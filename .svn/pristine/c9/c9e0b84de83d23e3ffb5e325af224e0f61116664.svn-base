@@ -1,0 +1,28 @@
+//
+//  PrefixHeader.pch
+//  亿红酒
+//
+//  Created by 蜗牛 on 2017/10/17.
+//  Copyright © 2017年 SnailLi. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//全局宏
+#import "UtilsMacros.h"
+#import "FontAndColorMacros.h"
+#import "YJRootVC.h"
+#import "CommonMacros.h"
+#import "NetWorkTools.h"
+#import "UIButton+layout.h"
+#import "UILabel+setProperty.h"
+#import "UIView+Extension.h"
+#import "Masonry.h"
+#import "UIImageView+WebCache.h"
+#import "NewsOneModel.h"
+#import "MJExtension.h"
+#import "NewsOneCell.h"
+#import "NewsOneDetailVC.h"
+
+#endif /* PrefixHeader_pch */

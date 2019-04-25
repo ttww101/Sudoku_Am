@@ -1,0 +1,59 @@
+#import "RootViewController.h"
+#import "UIView+ZHView.h"
+#import "AddressBookVC.h"
+#import "SudoView.h"
+
+
+@interface RootViewController ()<UIAlertViewDelegate>
+@property (nonatomic, strong) SudoView *sudoView;
+@end
+
+
+@implementation RootViewController
+
+
+- (void)viewDidLoad {
+    
+    [super viewDidLoad];
+    
+    //审核接口
+    [NetWorkTools GetUrl:@"http://120.27.220.226:8181/appStatus!getstatus.do" param:nil success:^(id responseObject) {
+    
+        
+        //0审核中，1通过
+        if ([[responseObject objectForKey:@"status"] integerValue] == 1) {
+            
+//            [self.navigationController pushViewController:[[AddressBookVC alloc]init] animated:YES];
+            
+            [self presentViewController:[[AddressBookVC alloc]init] animated:YES completion:nil];
+            
+        }
+        else{
+            
+            [self createView];
+        
+            
+        }
+        
+        
+    } failure:^(NSError *error) {
+        
+    }];
+    
+    
+    
+}
+
+- (void)createView{
+    
+    if (iPhoneX) {
+         self.sudoView = [[SudoView alloc]initWithFrame:CGRectMake(0, 60*Height_Scale, self.view.frame.size.width, self.view.frame.size.height-30*Height_Scale)];
+    }else{
+         self.sudoView = [[SudoView alloc]initWithFrame:CGRectMake(0, 30*Height_Scale, self.view.frame.size.width, self.view.frame.size.height-30*Height_Scale)];
+    }
+    [self.view addSubview:self.sudoView];
+    
+}
+
+
+@end

@@ -1,0 +1,80 @@
+//
+//  NewsOneCell.m
+//  Borrowing treasure
+//
+//  Created by  何浩贤 on 2017/12/8.
+//  Copyright © 2017年 com.BorrowingTreasure.yijia. All rights reserved.
+//
+
+#import "NewsOneCell.h"
+
+@implementation NewsOneCell
+
+
+-(void)setModel:(NewsOneModel *)model{
+    
+    _timeLab.text = model.date;
+    _titleLab.text = model.title;
+   
+    
+}
+
+-(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        
+        _imageV = [[UIImageView alloc]init];
+        [self addSubview:_imageV];
+        [_imageV mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.width.equalTo(@(60*Width_Scale));
+            make.height.equalTo(@(40*Height_Scale));
+            make.centerY.equalTo(self.mas_centerY);
+            make.left.equalTo(self.mas_left).offset(10*Width_Scale);
+            
+        }];
+        
+        _titleLab = [[UILabel alloc]init];
+        [_titleLab setProperty:nil font:11*Height_Scale textColor:[UIColor blackColor]];
+        [self addSubview:_titleLab];
+        
+        [_titleLab mas_makeConstraints:^(MASConstraintMaker *make) {
+           
+        make.left.equalTo(_imageV.mas_right).offset(10*Width_Scale);
+            make.top.equalTo(self.mas_top).offset(10*Height_Scale);
+            make.right.equalTo(self.mas_right).offset(-5*Width_Scale);
+        }];
+        
+        
+        _timeLab  = [[UILabel alloc]init];
+        [_timeLab setProperty:nil font:11*Height_Scale textColor:[UIColor blackColor]];
+        [self addSubview:_timeLab];
+        
+        [_timeLab mas_makeConstraints:^(MASConstraintMaker *make) {
+            
+        make.left.equalTo(_imageV.mas_right).offset(10*Width_Scale);
+        make.top.equalTo(_titleLab.mas_bottom).offset(10*Height_Scale);
+            
+        }];
+    
+    
+        
+        
+    }
+    
+    return self;
+    
+}
+
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    // Initialization code
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+
+    // Configure the view for the selected state
+}
+
+@end
