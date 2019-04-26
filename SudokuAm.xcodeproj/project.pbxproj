@@ -108,15 +108,15 @@
 		BB5ECB861FF0961900A4727A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECB831FF0961900A4727A /* MBProgressHUD.m */; };
 		BB5ECB8B1FF0968D00A4727A /* MTProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECB8A1FF0968D00A4727A /* MTProgressHUD.m */; };
 		BB5ECB8E1FF098CC00A4727A /* LTSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECB8D1FF098CC00A4727A /* LTSettingViewController.m */; };
-		BB5ECBE81FF0998C00A4727A /* LTSudokuLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECBD61FF0998A00A4727A /* LTSudokuLogic.m */; };
-		BB5ECBE91FF0998C00A4727A /* UIView+Extends.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECBD91FF0998A00A4727A /* UIView+Extends.m */; };
-		BB5ECBEA1FF0998C00A4727A /* LTGlobalState.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECBDD1FF0998B00A4727A /* LTGlobalState.m */; };
+		BB5ECBE81FF0998C00A4727A /* AmSudokuLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECBD61FF0998A00A4727A /* AmSudokuLogic.m */; };
+		BB5ECBE91FF0998C00A4727A /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECBD91FF0998A00A4727A /* UIView+Common.m */; };
+		BB5ECBEA1FF0998C00A4727A /* AmGlobalState.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECBDD1FF0998B00A4727A /* AmGlobalState.m */; };
 		BB5ECBEB1FF0998C00A4727A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECBDE1FF0998B00A4727A /* UIView+Extension.m */; };
-		BB5ECBEC1FF0998C00A4727A /* LTSudokuToolButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECBDF1FF0998B00A4727A /* LTSudokuToolButton.m */; };
-		BB5ECBED1FF0998C00A4727A /* LTSudukuGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECBE01FF0998B00A4727A /* LTSudukuGameView.m */; };
-		BB5ECBEE1FF0998C00A4727A /* LTSudokuCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECBE21FF0998B00A4727A /* LTSudokuCollectionViewCell.m */; };
-		BB5ECBEF1FF0998C00A4727A /* UIColorExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECBE41FF0998B00A4727A /* UIColorExtend.m */; };
-		BB5ECBF01FF0998C00A4727A /* LTSudokuEditToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECBE61FF0998C00A4727A /* LTSudokuEditToolView.m */; };
+		BB5ECBEC1FF0998C00A4727A /* AmSudokuToolButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECBDF1FF0998B00A4727A /* AmSudokuToolButton.m */; };
+		BB5ECBED1FF0998C00A4727A /* AmSudukuGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECBE01FF0998B00A4727A /* AmSudukuGameView.m */; };
+		BB5ECBEE1FF0998C00A4727A /* AmSudokuCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECBE21FF0998B00A4727A /* AmSudokuCollectionViewCell.m */; };
+		BB5ECBEF1FF0998C00A4727A /* UIColor+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECBE41FF0998B00A4727A /* UIColor+Ex.m */; };
+		BB5ECBF01FF0998C00A4727A /* AmSudokuEditToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECBE61FF0998C00A4727A /* AmSudokuEditToolView.m */; };
 		BB5ECBF31FF09A2D00A4727A /* LTSodukuCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECBF11FF09A2D00A4727A /* LTSodukuCellModel.m */; };
 /* End PBXBuildFile section */
 
@@ -363,24 +363,24 @@
 		BB5ECB8A1FF0968D00A4727A /* MTProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTProgressHUD.m; sourceTree = "<group>"; };
 		BB5ECB8C1FF098CB00A4727A /* LTSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTSettingViewController.h; sourceTree = "<group>"; };
 		BB5ECB8D1FF098CC00A4727A /* LTSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTSettingViewController.m; sourceTree = "<group>"; };
-		BB5ECBD61FF0998A00A4727A /* LTSudokuLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTSudokuLogic.m; sourceTree = "<group>"; };
-		BB5ECBD71FF0998A00A4727A /* LTSudokuToolButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTSudokuToolButton.h; sourceTree = "<group>"; };
-		BB5ECBD81FF0998A00A4727A /* LTSudokuCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTSudokuCollectionViewCell.h; sourceTree = "<group>"; };
-		BB5ECBD91FF0998A00A4727A /* UIView+Extends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extends.m"; sourceTree = "<group>"; };
-		BB5ECBDA1FF0998A00A4727A /* LTGlobalState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTGlobalState.h; sourceTree = "<group>"; };
-		BB5ECBDB1FF0998A00A4727A /* LTSudokuEditToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTSudokuEditToolView.h; sourceTree = "<group>"; };
-		BB5ECBDC1FF0998B00A4727A /* UIColorExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorExtend.h; sourceTree = "<group>"; };
-		BB5ECBDD1FF0998B00A4727A /* LTGlobalState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTGlobalState.m; sourceTree = "<group>"; };
+		BB5ECBD61FF0998A00A4727A /* AmSudokuLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmSudokuLogic.m; sourceTree = "<group>"; };
+		BB5ECBD71FF0998A00A4727A /* AmSudokuToolButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmSudokuToolButton.h; sourceTree = "<group>"; };
+		BB5ECBD81FF0998A00A4727A /* AmSudokuCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmSudokuCollectionViewCell.h; sourceTree = "<group>"; };
+		BB5ECBD91FF0998A00A4727A /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
+		BB5ECBDA1FF0998A00A4727A /* AmGlobalState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmGlobalState.h; sourceTree = "<group>"; };
+		BB5ECBDB1FF0998A00A4727A /* AmSudokuEditToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmSudokuEditToolView.h; sourceTree = "<group>"; };
+		BB5ECBDC1FF0998B00A4727A /* UIColor+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Ex.h"; sourceTree = "<group>"; };
+		BB5ECBDD1FF0998B00A4727A /* AmGlobalState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmGlobalState.m; sourceTree = "<group>"; };
 		BB5ECBDE1FF0998B00A4727A /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
-		BB5ECBDF1FF0998B00A4727A /* LTSudokuToolButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTSudokuToolButton.m; sourceTree = "<group>"; };
-		BB5ECBE01FF0998B00A4727A /* LTSudukuGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTSudukuGameView.m; sourceTree = "<group>"; };
-		BB5ECBE11FF0998B00A4727A /* LTSudukuGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTSudukuGameView.h; sourceTree = "<group>"; };
-		BB5ECBE21FF0998B00A4727A /* LTSudokuCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTSudokuCollectionViewCell.m; sourceTree = "<group>"; };
+		BB5ECBDF1FF0998B00A4727A /* AmSudokuToolButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmSudokuToolButton.m; sourceTree = "<group>"; };
+		BB5ECBE01FF0998B00A4727A /* AmSudukuGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmSudukuGameView.m; sourceTree = "<group>"; };
+		BB5ECBE11FF0998B00A4727A /* AmSudukuGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmSudukuGameView.h; sourceTree = "<group>"; };
+		BB5ECBE21FF0998B00A4727A /* AmSudokuCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmSudokuCollectionViewCell.m; sourceTree = "<group>"; };
 		BB5ECBE31FF0998B00A4727A /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
-		BB5ECBE41FF0998B00A4727A /* UIColorExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorExtend.m; sourceTree = "<group>"; };
-		BB5ECBE51FF0998C00A4727A /* LTSudokuLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTSudokuLogic.h; sourceTree = "<group>"; };
-		BB5ECBE61FF0998C00A4727A /* LTSudokuEditToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTSudokuEditToolView.m; sourceTree = "<group>"; };
-		BB5ECBE71FF0998C00A4727A /* UIView+Extends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extends.h"; sourceTree = "<group>"; };
+		BB5ECBE41FF0998B00A4727A /* UIColor+Ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Ex.m"; sourceTree = "<group>"; };
+		BB5ECBE51FF0998C00A4727A /* AmSudokuLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmSudokuLogic.h; sourceTree = "<group>"; };
+		BB5ECBE61FF0998C00A4727A /* AmSudokuEditToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmSudokuEditToolView.m; sourceTree = "<group>"; };
+		BB5ECBE71FF0998C00A4727A /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
 		BB5ECBF11FF09A2D00A4727A /* LTSodukuCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTSodukuCellModel.m; sourceTree = "<group>"; };
 		BB5ECBF21FF09A2D00A4727A /* LTSodukuCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTSodukuCellModel.h; sourceTree = "<group>"; };
 		CBAA1D8564AE39E7A38D83E9 /* libPods-SudokuAmTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SudokuAmTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -880,22 +880,22 @@
 		BB3A11161FE9F50500DD31DB /* shell */ = {
 			isa = PBXGroup;
 			children = (
-				BB5ECBDA1FF0998A00A4727A /* LTGlobalState.h */,
-				BB5ECBDD1FF0998B00A4727A /* LTGlobalState.m */,
-				BB5ECBD81FF0998A00A4727A /* LTSudokuCollectionViewCell.h */,
-				BB5ECBE21FF0998B00A4727A /* LTSudokuCollectionViewCell.m */,
-				BB5ECBDB1FF0998A00A4727A /* LTSudokuEditToolView.h */,
-				BB5ECBE61FF0998C00A4727A /* LTSudokuEditToolView.m */,
-				BB5ECBE51FF0998C00A4727A /* LTSudokuLogic.h */,
-				BB5ECBD61FF0998A00A4727A /* LTSudokuLogic.m */,
-				BB5ECBD71FF0998A00A4727A /* LTSudokuToolButton.h */,
-				BB5ECBDF1FF0998B00A4727A /* LTSudokuToolButton.m */,
-				BB5ECBE11FF0998B00A4727A /* LTSudukuGameView.h */,
-				BB5ECBE01FF0998B00A4727A /* LTSudukuGameView.m */,
-				BB5ECBDC1FF0998B00A4727A /* UIColorExtend.h */,
-				BB5ECBE41FF0998B00A4727A /* UIColorExtend.m */,
-				BB5ECBE71FF0998C00A4727A /* UIView+Extends.h */,
-				BB5ECBD91FF0998A00A4727A /* UIView+Extends.m */,
+				BB5ECBDA1FF0998A00A4727A /* AmGlobalState.h */,
+				BB5ECBDD1FF0998B00A4727A /* AmGlobalState.m */,
+				BB5ECBD81FF0998A00A4727A /* AmSudokuCollectionViewCell.h */,
+				BB5ECBE21FF0998B00A4727A /* AmSudokuCollectionViewCell.m */,
+				BB5ECBDB1FF0998A00A4727A /* AmSudokuEditToolView.h */,
+				BB5ECBE61FF0998C00A4727A /* AmSudokuEditToolView.m */,
+				BB5ECBE51FF0998C00A4727A /* AmSudokuLogic.h */,
+				BB5ECBD61FF0998A00A4727A /* AmSudokuLogic.m */,
+				BB5ECBD71FF0998A00A4727A /* AmSudokuToolButton.h */,
+				BB5ECBDF1FF0998B00A4727A /* AmSudokuToolButton.m */,
+				BB5ECBE11FF0998B00A4727A /* AmSudukuGameView.h */,
+				BB5ECBE01FF0998B00A4727A /* AmSudukuGameView.m */,
+				BB5ECBDC1FF0998B00A4727A /* UIColor+Ex.h */,
+				BB5ECBE41FF0998B00A4727A /* UIColor+Ex.m */,
+				BB5ECBE71FF0998C00A4727A /* UIView+Common.h */,
+				BB5ECBD91FF0998A00A4727A /* UIView+Common.m */,
 				BB5ECBE31FF0998B00A4727A /* UIView+Extension.h */,
 				BB5ECBDE1FF0998B00A4727A /* UIView+Extension.m */,
 			);
@@ -1177,7 +1177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB256CFF2005BEAC00179078 /* YJRegisView.m in Sources */,
-				BB5ECBED1FF0998C00A4727A /* LTSudukuGameView.m in Sources */,
+				BB5ECBED1FF0998C00A4727A /* AmSudukuGameView.m in Sources */,
 				BB256CF32005B1EA00179078 /* YJComLoginView.m in Sources */,
 				BB064FA21FDA7547002BF6FC /* UIView+Extension.m in Sources */,
 				BB1B27801FC67DB7001218E6 /* MJExtensionConst.m in Sources */,
@@ -1235,13 +1235,13 @@
 				BB256D6C2006030100179078 /* NSImage+WebCache.m in Sources */,
 				BB256CFC2005BDFE00179078 /* YJMineRegisVC.m in Sources */,
 				BB1B26211FC679EB001218E6 /* AppDelegate.m in Sources */,
-				BB5ECBF01FF0998C00A4727A /* LTSudokuEditToolView.m in Sources */,
+				BB5ECBF01FF0998C00A4727A /* AmSudokuEditToolView.m in Sources */,
 				BB256CF42005B1EA00179078 /* UIView+ZHView.m in Sources */,
 				BB256D752006030100179078 /* SDWebImageDownloaderOperation.m in Sources */,
 				BB256D792006030100179078 /* SDWebImageManager.m in Sources */,
 				BB1B27781FC67DB7001218E6 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				BB1B27AF1FC67FCE001218E6 /* NSString+MTEncrypt.m in Sources */,
-				BB5ECBEF1FF0998C00A4727A /* UIColorExtend.m in Sources */,
+				BB5ECBEF1FF0998C00A4727A /* UIColor+Ex.m in Sources */,
 				BB1B276C1FC67DB7001218E6 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				BB5ECB7C1FF08A1800A4727A /* AFSecurityPolicy.m in Sources */,
 				BB1B27731FC67DB7001218E6 /* MASConstraintMaker.m in Sources */,
@@ -1255,7 +1255,7 @@
 				BB256D7D2006030100179078 /* UIImage+GIF.m in Sources */,
 				BB1B27681FC67DB6001218E6 /* IQBarButtonItem.m in Sources */,
 				BB256D812006030100179078 /* UIView+WebCache.m in Sources */,
-				BB5ECBE81FF0998C00A4727A /* LTSudokuLogic.m in Sources */,
+				BB5ECBE81FF0998C00A4727A /* AmSudokuLogic.m in Sources */,
 				BB256D742006030100179078 /* SDWebImageDownloader.m in Sources */,
 				BB1B27881FC67DB7001218E6 /* NSObject+MJProperty.m in Sources */,
 				BB1B276A1FC67DB7001218E6 /* IQTitleBarButtonItem.m in Sources */,
@@ -1264,13 +1264,13 @@
 				BB5ECB8B1FF0968D00A4727A /* MTProgressHUD.m in Sources */,
 				BB1B27611FC67DB6001218E6 /* IQUITextFieldView+Additions.m in Sources */,
 				BB5ECB7A1FF08A1800A4727A /* AFHTTPSessionManager.m in Sources */,
-				BB5ECBEA1FF0998C00A4727A /* LTGlobalState.m in Sources */,
-				BB5ECBEC1FF0998C00A4727A /* LTSudokuToolButton.m in Sources */,
+				BB5ECBEA1FF0998C00A4727A /* AmGlobalState.m in Sources */,
+				BB5ECBEC1FF0998C00A4727A /* AmSudokuToolButton.m in Sources */,
 				BB5ECBF31FF09A2D00A4727A /* LTSodukuCellModel.m in Sources */,
 				BB5ECB7D1FF08A1800A4727A /* AFURLRequestSerialization.m in Sources */,
 				BB5ECB7F1FF08A1800A4727A /* AFURLSessionManager.m in Sources */,
-				BB5ECBE91FF0998C00A4727A /* UIView+Extends.m in Sources */,
-				BB5ECBEE1FF0998C00A4727A /* LTSudokuCollectionViewCell.m in Sources */,
+				BB5ECBE91FF0998C00A4727A /* UIView+Common.m in Sources */,
+				BB5ECBEE1FF0998C00A4727A /* AmSudokuCollectionViewCell.m in Sources */,
 				BB256D7C2006030100179078 /* UIImage+ForceDecode.m in Sources */,
 				BB256D7F2006030100179078 /* UIImageView+HighlightedWebCache.m in Sources */,
 				BB1B27BB1FC69FCC001218E6 /* BaseModel.m in Sources */,

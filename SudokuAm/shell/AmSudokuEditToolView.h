@@ -1,5 +1,5 @@
 //
-//  LTSudokuEditToolView.h
+//  AmSudokuEditToolView.h
 //  LTSoduku
 //
 //  Created by lt on 2017/9/7.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol LTSudokuEditToolViewDelegate <NSObject>
+@protocol AmSudokuEditToolViewDelegate <NSObject>
 
 - (void)setInputValue:(NSString *)value;
 
@@ -18,9 +18,9 @@
 
 @end
 
-@interface LTSudokuEditToolView : UIView
+@interface AmSudokuEditToolView : UIView
 
-@property (nonatomic, weak) id<LTSudokuEditToolViewDelegate> delegate;
+@property (nonatomic, weak) id<AmSudokuEditToolViewDelegate> delegate;
 
 
 @end

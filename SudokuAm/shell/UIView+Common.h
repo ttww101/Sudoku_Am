@@ -1,12 +1,12 @@
 //
-//  UIView+Extends.h
+//  UIView+Common.h
 //
 
 #import <UIKit/UIKit.h>
 
 typedef enum { UIViewAddLinePositionTop, UIViewAddLinePositionBottom } UIViewAddLinePosition;
 
-@interface UIView (Extends)
+@interface UIView (Common)
 /**
  * Shortcut for frame.origin.x.
  *

@@ -1,14 +1,14 @@
 //
-//  LTGlobalState.m
+//  AmGlobalState.m
 //  LTSoduku
 //
 //  Created by lt on 2017/9/4.
 //  Copyright © 2017年 tl. All rights reserved.
 //
 
-#import "LTGlobalState.h"
+#import "AmGlobalState.h"
 
-@implementation LTGlobalState
+@implementation AmGlobalState
 
 + (UIColor *)selectedCellColor
 {

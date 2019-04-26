@@ -1,5 +1,5 @@
 //
-//  LTSudokuCollectionViewCell.h
+//  AmSudokuCollectionViewCell.h
 //  LTSoduku
 //
 //  Created by lt on 2017/9/5.
@@ -10,7 +10,7 @@
 #import <Foundation/Foundation.h>
 #import "LTSodukuCellModel.h"
 
-@interface LTSudokuCollectionViewCell : UICollectionViewCell
+@interface AmSudokuCollectionViewCell : UICollectionViewCell
 
 @property (nonatomic, strong) LTSodukuCellModel *model;
 

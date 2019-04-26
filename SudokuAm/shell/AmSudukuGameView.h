@@ -1,5 +1,5 @@
 //
-//  LTSudukuGameView.h
+//  AmSudukuGameView.h
 //  LTSoduku
 //
 //  Created by lt on 2017/9/4.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LTSudukuGameView : UIView
+@interface AmSudukuGameView : UIView
 
 - (void)restartGame;
 

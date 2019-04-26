@@ -31,7 +31,7 @@
 # pragma mark - private
 - (IBAction)confirmBtnClicked:(id)sender
 {
-    [LTSudokuLogic restartGame];
+    [AmSudokuLogic restartGame];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -59,7 +59,7 @@
         case 0:     // 难度选择
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"settingCell"];
             cell.textLabel.text = @"难度";
-            cell.detailTextLabel.text = @[@"低级",@"中级",@"高级"][[LTSudokuLogic sharedInstance].gameLevel];
+            cell.detailTextLabel.text = @[@"低级",@"中级",@"高级"][[AmSudokuLogic sharedInstance].gameLevel];
             
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             break;
@@ -94,15 +94,15 @@
     if (!_alertVC) {
         _alertVC =  [UIAlertController alertControllerWithTitle:@"难度选择" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
         [_alertVC addAction:[UIAlertAction actionWithTitle:@"低级" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            [LTSudokuLogic setGameLevel:0];
+            [AmSudokuLogic setGameLevel:0];
             [self.tableView reloadData];
         }]];
         [_alertVC addAction:[UIAlertAction actionWithTitle:@"中级" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            [LTSudokuLogic setGameLevel:1];
+            [AmSudokuLogic setGameLevel:1];
             [self.tableView reloadData];
         }]];
         [_alertVC addAction:[UIAlertAction actionWithTitle:@"高级" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            [LTSudokuLogic setGameLevel:2];
+            [AmSudokuLogic setGameLevel:2];
             [self.tableView reloadData];
         }]];
         

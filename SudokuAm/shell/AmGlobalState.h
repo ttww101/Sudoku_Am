@@ -1,5 +1,5 @@
 //
-//  LTGlobalState.h
+//  AmGlobalState.h
 //  LTSoduku
 //
 //  Created by lt on 2017/9/4.
@@ -17,7 +17,7 @@
 #define USERGAMEDATA @"userGameData"    // 用户手动存档数据
 
 
-@interface LTGlobalState : NSObject
+@interface AmGlobalState : NSObject
 
 + (UIColor *)selectedCellColor;
 

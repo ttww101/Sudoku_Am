@@ -23,11 +23,11 @@
 #import "MJExtension.h"
 
 
-#import "LTGlobalState.h"
-#import "UIView+Extends.h"
+#import "AmGlobalState.h"
+#import "UIView+Common.h"
 #import "UIView+Extension.h"
-#import "UIColorExtend.h"
-#import "LTSudokuLogic.h"
+#import "UIColor+Ex.h"
+#import "AmSudokuLogic.h"
 
 #define ISIPAD      (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad)
 #define ISIPHONE    (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone)

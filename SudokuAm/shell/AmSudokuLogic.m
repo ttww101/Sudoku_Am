@@ -1,29 +1,29 @@
 //
-//  LTSudokuLogic.m
+//  AmSudokuLogic.m
 //  LTSoduku
 //
 //  Created by lt on 2017/9/6.
 //  Copyright © 2017年 tl. All rights reserved.
 //
 
-#import "LTSudokuLogic.h"
+#import "AmSudokuLogic.h"
 #import "LTSodukuCellModel.h"
-#import "LTSudukuGameView.h"
+#import "AmSudukuGameView.h"
 
-@interface LTSudokuLogic ()
+@interface AmSudokuLogic ()
 
 @property (nonatomic, strong) NSMutableArray *modelArray;
 
 @end
 
-@implementation LTSudokuLogic
+@implementation AmSudokuLogic
 
 + (instancetype)sharedInstance
 {
-    static LTSudokuLogic *manager = nil;
+    static AmSudokuLogic *manager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        manager = [[LTSudokuLogic alloc] init];
+        manager = [[AmSudokuLogic alloc] init];
         manager.gameLevel = [[[NSUserDefaults standardUserDefaults] valueForKey:GAMELEVEL] integerValue];
     });
     return manager;
@@ -54,7 +54,7 @@
     for (NSInteger i = 1; i <= 9; i++) {
         NSString *value = [NSString stringWithFormat:@"%ld" ,(long)i];
         if ([self isValidWithX:x y:y value:value]) {
-            [[LTSudokuLogic modelWithX:x y:y].valistValueList addObject:value];
+            [[AmSudokuLogic modelWithX:x y:y].valistValueList addObject:value];
         }
     }
 }
@@ -65,7 +65,7 @@
  */
 - (BOOL)fillModelWithX:(NSInteger)x y:(NSInteger)y
 {
-    LTSodukuCellModel *model = [LTSudokuLogic modelWithX:x y:y];
+    LTSodukuCellModel *model = [AmSudokuLogic modelWithX:x y:y];
     
     if (model.valistValueList.count > 0) {
         NSInteger randomIndex = [self getRandomNumber:0 to:model.valistValueList.count - 1];
@@ -110,7 +110,7 @@
 {
     for (NSInteger i = 0; i < 9; i++) {
         if (i != y) {
-            if ([value isEqualToString:[LTSudokuLogic valueWithX:x y:i]]) {
+            if ([value isEqualToString:[AmSudokuLogic valueWithX:x y:i]]) {
                 return NO;
             }
         }
@@ -118,7 +118,7 @@
     
     for (NSInteger i = 0; i < 9; i++) {
         if (i != x) {
-            if ([value isEqualToString:[LTSudokuLogic valueWithX:i y:y]]) {
+            if ([value isEqualToString:[AmSudokuLogic valueWithX:i y:y]]) {
                 return NO;
             }
         }
@@ -130,7 +130,7 @@
     for (NSInteger i = -1; i < 2; i++) {
         for (NSInteger j = -1; j < 2; j ++) {
             if ( !((centerX + i) == x && (centerY + j) == y) ) {
-                if ([[LTSudokuLogic valueWithX:(centerX + i) y:(centerY + j)] isEqualToString:value]) {
+                if ([[AmSudokuLogic valueWithX:(centerX + i) y:(centerY + j)] isEqualToString:value]) {
                     return NO;
                 }
             }
@@ -144,7 +144,7 @@
 {
     for (NSInteger i = 0; i < 9; i++) {
         for (NSInteger j = 0; j < 9; j++) {
-            [LTSudokuLogic modelWithX:i y:j].editEnabled = NO;
+            [AmSudokuLogic modelWithX:i y:j].editEnabled = NO;
         }
     }
     
@@ -179,10 +179,10 @@
             do {
                 x = centerX + [self getRandomNumber:-1 to:1];
                 y = centerY + [self getRandomNumber:-1 to:1];
-            } while ([LTSudokuLogic modelWithX:x y:y].editEnabled == YES);
+            } while ([AmSudokuLogic modelWithX:x y:y].editEnabled == YES);
             
             subBlankCount++;
-            [LTSudokuLogic modelWithX:x y:y].editEnabled = YES;
+            [AmSudokuLogic modelWithX:x y:y].editEnabled = YES;
         }
     }
 }
@@ -221,7 +221,7 @@
 // 存档
 + (void)saveGameFileWithKey:(NSString *)key
 {
-    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:[LTSudokuLogic sharedInstance].modelArray];
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:[AmSudokuLogic sharedInstance].modelArray];
     [[NSUserDefaults standardUserDefaults] setValue:data forKey:key];
 }
 
@@ -232,7 +232,7 @@
     if (!data) {
         return NO;
     }
-    [LTSudokuLogic sharedInstance].modelArray = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    [AmSudokuLogic sharedInstance].modelArray = [NSKeyedUnarchiver unarchiveObjectWithData:data];
     [[NSNotificationCenter defaultCenter] postNotificationName:LTGAMEREFRESH object:nil];
     return YES;
 }
@@ -244,15 +244,15 @@
 
 + (void)initGameData
 {
-    [[LTSudokuLogic sharedInstance] clearModelValue];
-    [[LTSudokuLogic sharedInstance] createSudokuArray];
-    [[LTSudokuLogic sharedInstance] initBlankModelWithLevel:[LTSudokuLogic sharedInstance].gameLevel];
+    [[AmSudokuLogic sharedInstance] clearModelValue];
+    [[AmSudokuLogic sharedInstance] createSudokuArray];
+    [[AmSudokuLogic sharedInstance] initBlankModelWithLevel:[AmSudokuLogic sharedInstance].gameLevel];
     
 }
 
 + (LTSodukuCellModel *)modelWithX:(NSInteger)x y:(NSInteger)y
 {
-    return [LTSudokuLogic sharedInstance].modelArray[x][y];
+    return [AmSudokuLogic sharedInstance].modelArray[x][y];
 }
 
 + (NSString *)valueWithX:(NSInteger)x y:(NSInteger)y
@@ -269,7 +269,7 @@
 {
     for (NSInteger x = 0; x < 9; x++) {
         for (NSInteger y = 0; y < 9; y++) {
-            LTSodukuCellModel *model = [LTSudokuLogic modelWithX:x y:y];
+            LTSodukuCellModel *model = [AmSudokuLogic modelWithX:x y:y];
             if (model.editEnabled && ![model.inputValue isEqualToString:model.realValue]) {
                 return NO;
             }
@@ -281,7 +281,7 @@
 
 + (void)setGameLevel:(NSInteger)level
 {
-    [LTSudokuLogic sharedInstance].gameLevel = level;
+    [AmSudokuLogic sharedInstance].gameLevel = level;
     [[NSUserDefaults standardUserDefaults] setValue:[NSNumber numberWithInteger:level] forKey:GAMELEVEL];
 }
 

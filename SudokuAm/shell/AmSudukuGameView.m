@@ -1,19 +1,19 @@
 //
-//  LTSudukuGameView.m
+//  AmSudukuGameView.m
 //  LTSoduku
 //
 //  Created by lt on 2017/9/4.
 //  Copyright © 2017年 tl. All rights reserved.
 //
 
-#import "LTSudukuGameView.h"
-#import "LTSudokuEditToolView.h"
-#import "LTSudokuCollectionViewCell.h"
+#import "AmSudukuGameView.h"
+#import "AmSudokuEditToolView.h"
+#import "AmSudokuCollectionViewCell.h"
 
-@interface LTSudukuGameView () <UICollectionViewDelegate, UICollectionViewDataSource, LTSudokuEditToolViewDelegate>
+@interface AmSudukuGameView () <UICollectionViewDelegate, UICollectionViewDataSource, AmSudokuEditToolViewDelegate>
 
 @property (nonatomic, strong) UICollectionView *sudokuView;
-@property (nonatomic, strong) LTSudokuEditToolView *toolView;
+@property (nonatomic, strong) AmSudokuEditToolView *toolView;
 @property (nonatomic, strong) UIButton *saveButton;
 @property (nonatomic, strong) UIButton *loadButton;
 
@@ -21,7 +21,7 @@
 
 @end
 
-@implementation LTSudukuGameView {
+@implementation AmSudukuGameView {
     NSIndexPath *_selectedIndex;        // 当前选择的cell index
 }
 
@@ -48,8 +48,8 @@
         UIView *yLineView = [[UIView alloc] init];
         xLineView.backgroundColor = [UIColor blackColor];
         yLineView.backgroundColor = [UIColor blackColor];
-        xLineView.frame = CGRectMake(0, [GState cellWidthHeight] * i, [GState sudokuViewWidth] + 1.f, [GState sudokuLayerWidth]);
-        yLineView.frame = CGRectMake([GState cellWidthHeight] * i, 0, [GState sudokuLayerWidth], [GState sudokuViewWidth] + 1.f);
+        xLineView.frame = CGRectMake(0, [AmGlobalState cellWidthHeight] * i, [AmGlobalState sudokuViewWidth] + 1.f, [AmGlobalState sudokuLayerWidth]);
+        yLineView.frame = CGRectMake([AmGlobalState cellWidthHeight] * i, 0, [AmGlobalState sudokuLayerWidth], [AmGlobalState sudokuViewWidth] + 1.f);
         if (i % 3 == 0) {
             xLineView.height = 1.5f;
             yLineView.width = 1.5f;
@@ -62,14 +62,14 @@
 
 - (void)layoutSubviews
 {
-    self.sudokuView.frame = CGRectMake([GState defaultTopSpace], 0, [GState sudokuViewWidth], [GState sudokuViewWidth]);
-    self.toolView.frame = CGRectMake(self.sudokuView.left, self.sudokuView.bottom + [GState defaultTopSpace], [GState sudokuViewWidth], (self.width - [GState sudokuButtonSpace] * 5) / 6.5 * 2 + [GState sudokuButtonSpace]);
+    self.sudokuView.frame = CGRectMake([AmGlobalState defaultTopSpace], 0, [AmGlobalState sudokuViewWidth], [AmGlobalState sudokuViewWidth]);
+    self.toolView.frame = CGRectMake(self.sudokuView.left, self.sudokuView.bottom + [AmGlobalState defaultTopSpace], [AmGlobalState sudokuViewWidth], (self.width - [AmGlobalState sudokuButtonSpace] * 5) / 6.5 * 2 + [AmGlobalState sudokuButtonSpace]);
     self.saveButton.left = self.toolView.left;
     self.saveButton.top = self.toolView.bottom + 5;
     self.saveButton.size = CGSizeMake(60, 30);
     
     self.loadButton.size = self.saveButton.size;
-    self.loadButton.right = self.width - [GState defaultTopSpace];
+    self.loadButton.right = self.width - [AmGlobalState defaultTopSpace];
     self.loadButton.top = self.saveButton.top;
     
 }
@@ -89,7 +89,7 @@
 {
     for (NSInteger x = 0; x < 9; x++) {
         for (NSInteger y = 0; y < 9; y++) {
-            LTSudokuCollectionViewCell *selectedCell = (LTSudokuCollectionViewCell *)[self.sudokuView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:x inSection:y]];
+            AmSudokuCollectionViewCell *selectedCell = (AmSudokuCollectionViewCell *)[self.sudokuView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:x inSection:y]];
             selectedCell.backgroundColor = [UIColor whiteColor];
             selectedCell.borderLayer.borderWidth = .5f;
         }
@@ -98,7 +98,7 @@
 
 - (void)updateCellColor
 {
-    LTSudokuCollectionViewCell *selectedCell = (LTSudokuCollectionViewCell *)[self.sudokuView cellForItemAtIndexPath:_selectedIndex];
+    AmSudokuCollectionViewCell *selectedCell = (AmSudokuCollectionViewCell *)[self.sudokuView cellForItemAtIndexPath:_selectedIndex];
     
     NSInteger y = _selectedIndex.section;
     NSInteger x = _selectedIndex.row;
@@ -111,10 +111,10 @@
     
     for (NSInteger i = 0; i < 9; i++) {
         for (NSInteger j = 0; j < 9; j++) {
-            LTSudokuCollectionViewCell *cell = (LTSudokuCollectionViewCell *)[self.sudokuView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:i inSection:j]];
+            AmSudokuCollectionViewCell *cell = (AmSudokuCollectionViewCell *)[self.sudokuView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:i inSection:j]];
             cell.borderLayer.borderWidth = 0;
             if (i == x || j == y ) {
-                cell.backgroundColor = [GState selectedCellColor];
+                cell.backgroundColor = [AmGlobalState selectedCellColor];
             } else {
                 cell.backgroundColor = [UIColor whiteColor];
             }
@@ -133,12 +133,12 @@
 
 - (void)saveButtonClicked
 {
-    [LTSudokuLogic saveGameFileWithKey:USERGAMEDATA];
+    [AmSudokuLogic saveGameFileWithKey:USERGAMEDATA];
 }
 
 - (void)loadButtonClicked
 {
-    [LTSudokuLogic loadGameFileAndRestartWithKey:USERGAMEDATA];
+    [AmSudokuLogic loadGameFileAndRestartWithKey:USERGAMEDATA];
 }
 
 # pragma mark - CollectionViewDatasource
@@ -155,9 +155,9 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    LTSudokuCollectionViewCell * cell = (LTSudokuCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    AmSudokuCollectionViewCell * cell = (AmSudokuCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     cell.borderLayer.borderColor = [UIColor flatRedColor].CGColor;
-    [cell setModel:[LTSudokuLogic modelWithX:indexPath.row y:indexPath.section]];
+    [cell setModel:[AmSudokuLogic modelWithX:indexPath.row y:indexPath.section]];
     
     return cell;
 }
@@ -168,7 +168,7 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     _selectedIndex = indexPath;
-    LTSudokuCollectionViewCell *selectedCell = (LTSudokuCollectionViewCell *)[self.sudokuView cellForItemAtIndexPath:indexPath];
+    AmSudokuCollectionViewCell *selectedCell = (AmSudokuCollectionViewCell *)[self.sudokuView cellForItemAtIndexPath:indexPath];
     if (selectedCell.borderLayer.borderWidth == 1.5f) {
         [self collectionView:self.sudokuView didDeselectItemAtIndexPath:_selectedIndex];
         return;
@@ -183,7 +183,7 @@
     NSLog(@"x = %ld y = %ld  取消选中",indexPath.row,indexPath.section);
     for (NSInteger i = 0; i < 9; i++) {
         for (NSInteger j = 0; j < 9; j++) {
-            LTSudokuCollectionViewCell *cell = (LTSudokuCollectionViewCell *)[collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:i inSection:j]];
+            AmSudokuCollectionViewCell *cell = (AmSudokuCollectionViewCell *)[collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:i inSection:j]];
             cell.backgroundColor = [UIColor whiteColor];
             cell.borderLayer.borderWidth = 0;
         }
@@ -200,11 +200,11 @@
         [self.sudokuView reloadItemsAtIndexPaths:[NSArray arrayWithObject:_selectedIndex]];
         [self collectionView:self.sudokuView didSelectItemAtIndexPath:_selectedIndex];
         
-        if ([LTSudokuLogic isGameOver]) {
+        if ([AmSudokuLogic isGameOver]) {
             UIAlertController * alertVC = [UIAlertController alertControllerWithTitle:nil message:@"YOU WIN!" preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction *action = [UIAlertAction actionWithTitle:@"下一局" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                 _selectedIndex = nil;
-                [LTSudokuLogic restartGame];
+                [AmSudokuLogic restartGame];
             }];
             [alertVC addAction:action];
             [self.window.rootViewController presentViewController:alertVC animated:NO completion:nil];
@@ -250,7 +250,7 @@
     if (!_sudokuView)
     {
         UICollectionViewFlowLayout *viewLayout = [[UICollectionViewFlowLayout alloc] init];
-        viewLayout.itemSize = CGSizeMake([GState cellWidthHeight], [GState cellWidthHeight]);
+        viewLayout.itemSize = CGSizeMake([AmGlobalState cellWidthHeight], [AmGlobalState cellWidthHeight]);
         viewLayout.minimumLineSpacing = 0;
         viewLayout.minimumInteritemSpacing = 0;
         _sudokuView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:viewLayout];
@@ -258,17 +258,17 @@
         _sudokuView.backgroundColor = [UIColor whiteColor];
         _sudokuView.delegate = self;
         _sudokuView.dataSource = self;
-        [_sudokuView registerClass:[LTSudokuCollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
+        [_sudokuView registerClass:[AmSudokuCollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
         
     }
     return _sudokuView;
 }
 
-- (LTSudokuEditToolView *)toolView
+- (AmSudokuEditToolView *)toolView
 {
     if (!_toolView)
     {
-        _toolView = [[LTSudokuEditToolView alloc] initWithFrame:CGRectZero];
+        _toolView = [[AmSudokuEditToolView alloc] initWithFrame:CGRectZero];
         _toolView.delegate = self;
     }
     return _toolView;
@@ -302,7 +302,7 @@
         NSLog(@"请选择要操作的方格");
         return nil;
     }
-    return [LTSudokuLogic modelWithX:_selectedIndex.row y:_selectedIndex.section];
+    return [AmSudokuLogic modelWithX:_selectedIndex.row y:_selectedIndex.section];
 }
 
 

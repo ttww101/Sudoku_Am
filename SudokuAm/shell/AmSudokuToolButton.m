@@ -1,14 +1,14 @@
 //
-//  LTSudokuToolButton.m
+//  AmSudokuToolButton.m
 //  LTSoduku
 //
 //  Created by lt on 2017/9/22.
 //  Copyright © 2017年 tl. All rights reserved.
 //
 
-#import "LTSudokuToolButton.h"
+#import "AmSudokuToolButton.h"
 
-@implementation LTSudokuToolButton
+@implementation AmSudokuToolButton
 
 - (instancetype)init
 {

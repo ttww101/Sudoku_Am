@@ -1,21 +1,21 @@
 //
-//  LTSudokuCollectionViewCell.m
+//  AmSudokuCollectionViewCell.m
 //  LTSoduku
 //
 //  Created by lt on 2017/9/5.
 //  Copyright © 2017年 tl. All rights reserved.
 //
 
-#import "LTSudokuCollectionViewCell.h"
+#import "AmSudokuCollectionViewCell.h"
 
-@interface LTSudokuCollectionViewCell ()
+@interface AmSudokuCollectionViewCell ()
 
 @property (nonatomic, strong) UILabel *valueLabel;
 @property (nonatomic, strong) NSMutableArray *noteLabelArray;
 
 @end
 
-@implementation LTSudokuCollectionViewCell
+@implementation AmSudokuCollectionViewCell
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -59,7 +59,7 @@
     
     _model = model;
     self.valueLabel.textAlignment = NSTextAlignmentCenter;
-    self.valueLabel.textColor = self.model.editEnabled == YES ? [GState editableCellTextColor] : [UIColor blackColor];
+    self.valueLabel.textColor = self.model.editEnabled == YES ? [AmGlobalState editableCellTextColor] : [UIColor blackColor];
     self.valueLabel.font = [UIFont systemFontOfSize:15];
     
     //    self.valueLabel.text = model.realValue;

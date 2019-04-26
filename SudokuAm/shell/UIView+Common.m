@@ -1,8 +1,8 @@
 //
-//  UIView+Extends.m
+//  UIView+Common.m
 //
 
-#import "UIView+Extends.h"
+#import "UIView+Common.h"
 #import <objc/runtime.h>
 
 static char kDTActionHandlerTapBlockKey;
@@ -10,7 +10,7 @@ static char kDTActionHandlerTapGestureKey;
 static char kDTActionHandlerLongPressBlockKey;
 static char kDTActionHandlerLongPressGestureKey;
 
-@implementation UIView (Extends)
+@implementation UIView (Common)
 
 - (CGFloat)left {
     return self.frame.origin.x;

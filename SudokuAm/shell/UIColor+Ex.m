@@ -1,14 +1,14 @@
 //
-//  UIColor+UIColorExtend.m
+//  UIColor+UIColorEx.m
 //  etionLib
 //
 //  Created by wu jingxing on 12-6-20.
 //  Copyright (c) 2012年 GuangZhouXuanWu. All rights reserved.
 //
 
-#import "UIColorExtend.h"
+#import "UIColor+Ex.h"
 
-@implementation UIColor (UIColorExtend)
+@implementation UIColor (UIColorEx)
 
 +(UIColor*)colorWithRGBString:(NSString*)szRGB
 {

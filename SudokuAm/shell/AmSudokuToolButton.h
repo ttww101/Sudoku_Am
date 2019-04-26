@@ -1,5 +1,5 @@
 //
-//  LTSudokuToolButton.h
+//  AmSudokuToolButton.h
 //  LTSoduku
 //
 //  Created by lt on 2017/9/22.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LTSudokuToolButton : UIButton
+@interface AmSudokuToolButton : UIButton
 
 @property (nonatomic, assign) BOOL isNoted;
 

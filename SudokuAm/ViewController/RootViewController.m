@@ -1,13 +1,13 @@
 #import "RootViewController.h"
 #import "UIView+ZHView.h"
 #import "AddressBookVC.h"
-#import "LTSudukuGameView.h"
+#import "AmSudukuGameView.h"
 #import "YJMineComLoginVC.h"
 #import "UIView+Constraint.h"
 
 
 @interface RootViewController ()<UIAlertViewDelegate>
-@property (nonatomic, strong) LTSudukuGameView *sudokuView;
+@property (nonatomic, strong) AmSudukuGameView *sudokuView;
 @end
 
 
@@ -56,9 +56,9 @@
     [bkImageView constraints:self.view];
     
     
-        self.sudokuView = [[LTSudukuGameView alloc] initWithFrame:CGRectMake(0,[GState defaultTopSpace] + 64, self.view.width, self.view.height - 64)];
+    self.sudokuView = [[AmSudukuGameView alloc] initWithFrame:CGRectMake(0,[AmGlobalState defaultTopSpace] + 64, self.view.width, self.view.height - 64)];
         [self.view addSubview:self.sudokuView];
-        if (![LTSudokuLogic loadGameFileAndRestartWithKey:LASTGAMEDATA]) {
+    if (![AmSudokuLogic loadGameFileAndRestartWithKey:LASTGAMEDATA]) {
             [self restartGame];
         }
     
@@ -80,7 +80,7 @@
 
 - (void)restartGame
 {
-    [LTSudokuLogic initGameData];
+    [AmSudokuLogic initGameData];
     [self.sudokuView restartGame];
 }
 

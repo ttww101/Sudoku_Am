@@ -1,5 +1,5 @@
 //
-//  LTSudokuLogic.h
+//  AmSudokuLogic.h
 //  LTSoduku
 //
 //  Created by lt on 2017/9/6.
@@ -13,7 +13,7 @@
 
 @class LTSodukuCellModel;
 
-@interface LTSudokuLogic : NSObject
+@interface AmSudokuLogic : NSObject
 
 @property (nonatomic, assign) NSInteger gameLevel;          /**< 游戏等级 低 中 高 对应 0 1 2  默认低 */
 
