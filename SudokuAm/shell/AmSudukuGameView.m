@@ -1,6 +1,6 @@
 //
 //  AmSudukuGameView.m
-//  LTSoduku
+//  AmSoduku
 //
 //  Created by lt on 2017/9/4.
 //  Copyright © 2017年 tl. All rights reserved.
@@ -17,7 +17,7 @@
 @property (nonatomic, strong) UIButton *saveButton;
 @property (nonatomic, strong) UIButton *loadButton;
 
-@property (nonatomic, readonly) LTSodukuCellModel *selectedCellModel;
+@property (nonatomic, readonly) AMSodukuCellModel *selectedCellModel;
 
 @end
 
@@ -296,7 +296,7 @@
     return _loadButton;
 }
 
-- (LTSodukuCellModel *)selectedCellModel
+- (AMSodukuCellModel *)selectedCellModel
 {
     if (!_selectedIndex) {
         NSLog(@"请选择要操作的方格");

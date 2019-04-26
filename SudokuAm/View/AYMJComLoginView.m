@@ -1,20 +1,20 @@
 //
-//  YJComLoginView.m
+//  AYMJComLoginView.m
 //  意料之外
 //
 //  Created by  何浩贤 on 2017/8/22.
 //  Copyright © 2017年 com.UNEXPECTED.yijia. All rights reserved.
 //
 
-#import "YJComLoginView.h"
+#import "AYMJComLoginView.h"
 
-@interface YJComLoginView ()
+@interface AYMJComLoginView ()
 
 @property (nonatomic, assign) NSInteger status;
 
 @end
 
-@implementation YJComLoginView
+@implementation AYMJComLoginView
 
 -(instancetype)initWithFrame:(CGRect)frame{
  

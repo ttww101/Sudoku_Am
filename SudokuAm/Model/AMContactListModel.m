@@ -1,7 +1,7 @@
 
-#import "ContactListModel.h"
+#import "AMContactListModel.h"
 
-@implementation ContactListModel
+@implementation AMContactListModel
 
 + (NSDictionary *)replacedKeyFromPropertyName{
     return @{

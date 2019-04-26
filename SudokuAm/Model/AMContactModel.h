@@ -1,9 +1,9 @@
 
 #import <Foundation/Foundation.h>
 #import "BaseModel.h"
-#import "ContactListModel.h"
+#import "AMContactListModel.h"
 
-@interface ContactModel : BaseModel
+@interface AMContactModel : BaseModel
 @property (nonatomic, strong) NSArray *list;
 @end
 

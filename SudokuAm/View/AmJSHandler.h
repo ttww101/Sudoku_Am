@@ -1,5 +1,5 @@
 //
-//  SLJSHandler.h
+//  AmJSHandler.h
 //  亿红酒
 //
 //  Created by 蜗牛 on 2017/11/8.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <WebKit/WebKit.h>
-@interface SLJSHandler : NSObject<WKScriptMessageHandler>
+@interface AmJSHandler : NSObject<WKScriptMessageHandler>
 @property (nonatomic,weak,readonly) UIViewController * webVC;
 @property (nonatomic,strong,readonly) WKWebViewConfiguration * configuration;
 

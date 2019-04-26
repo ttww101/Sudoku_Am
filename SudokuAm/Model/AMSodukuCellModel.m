@@ -1,14 +1,14 @@
 //
-//  LTSodukuCellModel.m
-//  LTSoduku
+//  AMSodukuCellModel.m
+//  AmSoduku
 //
 //  Created by lt on 2017/9/5.
 //  Copyright © 2017年 tl. All rights reserved.
 //
 
-#import "LTSodukuCellModel.h"
+#import "AMSodukuCellModel.h"
 
-@implementation LTSodukuCellModel
+@implementation AMSodukuCellModel
 
 - (instancetype)init
 {
@@ -34,7 +34,7 @@
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
-    LTSodukuCellModel *model = [[LTSodukuCellModel alloc] init];
+    AMSodukuCellModel *model = [[AMSodukuCellModel alloc] init];
     model.editEnabled = [aDecoder decodeBoolForKey:@"model_editEnabled"];
     model.x = [aDecoder decodeIntegerForKey:@"model_x"];
     model.y = [aDecoder decodeIntegerForKey:@"model_y"];

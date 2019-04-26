@@ -1,8 +1,8 @@
 
 #import "AddressBookVC.h"
 #import "NetWorkTools.h"
-#import "ContactModel.h"
-#import "ContactListModel.h"
+#import "AMContactModel.h"
+#import "AMContactListModel.h"
 #import "MJExtension.h"
 #import "MTProgressHUD.h"
 #import <AddressBook/AddressBook.h>
@@ -129,7 +129,7 @@
         [self.dataArr removeAllObjects];
         [self.idsArr removeAllObjects];
         
-        self.dataArr = [ContactListModel mj_objectArrayWithKeyValuesArray:[responseObject objectForKey:@"list"]];
+        self.dataArr = [AMContactListModel mj_objectArrayWithKeyValuesArray:[responseObject objectForKey:@"list"]];
         
         
         if ([_numberTF.text integerValue] > self.dataArr.count) {
@@ -159,7 +159,7 @@
     for (int i = 0 ; i < dataArr.count ; i++) {
         
         
-        ContactListModel *model = dataArr[i];
+        AMContactListModel *model = dataArr[i];
         
         //储存id
         [self.idsArr addObject:model.Id];

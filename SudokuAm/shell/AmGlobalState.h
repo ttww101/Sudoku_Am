@@ -1,6 +1,6 @@
 //
 //  AmGlobalState.h
-//  LTSoduku
+//  AmSoduku
 //
 //  Created by lt on 2017/9/4.
 //  Copyright © 2017年 tl. All rights reserved.

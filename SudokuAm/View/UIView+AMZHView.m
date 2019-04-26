@@ -1,14 +1,14 @@
 //
-//  UIView+ZHView.m
-//  ZHView
+//  UIView+AMZHView.m
+//  AMZHView
 //
 //  Created by mac on 16/2/13.
 //  Copyright © 2016年 mac. All rights reserved.
 //
 
-#import "UIView+ZHView.h"
+#import "UIView+AMZHView.h"
 
-@implementation UIView (ZHView)
+@implementation UIView (AMZHView)
 
 - (void)setX:(CGFloat)x{
     CGRect frame = self.frame;

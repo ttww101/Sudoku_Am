@@ -1,13 +1,13 @@
 
 #import "YJMineRegisVC.h"
-#import "YJRegisView.h"
+#import "AYMJRegisView.h"
 #import "AFNetworking.h"
 #import "UIImageView+WebCache.h"
 #import "MTProgressHUD.h"
 #import "NSString+MTEncrypt.h"
 
 @interface YJMineRegisVC ()
-@property (nonatomic, strong) YJRegisView *regisView;
+@property (nonatomic, strong) AYMJRegisView *regisView;
 @end
 
 @implementation YJMineRegisVC
@@ -46,7 +46,7 @@
 #pragma mark 创建注册视图
 -(void)initRegisView{
     
-    _regisView = [[YJRegisView alloc]initWithFrame:CGRectMake(10*Width_Scale, 130*Height_Scale, 300*Width_Scale, 400*Height_Scale)];
+    _regisView = [[AYMJRegisView alloc]initWithFrame:CGRectMake(10*Width_Scale, 130*Height_Scale, 300*Width_Scale, 400*Height_Scale)];
     
 //    _regisView.userTF.delegate = self;
 //    _regisView.passTF.delegate = self;

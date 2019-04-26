@@ -1,6 +1,6 @@
 //
 //  AmSudokuCollectionViewCell.m
-//  LTSoduku
+//  AmSoduku
 //
 //  Created by lt on 2017/9/5.
 //  Copyright © 2017年 tl. All rights reserved.
@@ -52,7 +52,7 @@
 # pragma mark - set
 
 
-- (void)setModel:(LTSodukuCellModel *)model
+- (void)setModel:(AMSodukuCellModel *)model
 {
     self.backgroundColor = [UIColor whiteColor];
     self.borderLayer.borderWidth = 0;

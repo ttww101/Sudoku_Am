@@ -1,14 +1,14 @@
 //
-//  UIBarButtonItem+MTButton.m
+//  UIBarButtonItem+KMTButton.m
 //  YingCaa
 //
 //  Created by interest on 16/4/26.
 //  Copyright © 2016年 interest. All rights reserved.
 //
 
-#import "UIBarButtonItem+MTButton.h"
+#import "UIBarButtonItem+KMTButton.h"
 
-@implementation UIBarButtonItem (MTButton)
+@implementation UIBarButtonItem (KMTButton)
 
 + (instancetype)mt_barButtonItemWithImage:(NSString *)imageName highImage:(NSString *)highImageName target:(id)target action:(SEL)action{
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];

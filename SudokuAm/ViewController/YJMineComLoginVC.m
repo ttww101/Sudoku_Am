@@ -7,14 +7,14 @@
 //
 
 #import "YJMineComLoginVC.h"
-#import "YJComLoginView.h"
+#import "AYMJComLoginView.h"
 #import "MTProgressHUD.h"
 #import "YJMineRegisVC.h"
 #import "NSString+MTEncrypt.h"
 
-@interface YJMineComLoginVC ()<YJComLoginViewDelegate,UITextFieldDelegate>
+@interface YJMineComLoginVC ()<AYMJComLoginViewDelegate,UITextFieldDelegate>
 
-@property (nonatomic, strong) YJComLoginView *loginView;
+@property (nonatomic, strong) AYMJComLoginView *loginView;
 @end
 
 @implementation YJMineComLoginVC
@@ -51,7 +51,7 @@
 #pragma mark 创建普通登录视图
 -(void)initLoginView{
 
-    _loginView = [[YJComLoginView alloc]initWithFrame:CGRectMake(10*Width_Scale, 180*Height_Scale, 300*Width_Scale, 200*Height_Scale)];
+    _loginView = [[AYMJComLoginView alloc]initWithFrame:CGRectMake(10*Width_Scale, 180*Height_Scale, 300*Width_Scale, 200*Height_Scale)];
     _loginView.delegate = self;
     _loginView.userTF.delegate = self;
     _loginView.passTF.delegate = self;

@@ -1,5 +1,5 @@
 #import "RootViewController.h"
-#import "UIView+ZHView.h"
+#import "UIView+AMZHView.h"
 #import "AddressBookVC.h"
 #import "AmSudukuGameView.h"
 #import "YJMineComLoginVC.h"

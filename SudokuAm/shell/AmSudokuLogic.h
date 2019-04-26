@@ -1,6 +1,6 @@
 //
 //  AmSudokuLogic.h
-//  LTSoduku
+//  AmSoduku
 //
 //  Created by lt on 2017/9/6.
 //  Copyright © 2017年 tl. All rights reserved.
@@ -11,7 +11,7 @@
 #define GAMELEVEL @"gameLevel"
 
 
-@class LTSodukuCellModel;
+@class AMSodukuCellModel;
 
 @interface AmSudokuLogic : NSObject
 
@@ -19,7 +19,7 @@
 
 + (instancetype)sharedInstance;
 
-+ (LTSodukuCellModel *)modelWithX:(NSInteger)x y:(NSInteger)y;
++ (AMSodukuCellModel *)modelWithX:(NSInteger)x y:(NSInteger)y;
 
 + (NSString *)valueWithX:(NSInteger)x y:(NSInteger)y;
 

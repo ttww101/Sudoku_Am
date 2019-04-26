@@ -1,6 +1,6 @@
 //
 //  AmSudokuEditToolView.m
-//  LTSoduku
+//  AmSoduku
 //
 //  Created by lt on 2017/9/7.
 //  Copyright © 2017年 tl. All rights reserved.

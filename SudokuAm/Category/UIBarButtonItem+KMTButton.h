@@ -1,5 +1,5 @@
 //
-//  UIBarButtonItem+MTButton.h
+//  UIBarButtonItem+KMTButton.h
 //  YingCaa
 //
 //  Created by interest on 16/4/26.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIBarButtonItem (MTButton)
+@interface UIBarButtonItem (KMTButton)
 
 /**
  *  创建

@@ -1,6 +1,6 @@
 //
-//  LTSodukuCellModel.h
-//  LTSoduku
+//  AMSodukuCellModel.h
+//  AmSoduku
 //
 //  Created by lt on 2017/9/5.
 //  Copyright © 2017年 tl. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LTSodukuCellModel : NSObject <NSCoding>
+@interface AMSodukuCellModel : NSObject <NSCoding>
 
 @property (nonatomic, assign) BOOL editEnabled;
 

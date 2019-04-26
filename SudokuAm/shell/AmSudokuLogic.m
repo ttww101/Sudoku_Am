@@ -1,13 +1,13 @@
 //
 //  AmSudokuLogic.m
-//  LTSoduku
+//  AmSoduku
 //
 //  Created by lt on 2017/9/6.
 //  Copyright © 2017年 tl. All rights reserved.
 //
 
 #import "AmSudokuLogic.h"
-#import "LTSodukuCellModel.h"
+#import "AMSodukuCellModel.h"
 #import "AmSudukuGameView.h"
 
 @interface AmSudokuLogic ()
@@ -65,7 +65,7 @@
  */
 - (BOOL)fillModelWithX:(NSInteger)x y:(NSInteger)y
 {
-    LTSodukuCellModel *model = [AmSudokuLogic modelWithX:x y:y];
+    AMSodukuCellModel *model = [AmSudokuLogic modelWithX:x y:y];
     
     if (model.valistValueList.count > 0) {
         NSInteger randomIndex = [self getRandomNumber:0 to:model.valistValueList.count - 1];
@@ -208,7 +208,7 @@
 {
     for (NSInteger i = 0; i < 9; i++) {
         for (NSInteger j = 0; j < 9; j++) {
-            LTSodukuCellModel *model = self.modelArray[i][j];
+            AMSodukuCellModel *model = self.modelArray[i][j];
             model.realValue = @"";
             model.inputValue = @"";
             [model.noteList removeAllObjects];
@@ -250,7 +250,7 @@
     
 }
 
-+ (LTSodukuCellModel *)modelWithX:(NSInteger)x y:(NSInteger)y
++ (AMSodukuCellModel *)modelWithX:(NSInteger)x y:(NSInteger)y
 {
     return [AmSudokuLogic sharedInstance].modelArray[x][y];
 }
@@ -269,7 +269,7 @@
 {
     for (NSInteger x = 0; x < 9; x++) {
         for (NSInteger y = 0; y < 9; y++) {
-            LTSodukuCellModel *model = [AmSudokuLogic modelWithX:x y:y];
+            AMSodukuCellModel *model = [AmSudokuLogic modelWithX:x y:y];
             if (model.editEnabled && ![model.inputValue isEqualToString:model.realValue]) {
                 return NO;
             }
@@ -295,7 +295,7 @@
         for (NSInteger i = 0; i < 9; i++) {
             _modelArray[i] = [NSMutableArray arrayWithCapacity:9];
             for (NSInteger j = 0; j < 9; j++) {
-                LTSodukuCellModel *model = [[LTSodukuCellModel alloc] init];
+                AMSodukuCellModel *model = [[AMSodukuCellModel alloc] init];
                 model.realValue = @"";
                 model.x = i;
                 model.y = j;

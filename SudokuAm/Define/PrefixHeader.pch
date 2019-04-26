@@ -19,7 +19,7 @@
 #import "UILabel+setProperty.h"
 #import "UIView+Extension.h"
 #import "Masonry.h"
-#import "NewsOneModel.h"
+#import "AMNewsOneModel.h"
 #import "MJExtension.h"
 
 

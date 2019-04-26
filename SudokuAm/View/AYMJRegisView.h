@@ -4,7 +4,7 @@
 typedef void(^YJRegisViewRegisBlock)(void);
 typedef void(^YJRegisViewExamBlock)(void);
 
-@interface YJRegisView : UIView
+@interface AYMJRegisView : UIView
 @property (nonatomic, strong) UITextField *userTF;
 @property (nonatomic, strong) UITextField *passTF;
 @property (nonatomic, strong) UITextField *repassTF;

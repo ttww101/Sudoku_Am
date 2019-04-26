@@ -1,6 +1,6 @@
 //
-//  UIView+ZHView.h
-//  ZHView
+//  UIView+AMZHView.h
+//  AMZHView
 //
 //  Created by mac on 16/2/13.
 //  Copyright © 2016年 mac. All rights reserved.
@@ -8,11 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (ZHView)
-//一开始我以为这样是不行的,因为UIView中里面自带这些属性,但是这些属性可以生成getter方法和setter方法,调用这些方法就可以实现自己想实现的方法
-
-//但是,千万不能有本身自带的属性,否则会造成死循环
-//比如说UIView本身有frame属性,就不能再添加frame了
+@interface UIView (AMZHView)
 
 @property (assign, nonatomic) CGFloat x;
 @property (assign, nonatomic) CGFloat y;

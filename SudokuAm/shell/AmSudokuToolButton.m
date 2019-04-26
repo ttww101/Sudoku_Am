@@ -1,6 +1,6 @@
 //
 //  AmSudokuToolButton.m
-//  LTSoduku
+//  AmSoduku
 //
 //  Created by lt on 2017/9/22.
 //  Copyright © 2017年 tl. All rights reserved.

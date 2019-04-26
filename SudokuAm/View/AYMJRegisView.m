@@ -1,8 +1,8 @@
 
-#import "YJRegisView.h"
+#import "AYMJRegisView.h"
 #import "UIImageView+WebCache.h"
 
-@implementation YJRegisView
+@implementation AYMJRegisView
 
 -(instancetype)initWithFrame:(CGRect)frame{
     

@@ -1,14 +1,14 @@
 //
-//  SLJSHandler.m
+//  AmJSHandler.m
 //  亿红酒
 //
 //  Created by 蜗牛 on 2017/11/8.
 //  Copyright © 2017年 SnailLi. All rights reserved.
 //
 
-#import "SLJSHandler.h"
+#import "AmJSHandler.h"
 
-@implementation SLJSHandler
+@implementation AmJSHandler
 
 -(instancetype)initWithViewController:(UIViewController *)webVC configuration:(WKWebViewConfiguration *)configuration {
     self = [super init];

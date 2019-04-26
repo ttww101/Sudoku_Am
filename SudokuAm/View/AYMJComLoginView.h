@@ -1,5 +1,5 @@
 //
-//  YJComLoginView.h
+//  AYMJComLoginView.h
 //  意料之外
 //
 //  Created by  何浩贤 on 2017/8/22.
@@ -8,18 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol YJComLoginViewDelegate <NSObject>
+@protocol AYMJComLoginViewDelegate <NSObject>
 
 -(void)LoginClick;
 
 @end
 
-@interface YJComLoginView : UIView
+@interface AYMJComLoginView : UIView
 @property (nonatomic, strong) UITextField *userTF;
 @property (nonatomic, strong) UITextField *passTF;
 @property (nonatomic, strong) UIButton *loginBtn;
 
 
-@property (nonatomic, weak) id<YJComLoginViewDelegate> delegate;
+@property (nonatomic, weak) id<AYMJComLoginViewDelegate> delegate;
 
 @end
