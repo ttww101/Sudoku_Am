@@ -19,8 +19,8 @@
 		BB1B26291FC679EB001218E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB1B26281FC679EB001218E6 /* Assets.xcassets */; };
 		BB1B262C1FC679EB001218E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB1B262A1FC679EB001218E6 /* LaunchScreen.storyboard */; };
 		BB1B262F1FC679EB001218E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1B262E1FC679EB001218E6 /* main.m */; };
-		BB1B26391FC679EC001218E6 /* SudokuBasicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1B26381FC679EC001218E6 /* SudokuBasicTests.m */; };
-		BB1B26441FC679EC001218E6 /* SudokuBasicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1B26431FC679EC001218E6 /* SudokuBasicUITests.m */; };
+		BB1B26391FC679EC001218E6 /* SudokuAmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1B26381FC679EC001218E6 /* SudokuAmTests.m */; };
+		BB1B26441FC679EC001218E6 /* SudokuAmUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1B26431FC679EC001218E6 /* SudokuAmUITests.m */; };
 		BB1B275F1FC67DB6001218E6 /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1B26BD1FC67DB6001218E6 /* IQNSArray+Sort.m */; };
 		BB1B27601FC67DB6001218E6 /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1B26BF1FC67DB6001218E6 /* IQUIScrollView+Additions.m */; };
 		BB1B27611FC67DB6001218E6 /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1B26C11FC67DB6001218E6 /* IQUITextFieldView+Additions.m */; };
@@ -135,6 +135,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		941929BF227339020088616E /* SudokuAm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SudokuAm.entitlements; sourceTree = "<group>"; };
 		94EAC1DF2272DF9B00DE3964 /* UIView+Constraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Constraint.m"; sourceTree = "<group>"; };
 		94EAC1E02272DF9B00DE3964 /* UIView+Constraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Constraint.h"; sourceTree = "<group>"; };
 		BB064E761FDA419D002BF6FC /* UIBarButtonItem+MTButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+MTButton.h"; sourceTree = "<group>"; };
@@ -155,18 +156,18 @@
 		BB064F9F1FDA7547002BF6FC /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		BB064FA01FDA7547002BF6FC /* UIButton+layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+layout.m"; sourceTree = "<group>"; };
 		BB064FA11FDA7547002BF6FC /* UILabel+setProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+setProperty.m"; sourceTree = "<group>"; };
-		BB1B261C1FC679EB001218E6 /* SudokuBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SudokuBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1B261C1FC679EB001218E6 /* SudokuAm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SudokuAm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB1B261F1FC679EB001218E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BB1B26201FC679EB001218E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BB1B26281FC679EB001218E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB1B262B1FC679EB001218E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB1B262D1FC679EB001218E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB1B262E1FC679EB001218E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BB1B26341FC679EC001218E6 /* SudokuBasicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SudokuBasicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB1B26381FC679EC001218E6 /* SudokuBasicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SudokuBasicTests.m; sourceTree = "<group>"; };
+		BB1B26341FC679EC001218E6 /* SudokuAmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SudokuAmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1B26381FC679EC001218E6 /* SudokuAmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SudokuAmTests.m; sourceTree = "<group>"; };
 		BB1B263A1FC679EC001218E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB1B263F1FC679EC001218E6 /* SudokuBasicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SudokuBasicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB1B26431FC679EC001218E6 /* SudokuBasicUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SudokuBasicUITests.m; sourceTree = "<group>"; };
+		BB1B263F1FC679EC001218E6 /* SudokuAmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SudokuAmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1B26431FC679EC001218E6 /* SudokuAmUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SudokuAmUITests.m; sourceTree = "<group>"; };
 		BB1B26451FC679EC001218E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB1B26BC1FC67DB6001218E6 /* IQNSArray+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQNSArray+Sort.h"; sourceTree = "<group>"; };
 		BB1B26BD1FC67DB6001218E6 /* IQNSArray+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQNSArray+Sort.m"; sourceTree = "<group>"; };
@@ -449,9 +450,9 @@
 		BB1B26131FC679EB001218E6 = {
 			isa = PBXGroup;
 			children = (
-				BB1B261E1FC679EB001218E6 /* SudokuBasic */,
-				BB1B26371FC679EC001218E6 /* SudokuBasicTests */,
-				BB1B26421FC679EC001218E6 /* SudokuBasicUITests */,
+				BB1B261E1FC679EB001218E6 /* SudokuAm */,
+				BB1B26371FC679EC001218E6 /* SudokuAmTests */,
+				BB1B26421FC679EC001218E6 /* SudokuAmUITests */,
 				BB1B261D1FC679EB001218E6 /* Products */,
 				BB1B27C91FC6A379001218E6 /* Frameworks */,
 			);
@@ -460,16 +461,17 @@
 		BB1B261D1FC679EB001218E6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BB1B261C1FC679EB001218E6 /* SudokuBasic.app */,
-				BB1B26341FC679EC001218E6 /* SudokuBasicTests.xctest */,
-				BB1B263F1FC679EC001218E6 /* SudokuBasicUITests.xctest */,
+				BB1B261C1FC679EB001218E6 /* SudokuAm.app */,
+				BB1B26341FC679EC001218E6 /* SudokuAmTests.xctest */,
+				BB1B263F1FC679EC001218E6 /* SudokuAmUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BB1B261E1FC679EB001218E6 /* SudokuBasic */ = {
+		BB1B261E1FC679EB001218E6 /* SudokuAm */ = {
 			isa = PBXGroup;
 			children = (
+				941929BF227339020088616E /* SudokuAm.entitlements */,
 				BB3A11161FE9F50500DD31DB /* shell */,
 				BB064F981FDA74A8002BF6FC /* View */,
 				BB064E7C1FDA4344002BF6FC /* Define */,
@@ -486,25 +488,25 @@
 				BB1B262D1FC679EB001218E6 /* Info.plist */,
 				BB1B262E1FC679EB001218E6 /* main.m */,
 			);
-			path = SudokuBasic;
+			path = SudokuAm;
 			sourceTree = "<group>";
 		};
-		BB1B26371FC679EC001218E6 /* SudokuBasicTests */ = {
+		BB1B26371FC679EC001218E6 /* SudokuAmTests */ = {
 			isa = PBXGroup;
 			children = (
-				BB1B26381FC679EC001218E6 /* SudokuBasicTests.m */,
+				BB1B26381FC679EC001218E6 /* SudokuAmTests.m */,
 				BB1B263A1FC679EC001218E6 /* Info.plist */,
 			);
-			path = SudokuBasicTests;
+			path = SudokuAmTests;
 			sourceTree = "<group>";
 		};
-		BB1B26421FC679EC001218E6 /* SudokuBasicUITests */ = {
+		BB1B26421FC679EC001218E6 /* SudokuAmUITests */ = {
 			isa = PBXGroup;
 			children = (
-				BB1B26431FC679EC001218E6 /* SudokuBasicUITests.m */,
+				BB1B26431FC679EC001218E6 /* SudokuAmUITests.m */,
 				BB1B26451FC679EC001218E6 /* Info.plist */,
 			);
-			path = SudokuBasicUITests;
+			path = SudokuAmUITests;
 			sourceTree = "<group>";
 		};
 		BB1B26921FC67DB6001218E6 /* Tools */ = {
@@ -911,9 +913,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BB1B261B1FC679EB001218E6 /* SudokuBasic */ = {
+		BB1B261B1FC679EB001218E6 /* SudokuAm */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB1B26481FC679EC001218E6 /* Build configuration list for PBXNativeTarget "SudokuBasic" */;
+			buildConfigurationList = BB1B26481FC679EC001218E6 /* Build configuration list for PBXNativeTarget "SudokuAm" */;
 			buildPhases = (
 				BB1B26181FC679EB001218E6 /* Sources */,
 				BB1B26191FC679EB001218E6 /* Frameworks */,
@@ -923,14 +925,14 @@
 			);
 			dependencies = (
 			);
-			name = SudokuBasic;
+			name = SudokuAm;
 			productName = "Borrowing treasure";
-			productReference = BB1B261C1FC679EB001218E6 /* SudokuBasic.app */;
+			productReference = BB1B261C1FC679EB001218E6 /* SudokuAm.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BB1B26331FC679EC001218E6 /* SudokuBasicTests */ = {
+		BB1B26331FC679EC001218E6 /* SudokuAmTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB1B264B1FC679EC001218E6 /* Build configuration list for PBXNativeTarget "SudokuBasicTests" */;
+			buildConfigurationList = BB1B264B1FC679EC001218E6 /* Build configuration list for PBXNativeTarget "SudokuAmTests" */;
 			buildPhases = (
 				BB1B26301FC679EC001218E6 /* Sources */,
 				BB1B26311FC679EC001218E6 /* Frameworks */,
@@ -941,14 +943,14 @@
 			dependencies = (
 				BB1B26361FC679EC001218E6 /* PBXTargetDependency */,
 			);
-			name = SudokuBasicTests;
+			name = SudokuAmTests;
 			productName = "Borrowing treasureTests";
-			productReference = BB1B26341FC679EC001218E6 /* SudokuBasicTests.xctest */;
+			productReference = BB1B26341FC679EC001218E6 /* SudokuAmTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BB1B263E1FC679EC001218E6 /* SudokuBasicUITests */ = {
+		BB1B263E1FC679EC001218E6 /* SudokuAmUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB1B264E1FC679EC001218E6 /* Build configuration list for PBXNativeTarget "SudokuBasicUITests" */;
+			buildConfigurationList = BB1B264E1FC679EC001218E6 /* Build configuration list for PBXNativeTarget "SudokuAmUITests" */;
 			buildPhases = (
 				BB1B263B1FC679EC001218E6 /* Sources */,
 				BB1B263C1FC679EC001218E6 /* Frameworks */,
@@ -959,9 +961,9 @@
 			dependencies = (
 				BB1B26411FC679EC001218E6 /* PBXTargetDependency */,
 			);
-			name = SudokuBasicUITests;
+			name = SudokuAmUITests;
 			productName = "Borrowing treasureUITests";
-			productReference = BB1B263F1FC679EC001218E6 /* SudokuBasicUITests.xctest */;
+			productReference = BB1B263F1FC679EC001218E6 /* SudokuAmUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -976,7 +978,12 @@
 				TargetAttributes = {
 					BB1B261B1FC679EB001218E6 = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					BB1B26331FC679EC001218E6 = {
 						CreatedOnToolsVersion = 9.1;
@@ -990,7 +997,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BB1B26171FC679EB001218E6 /* Build configuration list for PBXProject "SudokuBasic" */;
+			buildConfigurationList = BB1B26171FC679EB001218E6 /* Build configuration list for PBXProject "SudokuAm" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -1003,9 +1010,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BB1B261B1FC679EB001218E6 /* SudokuBasic */,
-				BB1B26331FC679EC001218E6 /* SudokuBasicTests */,
-				BB1B263E1FC679EC001218E6 /* SudokuBasicUITests */,
+				BB1B261B1FC679EB001218E6 /* SudokuAm */,
+				BB1B26331FC679EC001218E6 /* SudokuAmTests */,
+				BB1B263E1FC679EC001218E6 /* SudokuAmUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1150,7 +1157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB1B26391FC679EC001218E6 /* SudokuBasicTests.m in Sources */,
+				BB1B26391FC679EC001218E6 /* SudokuAmTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1158,7 +1165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB1B26441FC679EC001218E6 /* SudokuBasicUITests.m in Sources */,
+				BB1B26441FC679EC001218E6 /* SudokuAmUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1167,12 +1174,12 @@
 /* Begin PBXTargetDependency section */
 		BB1B26361FC679EC001218E6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BB1B261B1FC679EB001218E6 /* SudokuBasic */;
+			target = BB1B261B1FC679EB001218E6 /* SudokuAm */;
 			targetProxy = BB1B26351FC679EC001218E6 /* PBXContainerItemProxy */;
 		};
 		BB1B26411FC679EC001218E6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BB1B261B1FC679EB001218E6 /* SudokuBasic */;
+			target = BB1B261B1FC679EB001218E6 /* SudokuAm */;
 			targetProxy = BB1B26401FC679EC001218E6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1301,23 +1308,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: xiuxin chen (7UDUZ9DY6H)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: xiuxin chen (7UDUZ9DY6H)";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 7UDUZ9DY6H;
+				CODE_SIGN_ENTITLEMENTS = SudokuAm/SudokuAm.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Q77G2P9FU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Borrowing\\ treasure/Tools/YYKit/Vendor",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/SudokuBasic/Define/PrefixHeader.pch";
-				INFOPLIST_FILE = SudokuBasic/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SudokuAm/Define/PrefixHeader.pch";
+				INFOPLIST_FILE = SudokuAm/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.sudokubasic.am;
+				PRODUCT_BUNDLE_IDENTIFIER = net.sudoku.am;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "4af0857c-54f6-47a5-ae29-d919af488a27";
-				PROVISIONING_PROFILE_SPECIFIER = Redsocket;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1326,23 +1334,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: xiuxin chen (7UDUZ9DY6H)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: xiuxin chen (7UDUZ9DY6H)";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 7UDUZ9DY6H;
+				CODE_SIGN_ENTITLEMENTS = SudokuAm/SudokuAm.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Q77G2P9FU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Borrowing\\ treasure/Tools/YYKit/Vendor",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/SudokuBasic/Define/PrefixHeader.pch";
-				INFOPLIST_FILE = SudokuBasic/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SudokuAm/Define/PrefixHeader.pch";
+				INFOPLIST_FILE = SudokuAm/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.sudokubasic.am;
+				PRODUCT_BUNDLE_IDENTIFIER = net.sudoku.am;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "4af0857c-54f6-47a5-ae29-d919af488a27";
-				PROVISIONING_PROFILE_SPECIFIER = Redsocket;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -1358,7 +1367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BorrowingTreasure.yijia.Borrowing-treasureTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SudokuBasic.app/SudokuBasic";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SudokuAm.app/SudokuAm";
 			};
 			name = Debug;
 		};
@@ -1373,7 +1382,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BorrowingTreasure.yijia.Borrowing-treasureTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SudokuBasic.app/SudokuBasic";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SudokuAm.app/SudokuAm";
 			};
 			name = Release;
 		};
@@ -1408,7 +1417,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BB1B26171FC679EB001218E6 /* Build configuration list for PBXProject "SudokuBasic" */ = {
+		BB1B26171FC679EB001218E6 /* Build configuration list for PBXProject "SudokuAm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB1B26461FC679EC001218E6 /* Debug */,
@@ -1417,7 +1426,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB1B26481FC679EC001218E6 /* Build configuration list for PBXNativeTarget "SudokuBasic" */ = {
+		BB1B26481FC679EC001218E6 /* Build configuration list for PBXNativeTarget "SudokuAm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB1B26491FC679EC001218E6 /* Debug */,
@@ -1426,7 +1435,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB1B264B1FC679EC001218E6 /* Build configuration list for PBXNativeTarget "SudokuBasicTests" */ = {
+		BB1B264B1FC679EC001218E6 /* Build configuration list for PBXNativeTarget "SudokuAmTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB1B264C1FC679EC001218E6 /* Debug */,
@@ -1435,7 +1444,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB1B264E1FC679EC001218E6 /* Build configuration list for PBXNativeTarget "SudokuBasicUITests" */ = {
+		BB1B264E1FC679EC001218E6 /* Build configuration list for PBXNativeTarget "SudokuAmUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB1B264F1FC679EC001218E6 /* Debug */,

@@ -1,11 +1,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface SudokuBasicUITests : XCTestCase
+@interface SudokuAmUITests : XCTestCase
 
 @end
 
-@implementation SudokuBasicUITests
+@implementation SudokuAmUITests
 
 - (void)setUp {
     [super setUp];
