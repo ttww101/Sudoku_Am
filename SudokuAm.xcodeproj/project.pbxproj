@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C7EEDB4658BBEB19DB14E38 /* libPods-SudokuAmTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBAA1D8564AE39E7A38D83E9 /* libPods-SudokuAmTests.a */; };
+		469FE1B62FE08D32DAC536F4 /* libPods-SudokuAm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 390E7C7FDA422341E4AE0F26 /* libPods-SudokuAm.a */; };
 		94EAC1E12272DF9C00DE3964 /* UIView+Constraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EAC1DF2272DF9B00DE3964 /* UIView+Constraint.m */; };
+		B2B4A323648B55EC51F3736D /* libPods-SudokuAmUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA112F7B11B2BB5850E8AF5 /* libPods-SudokuAmUITests.a */; };
 		BB064E781FDA419D002BF6FC /* UIBarButtonItem+MTButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BB064E771FDA419D002BF6FC /* UIBarButtonItem+MTButton.m */; };
 		BB064E7B1FDA41BA002BF6FC /* UIImage+Thread.m in Sources */ = {isa = PBXBuildFile; fileRef = BB064E791FDA41BA002BF6FC /* UIImage+Thread.m */; };
 		BB064E861FDA44A5002BF6FC /* AddressBookVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BB064E851FDA44A5002BF6FC /* AddressBookVC.m */; };
@@ -135,9 +138,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		390E7C7FDA422341E4AE0F26 /* libPods-SudokuAm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SudokuAm.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		501A7D1868BDC1813EDAC802 /* Pods-SudokuAmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudokuAmTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SudokuAmTests/Pods-SudokuAmTests.release.xcconfig"; sourceTree = "<group>"; };
+		69143745E3D7CBA59A7838E4 /* Pods-SudokuAmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudokuAmTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SudokuAmTests/Pods-SudokuAmTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C51A6A7C40CC4526CAD4E19 /* Pods-SudokuAmUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudokuAmUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SudokuAmUITests/Pods-SudokuAmUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		90B837C95AAD3AC6C3FC846A /* Pods-SudokuAm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudokuAm.release.xcconfig"; path = "Pods/Target Support Files/Pods-SudokuAm/Pods-SudokuAm.release.xcconfig"; sourceTree = "<group>"; };
 		941929BF227339020088616E /* SudokuAm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SudokuAm.entitlements; sourceTree = "<group>"; };
 		94EAC1DF2272DF9B00DE3964 /* UIView+Constraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Constraint.m"; sourceTree = "<group>"; };
 		94EAC1E02272DF9B00DE3964 /* UIView+Constraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Constraint.h"; sourceTree = "<group>"; };
+		9DA112F7B11B2BB5850E8AF5 /* libPods-SudokuAmUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SudokuAmUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B24B33267219D36FDB161E52 /* Pods-SudokuAmUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudokuAmUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SudokuAmUITests/Pods-SudokuAmUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BB064E761FDA419D002BF6FC /* UIBarButtonItem+MTButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+MTButton.h"; sourceTree = "<group>"; };
 		BB064E771FDA419D002BF6FC /* UIBarButtonItem+MTButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+MTButton.m"; sourceTree = "<group>"; };
 		BB064E791FDA41BA002BF6FC /* UIImage+Thread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Thread.m"; sourceTree = "<group>"; };
@@ -373,6 +383,8 @@
 		BB5ECBE71FF0998C00A4727A /* UIView+Extends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extends.h"; sourceTree = "<group>"; };
 		BB5ECBF11FF09A2D00A4727A /* LTSodukuCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTSodukuCellModel.m; sourceTree = "<group>"; };
 		BB5ECBF21FF09A2D00A4727A /* LTSodukuCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTSodukuCellModel.h; sourceTree = "<group>"; };
+		CBAA1D8564AE39E7A38D83E9 /* libPods-SudokuAmTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SudokuAmTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFDFE6051ACEE15CC0973B84 /* Pods-SudokuAm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudokuAm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SudokuAm/Pods-SudokuAm.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -382,6 +394,7 @@
 			files = (
 				BB1B27CD1FC6A395001218E6 /* AddressBookUI.framework in Frameworks */,
 				BB1B27CC1FC6A390001218E6 /* AddressBook.framework in Frameworks */,
+				469FE1B62FE08D32DAC536F4 /* libPods-SudokuAm.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +402,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C7EEDB4658BBEB19DB14E38 /* libPods-SudokuAmTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,12 +410,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B4A323648B55EC51F3736D /* libPods-SudokuAmUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B4167958CC7C01E79FF3F4F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFDFE6051ACEE15CC0973B84 /* Pods-SudokuAm.debug.xcconfig */,
+				90B837C95AAD3AC6C3FC846A /* Pods-SudokuAm.release.xcconfig */,
+				69143745E3D7CBA59A7838E4 /* Pods-SudokuAmTests.debug.xcconfig */,
+				501A7D1868BDC1813EDAC802 /* Pods-SudokuAmTests.release.xcconfig */,
+				6C51A6A7C40CC4526CAD4E19 /* Pods-SudokuAmUITests.debug.xcconfig */,
+				B24B33267219D36FDB161E52 /* Pods-SudokuAmUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BB064E751FDA419D002BF6FC /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +483,7 @@
 				BB1B26421FC679EC001218E6 /* SudokuAmUITests */,
 				BB1B261D1FC679EB001218E6 /* Products */,
 				BB1B27C91FC6A379001218E6 /* Frameworks */,
+				B4167958CC7C01E79FF3F4F8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -775,6 +804,9 @@
 			children = (
 				BB1B27CB1FC6A37E001218E6 /* AddressBookUI.framework */,
 				BB1B27CA1FC6A37A001218E6 /* AddressBook.framework */,
+				390E7C7FDA422341E4AE0F26 /* libPods-SudokuAm.a */,
+				CBAA1D8564AE39E7A38D83E9 /* libPods-SudokuAmTests.a */,
+				9DA112F7B11B2BB5850E8AF5 /* libPods-SudokuAmUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -917,9 +949,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB1B26481FC679EC001218E6 /* Build configuration list for PBXNativeTarget "SudokuAm" */;
 			buildPhases = (
+				3EA5F30113707BB8886D0790 /* [CP] Check Pods Manifest.lock */,
 				BB1B26181FC679EB001218E6 /* Sources */,
 				BB1B26191FC679EB001218E6 /* Frameworks */,
 				BB1B261A1FC679EB001218E6 /* Resources */,
+				1E6881A9AF6BBFA2AFD92AE2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -934,6 +968,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB1B264B1FC679EC001218E6 /* Build configuration list for PBXNativeTarget "SudokuAmTests" */;
 			buildPhases = (
+				C333849E3162FDAE1E4C9A80 /* [CP] Check Pods Manifest.lock */,
 				BB1B26301FC679EC001218E6 /* Sources */,
 				BB1B26311FC679EC001218E6 /* Frameworks */,
 				BB1B26321FC679EC001218E6 /* Resources */,
@@ -952,6 +987,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB1B264E1FC679EC001218E6 /* Build configuration list for PBXNativeTarget "SudokuAmUITests" */;
 			buildPhases = (
+				0B3442D1700407F83066C78E /* [CP] Check Pods Manifest.lock */,
 				BB1B263B1FC679EC001218E6 /* Sources */,
 				BB1B263C1FC679EC001218E6 /* Frameworks */,
 				BB1B263D1FC679EC001218E6 /* Resources */,
@@ -1043,6 +1079,97 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B3442D1700407F83066C78E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SudokuAmUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E6881A9AF6BBFA2AFD92AE2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SudokuAm/Pods-SudokuAm-resources.sh",
+				"${PODS_ROOT}/AVOSCloud/AVOS/AVOSCloud/AVOSCloud_Art.inc",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AVOSCloud_Art.inc",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SudokuAm/Pods-SudokuAm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EA5F30113707BB8886D0790 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SudokuAm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C333849E3162FDAE1E4C9A80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SudokuAmTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BB1B26181FC679EB001218E6 /* Sources */ = {
@@ -1306,6 +1433,7 @@
 		};
 		BB1B26491FC679EC001218E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFDFE6051ACEE15CC0973B84 /* Pods-SudokuAm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SudokuAm/SudokuAm.entitlements;
@@ -1332,6 +1460,7 @@
 		};
 		BB1B264A1FC679EC001218E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90B837C95AAD3AC6C3FC846A /* Pods-SudokuAm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SudokuAm/SudokuAm.entitlements;
@@ -1358,6 +1487,7 @@
 		};
 		BB1B264C1FC679EC001218E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69143745E3D7CBA59A7838E4 /* Pods-SudokuAmTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1373,6 +1503,7 @@
 		};
 		BB1B264D1FC679EC001218E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 501A7D1868BDC1813EDAC802 /* Pods-SudokuAmTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1388,6 +1519,7 @@
 		};
 		BB1B264F1FC679EC001218E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C51A6A7C40CC4526CAD4E19 /* Pods-SudokuAmUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5QXNAK3UB;
@@ -1402,6 +1534,7 @@
 		};
 		BB1B26501FC679EC001218E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B24B33267219D36FDB161E52 /* Pods-SudokuAmUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5QXNAK3UB;
