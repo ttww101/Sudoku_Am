@@ -3,6 +3,7 @@
 #import "AddressBookVC.h"
 #import "LTSudukuGameView.h"
 #import "YJMineComLoginVC.h"
+#import "UIView+Constraint.h"
 
 
 @interface RootViewController ()<UIAlertViewDelegate>
@@ -48,15 +49,21 @@
 //        }
 //        else{
 //
-            self.sudokuView = [[LTSudukuGameView alloc] initWithFrame:CGRectMake(0,[GState defaultTopSpace] + 64, self.view.width, self.view.height - 64)];
-            [self.view addSubview:self.sudokuView];
-            
-            if (![LTSudokuLogic loadGameFileAndRestartWithKey:LASTGAMEDATA]) {
-                [self restartGame];
-            }
-            
-            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(restartGame) name:LTGAMERESTART object:nil];
-            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshGame) name:LTGAMEREFRESH object:nil];
+    
+    UIImageView *bkImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bk"]];
+    bkImageView.contentMode = UIViewContentModeScaleToFill;
+    [self.view addSubview:bkImageView];
+    [bkImageView constraints:self.view];
+    
+    
+        self.sudokuView = [[LTSudukuGameView alloc] initWithFrame:CGRectMake(0,[GState defaultTopSpace] + 64, self.view.width, self.view.height - 64)];
+        [self.view addSubview:self.sudokuView];
+        if (![LTSudokuLogic loadGameFileAndRestartWithKey:LASTGAMEDATA]) {
+            [self restartGame];
+        }
+    
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(restartGame) name:LTGAMERESTART object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshGame) name:LTGAMEREFRESH object:nil];
         
             
 //        }

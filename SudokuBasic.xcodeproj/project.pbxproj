@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94EAC1E12272DF9C00DE3964 /* UIView+Constraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EAC1DF2272DF9B00DE3964 /* UIView+Constraint.m */; };
 		BB064E781FDA419D002BF6FC /* UIBarButtonItem+MTButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BB064E771FDA419D002BF6FC /* UIBarButtonItem+MTButton.m */; };
 		BB064E7B1FDA41BA002BF6FC /* UIImage+Thread.m in Sources */ = {isa = PBXBuildFile; fileRef = BB064E791FDA41BA002BF6FC /* UIImage+Thread.m */; };
 		BB064E861FDA44A5002BF6FC /* AddressBookVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BB064E851FDA44A5002BF6FC /* AddressBookVC.m */; };
@@ -134,6 +135,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		94EAC1DF2272DF9B00DE3964 /* UIView+Constraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Constraint.m"; sourceTree = "<group>"; };
+		94EAC1E02272DF9B00DE3964 /* UIView+Constraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Constraint.h"; sourceTree = "<group>"; };
 		BB064E761FDA419D002BF6FC /* UIBarButtonItem+MTButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+MTButton.h"; sourceTree = "<group>"; };
 		BB064E771FDA419D002BF6FC /* UIBarButtonItem+MTButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+MTButton.m"; sourceTree = "<group>"; };
 		BB064E791FDA41BA002BF6FC /* UIImage+Thread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Thread.m"; sourceTree = "<group>"; };
@@ -401,6 +404,8 @@
 		BB064E751FDA419D002BF6FC /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				94EAC1E02272DF9B00DE3964 /* UIView+Constraint.h */,
+				94EAC1DF2272DF9B00DE3964 /* UIView+Constraint.m */,
 				BB064F9E1FDA7546002BF6FC /* UIButton+layout.h */,
 				BB064FA01FDA7547002BF6FC /* UIButton+layout.m */,
 				BB064F9C1FDA7546002BF6FC /* UILabel+setProperty.h */,
@@ -1120,6 +1125,7 @@
 				BB256D742006030100179078 /* SDWebImageDownloader.m in Sources */,
 				BB1B27881FC67DB7001218E6 /* NSObject+MJProperty.m in Sources */,
 				BB1B276A1FC67DB7001218E6 /* IQTitleBarButtonItem.m in Sources */,
+				94EAC1E12272DF9C00DE3964 /* UIView+Constraint.m in Sources */,
 				BB1B27D01FC6A4A1001218E6 /* ContactListModel.m in Sources */,
 				BB5ECB8B1FF0968D00A4727A /* MTProgressHUD.m in Sources */,
 				BB1B27611FC67DB6001218E6 /* IQUITextFieldView+Additions.m in Sources */,

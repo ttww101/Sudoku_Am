@@ -44,6 +44,7 @@
     
     button = [self editButtonWithTitle:@"输入"];
     button.noteTitle = @"标签";
+    [button setBackgroundColor:[UIColor colorWithHexString:@"#84b9cb"]];
     [button addTarget:self action:@selector(switchButtonClicked) forControlEvents:UIControlEventTouchDown];
     [self addSubview:button];
     [self.buttonArray addObject:button];
@@ -73,7 +74,7 @@
     button.contentMode = UIViewContentModeScaleToFill;
     [button setTitle:title forState:UIControlStateNormal];
     [button.titleLabel setFont:[UIFont systemFontOfSize:25]];
-    [button setBackgroundColor:[UIColor flatGrayColor]];
+    [button setBackgroundColor:[UIColor colorWithHexString:@"#A2D7DD"]];
     button.layer.borderWidth = 1.f;
     button.layer.borderColor = [UIColor flatGrayColor].CGColor;
     

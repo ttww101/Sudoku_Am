@@ -278,7 +278,7 @@
 {
     if (!_saveButton) {
         _saveButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        _saveButton.backgroundColor = [UIColor flatGrayColor];
+        _saveButton.backgroundColor = [UIColor colorWithHexString:@"517ea5"];
         [_saveButton setTitle:@"存档" forState:UIControlStateNormal];
         [_saveButton addTarget:self action:@selector(saveButtonClicked) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -289,7 +289,7 @@
 {
     if (!_loadButton) {
         _loadButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        _loadButton.backgroundColor = [UIColor flatGrayColor];
+        _loadButton.backgroundColor = [UIColor colorWithHexString:@"517ea5"];
         [_loadButton setTitle:@"读档" forState:UIControlStateNormal];
         [_loadButton addTarget:self action:@selector(loadButtonClicked) forControlEvents:UIControlEventTouchUpInside];
     }
