@@ -7,7 +7,7 @@ typedef NS_ENUM(NSInteger, UIOperationType) {
   
 };
 
-@interface NetWorkTools : NSObject
+@interface AMNetWorkTools : NSObject
 
 + (void)GetUrl:(NSString *)url param:(NSMutableDictionary *)param success:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure ;
 

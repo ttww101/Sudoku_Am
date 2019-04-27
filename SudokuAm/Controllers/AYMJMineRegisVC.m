@@ -1,16 +1,16 @@
 
-#import "YJMineRegisVC.h"
+#import "AYMJMineRegisVC.h"
 #import "AYMJRegisView.h"
 #import "AFNetworking.h"
 #import "UIImageView+WebCache.h"
 #import "MTProgressHUD.h"
 #import "NSString+MTEncrypt.h"
 
-@interface YJMineRegisVC ()
+@interface AYMJMineRegisVC ()
 @property (nonatomic, strong) AYMJRegisView *regisView;
 @end
 
-@implementation YJMineRegisVC
+@implementation AYMJMineRegisVC
 
 
 
@@ -30,7 +30,7 @@
 
 -(void)LoadImageNetwork{
     
-    [NetWorkTools postUrl:@"http://APIHOST/authImage!imageCode.do" type:1 param:nil success:^(id responseObject) {
+    [AMNetWorkTools postUrl:@"http://APIHOST/authImage!imageCode.do" type:1 param:nil success:^(id responseObject) {
         
         UIImage *image = [UIImage imageWithData:responseObject];
         
@@ -98,7 +98,7 @@
     param[@"account"] = self.regisView.userTF.text;
     param[@"passwd"] = self.regisView.passTF.text;
     param[@"verifyCode"] = self.regisView.examTF.text;
-    NSInteger timeStamp = [[NetWorkTools GetTimestamp] integerValue];
+    NSInteger timeStamp = [[AMNetWorkTools GetTimestamp] integerValue];
     param[@"time"] = [NSString stringWithFormat:@"%ld",timeStamp];
     
     NSString *result = [NSString stringWithFormat:@"account=%@&passwd=%@&verifyCode=%@&time=%ld&key=asdlsadfasdfsddklss",self.regisView.userTF.text,self.regisView.passTF.text,self.regisView.examTF.text,timeStamp];
@@ -107,7 +107,7 @@
     
     NSLog(@"~~~%@",param);
     
-    [NetWorkTools postUrl:@"http://APIHOST/tbUsers!reg.do?" type:0  param:param  success:^(id responseObject) {
+    [AMNetWorkTools postUrl:@"http://APIHOST/tbUsers!reg.do?" type:0  param:param  success:^(id responseObject) {
         
         NSLog(@"re %@",responseObject);
         

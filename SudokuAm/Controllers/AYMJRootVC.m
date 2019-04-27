@@ -1,13 +1,13 @@
 
-#import "YJRootVC.h"
+#import "AYMJRootVC.h"
 
 
 
-@interface YJRootVC ()
+@interface AYMJRootVC ()
 
 @end
 
-@implementation YJRootVC
+@implementation AYMJRootVC
 
 
 

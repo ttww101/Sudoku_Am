@@ -1,5 +1,5 @@
 //
-//  BaseModel.h
+//  AMBaseModel.h
 //  亿红酒
 //
 //  Created by  何浩贤 on 2017/10/27.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BaseModel : NSObject
+@interface AMBaseModel : NSObject
 
 @end

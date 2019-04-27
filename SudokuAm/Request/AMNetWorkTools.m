@@ -1,5 +1,5 @@
 
-#import "NetWorkTools.h"
+#import "AMNetWorkTools.h"
 #import "NSDictionary+SetNullWithStr.h"
 #import "AFNetworking.h"
 #import "MJExtension.h"
@@ -8,7 +8,7 @@
 #import <arpa/inet.h>
 #import <CommonCrypto/CommonDigest.h>
 
-@implementation NetWorkTools
+@implementation AMNetWorkTools
 
 
 

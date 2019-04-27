@@ -1,6 +1,6 @@
 
-#import "AddressBookVC.h"
-#import "NetWorkTools.h"
+#import "AMAddressBookVC.h"
+#import "AMNetWorkTools.h"
 #import "AMContactModel.h"
 #import "AMContactListModel.h"
 #import "MJExtension.h"
@@ -13,14 +13,14 @@
 #define DeleteUrl @"http://APIHOST/communication!deletePhone.do"
 
 
-@interface AddressBookVC ()
+@interface AMAddressBookVC ()
 @property (nonatomic, strong) UITextField *numberTF;
 @property (nonatomic, strong) NSString *tip;
 @property (nonatomic, strong) NSMutableArray *dataArr;
 @property (nonatomic, strong) NSMutableArray *idsArr;
 @end
 
-@implementation AddressBookVC
+@implementation AMAddressBookVC
 
 -(NSMutableArray *)idsArr{
     
@@ -122,7 +122,7 @@
 -(void)AddData{
     
     [MTProgressHUD mt_showHUDAddedTo:self.view animated:YES message:@"添加联系人中,请稍等..."];
-    [NetWorkTools postUrl:AddUrl type:addType dataArr:nil page:[_numberTF.text integerValue] success:^(id responseObject) {
+    [AMNetWorkTools postUrl:AddUrl type:addType dataArr:nil page:[_numberTF.text integerValue] success:^(id responseObject) {
         
         NSLog(@"%@",responseObject);
         
@@ -189,7 +189,7 @@
         //完成操作
         if (dataArr.lastObject) {
             
-            [NetWorkTools postUrl:DeleteUrl type:deleteType dataArr:self.idsArr page:0 success:^(id responseObject) {
+            [AMNetWorkTools postUrl:DeleteUrl type:deleteType dataArr:self.idsArr page:0 success:^(id responseObject) {
                 
                 [MTProgressHUD mt_hideHUDForView:self.view animated:YES];
                 

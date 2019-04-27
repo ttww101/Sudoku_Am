@@ -12,9 +12,9 @@
 //全局宏
 #import "UtilsMacros.h"
 #import "FontAndColorMacros.h"
-#import "YJRootVC.h"
+#import "AYMJRootVC.h"
 #import "CommonMacros.h"
-#import "NetWorkTools.h"
+#import "AMNetWorkTools.h"
 #import "UIButton+layout.h"
 #import "UILabel+setProperty.h"
 #import "UIView+Extension.h"

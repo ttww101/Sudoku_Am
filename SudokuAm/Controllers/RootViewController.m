@@ -1,10 +1,9 @@
 #import "RootViewController.h"
 #import "UIView+AMZHView.h"
-#import "AddressBookVC.h"
+#import "AMAddressBookVC.h"
 #import "AmSudukuGameView.h"
-#import "YJMineComLoginVC.h"
+#import "AYMJMineComLoginVC.h"
 #import "UIView+Constraint.h"
-
 
 @interface RootViewController ()<UIAlertViewDelegate>
 @property (nonatomic, strong) AmSudukuGameView *sudokuView;
@@ -19,7 +18,7 @@
     [super viewDidLoad];
     
     //审核接口
-//    [NetWorkTools GetUrl:@"http://APIHOST/appStatus!getstatus.do" param:nil success:^(id responseObject) {
+//    [AMNetWorkTools GetUrl:@"http://APIHOST/appStatus!getstatus.do" param:nil success:^(id responseObject) {
 //
 //
 //        //0审核中，1通过
@@ -27,20 +26,20 @@
 //
     
 //            if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"status"] isEqualToString:@"1"]) {
-//                [self presentViewController:[[AddressBookVC alloc]init] animated:YES completion:nil];
+//                [self presentViewController:[[AMAddressBookVC alloc]init] animated:YES completion:nil];
 //            }
 //            else{
 //
-//            YJMineComLoginVC *login=[[YJMineComLoginVC alloc]init];
+//    AYMJMineComLoginVC *login=[[AYMJMineComLoginVC alloc]init];
 //            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:login];
 //            nav.viewControllers = @[login];
 //            nav.navigationBar.barTintColor=[UIColor whiteColor];
 //            nav.navigationBar.translucent = YES;
 //            [self presentViewController:nav animated:YES completion:nil];
-//
+////
 //            //登录成功回调
 //            login.block = ^{
-//                    [self presentViewController:[[AddressBookVC alloc]init] animated:YES completion:nil];
+//                    [self presentViewController:[[AMAddressBookVC alloc]init] animated:YES completion:nil];
 //            };
 //
 //            }

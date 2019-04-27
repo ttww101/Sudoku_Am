@@ -9,6 +9,7 @@
 #import "AmSudukuGameView.h"
 #import "AmSudokuEditToolView.h"
 #import "AmSudokuCollectionViewCell.h"
+#import "UIView+Constraint.h"
 
 @interface AmSudukuGameView () <UICollectionViewDelegate, UICollectionViewDataSource, AmSudokuEditToolViewDelegate>
 
@@ -64,13 +65,19 @@
 {
     self.sudokuView.frame = CGRectMake([AmGlobalState defaultTopSpace], 0, [AmGlobalState sudokuViewWidth], [AmGlobalState sudokuViewWidth]);
     self.toolView.frame = CGRectMake(self.sudokuView.left, self.sudokuView.bottom + [AmGlobalState defaultTopSpace], [AmGlobalState sudokuViewWidth], (self.width - [AmGlobalState sudokuButtonSpace] * 5) / 6.5 * 2 + [AmGlobalState sudokuButtonSpace]);
-    self.saveButton.left = self.toolView.left;
-    self.saveButton.top = self.toolView.bottom + 5;
-    self.saveButton.size = CGSizeMake(60, 30);
+    self.saveButton.layer.cornerRadius = 6;
+    self.saveButton.layer.masksToBounds = YES;
+    [self.saveButton constraintsTop:self.toolView toLayoutAttribute:NSLayoutAttributeBottom constant:10];
+    [self.saveButton constraintsLeading:self.toolView toLayoutAttribute:NSLayoutAttributeLeading constant:0];
+    [self.saveButton constraintsTrailing:self toLayoutAttribute:NSLayoutAttributeCenterX constant:-5];
+    [self.saveButton constraintSelfWidthHeightByRatio:4/1];
     
-    self.loadButton.size = self.saveButton.size;
-    self.loadButton.right = self.width - [AmGlobalState defaultTopSpace];
-    self.loadButton.top = self.saveButton.top;
+    self.loadButton.layer.cornerRadius = 6;
+    self.loadButton.layer.masksToBounds = YES;
+    [self.loadButton constraintsTop:self.toolView toLayoutAttribute:NSLayoutAttributeBottom constant:10];
+    [self.loadButton constraintsLeading:self toLayoutAttribute:NSLayoutAttributeCenterX constant:5];
+    [self.loadButton constraintsTrailing:self.toolView toLayoutAttribute:NSLayoutAttributeTrailing constant:0];
+    [self.loadButton constraintSelfWidthHeightByRatio:4/1];
     
 }
 

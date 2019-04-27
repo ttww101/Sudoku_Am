@@ -1,21 +1,21 @@
 //
-//  LTSettingViewController.m
+//  ALMTSettingViewController.m
 //  AmSoduku
 //
 //  Created by lt on 2017/9/28.
 //  Copyright © 2017年 tl. All rights reserved.
 //
 
-#import "LTSettingViewController.h"
+#import "ALMTSettingViewController.h"
 
-@interface LTSettingViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface ALMTSettingViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) UIAlertController *alertVC;
 
 @end
 
-@implementation LTSettingViewController
+@implementation ALMTSettingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

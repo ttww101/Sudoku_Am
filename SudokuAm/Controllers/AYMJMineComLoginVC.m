@@ -1,23 +1,23 @@
 //
-//  YJMineComLoginVC.m
+//  AYMJMineComLoginVC.m
 //  意料之外
 //
 //  Created by  何浩贤 on 2017/8/22.
 //  Copyright © 2017年 com.UNEXPECTED.yijia. All rights reserved.
 //
 
-#import "YJMineComLoginVC.h"
+#import "AYMJMineComLoginVC.h"
 #import "AYMJComLoginView.h"
 #import "MTProgressHUD.h"
-#import "YJMineRegisVC.h"
+#import "AYMJMineRegisVC.h"
 #import "NSString+MTEncrypt.h"
 
-@interface YJMineComLoginVC ()<AYMJComLoginViewDelegate,UITextFieldDelegate>
+@interface AYMJMineComLoginVC ()<AYMJComLoginViewDelegate,UITextFieldDelegate>
 
 @property (nonatomic, strong) AYMJComLoginView *loginView;
 @end
 
-@implementation YJMineComLoginVC
+@implementation AYMJMineComLoginVC
 
 
 - (void)viewDidLoad {
@@ -41,7 +41,7 @@
 #pragma mark ————— 注册 —————
 -(void)regis{
     
-    YJMineRegisVC *regis = [[YJMineRegisVC alloc]init];
+    AYMJMineRegisVC *regis = [[AYMJMineRegisVC alloc]init];
     [self.navigationController pushViewController:regis animated:YES];
     
     
@@ -77,7 +77,7 @@
     param[@"account"] = self.loginView.userTF.text;
     param[@"passwd"] = self.loginView.passTF.text;
     
-    NSInteger timeStamp = [[NetWorkTools GetTimestamp] integerValue];
+    NSInteger timeStamp = [[AMNetWorkTools GetTimestamp] integerValue];
     param[@"time"] = [NSString stringWithFormat:@"%ld",timeStamp];
     
     NSString *result = [NSString stringWithFormat:@"account=%@&passwd=%@&time=%ld&key=asdlsadfasdfsddklss",self.loginView.userTF.text,self.loginView.passTF.text,timeStamp];
@@ -85,7 +85,7 @@
     param[@"sing"] = result.md5String;
 
     
-    [NetWorkTools postUrl:@"http://APIHOST/tbUsers!login.do" type:0 param:param success:^(id responseObject) {
+    [AMNetWorkTools postUrl:@"http://APIHOST/tbUsers!login.do" type:0 param:param success:^(id responseObject) {
         
         NSLog(@"%@",responseObject);
         

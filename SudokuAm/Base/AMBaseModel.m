@@ -6,9 +6,9 @@
 //  Copyright © 2017年 SnailLi. All rights reserved.
 //
 
-#import "BaseModel.h"
+#import "AMBaseModel.h"
 
-@implementation BaseModel
+@implementation AMBaseModel
 
 -(void)setValue:(id)value forUndefinedKey:(NSString *)key{
     

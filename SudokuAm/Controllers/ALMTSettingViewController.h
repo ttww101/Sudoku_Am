@@ -1,5 +1,5 @@
 //
-//  LTSettingViewController.h
+//  ALMTSettingViewController.h
 //  AmSoduku
 //
 //  Created by lt on 2017/9/28.
@@ -8,6 +8,6 @@
 
 #import "RootViewController.h"
 
-@interface LTSettingViewController : UIViewController
+@interface ALMTSettingViewController : UIViewController
 
 @end

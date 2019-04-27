@@ -1,9 +1,9 @@
 
-#import "YJRootVC.h"
+#import "AYMJRootVC.h"
 
 typedef void(^YJMineRegisVCInitBlock)(void);
 
-@interface YJMineRegisVC : YJRootVC
+@interface AYMJMineRegisVC : AYMJRootVC
 
 @property (nonatomic, copy) YJMineRegisVCInitBlock block;
 @end

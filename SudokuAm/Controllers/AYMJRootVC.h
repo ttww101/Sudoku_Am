@@ -1,7 +1,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YJRootVC : UIViewController <UITableViewDelegate,UITableViewDataSource>
+@interface AYMJRootVC : UIViewController <UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, assign) CGFloat SecondHeight;
 
