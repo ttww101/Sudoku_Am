@@ -30,6 +30,7 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         self.bottomBarHeightConstraint.constant = height;
         [self.bottomBarView layoutIfNeeded];
+        [self.view layoutIfNeeded];
         if (height <= 0) {
             [self.bottomBarView setHidden:YES];
         } else {

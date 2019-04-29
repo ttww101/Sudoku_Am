@@ -6,9 +6,12 @@
 #import "KMTProgressHUD.h"
 #import "NSString+MTEncrypt.h"
 #import <AVOSCloud/AVOSCloud.h>
+#import "ADWebViewController.h"
+#import "UIView+Constraint.h"
 
 @interface AYMJRegisViewController ()
 @property (nonatomic, strong) AYMJRegisView *regisView;
+@property (strong, nonatomic) ADWebViewController *policyVC;
 @end
 
 @implementation AYMJRegisViewController
@@ -18,12 +21,23 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self addTitleWithTitle:@"注册"];
-
+    self.title = @"注册";
+    
     [self initRegisView];
+    
+    [self showPolicyView];
 }
 
 #pragma mark 创建注册视图
+
+- (void)showPolicyView {
+    self.policyVC = [ADWebViewController initWithURL:@"https://www.privacypolicies.com/privacy/view/4715f5ad7eb3e0354fb9b048a0ba3b7a"];
+    [self.policyVC layoutBottomBarHeight:0];
+    [self.navigationController pushViewController:self.policyVC animated:YES];
+    self.policyVC.title = @"隱私權條款";
+}
+
+
 -(void)initRegisView{
     
     _regisView = [[AYMJRegisView alloc]initWithFrame:CGRectMake(10*Width_Scale, 130*Height_Scale, 300*Width_Scale, 400*Height_Scale)];
