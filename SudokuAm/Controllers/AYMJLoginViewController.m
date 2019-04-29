@@ -33,6 +33,7 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:regis];
     [self initLoginView];
     
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(gameStatusChanged:) name:@"STATUS_CODE" object:nil];
 }
 
 

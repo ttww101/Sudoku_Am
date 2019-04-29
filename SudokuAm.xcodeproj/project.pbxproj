@@ -10,6 +10,17 @@
 		3C7EEDB4658BBEB19DB14E38 /* libPods-SudokuAmTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBAA1D8564AE39E7A38D83E9 /* libPods-SudokuAmTests.a */; };
 		469FE1B62FE08D32DAC536F4 /* libPods-SudokuAm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 390E7C7FDA422341E4AE0F26 /* libPods-SudokuAm.a */; };
 		9458679F2274360000423795 /* UIView+Constraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9458679D227435FF00423795 /* UIView+Constraint.m */; };
+		945FA6EC2276CE6300A450E6 /* AMURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 945FA6EB2276CE6200A450E6 /* AMURLSessionManager.m */; };
+		945FA7012276E28200A450E6 /* ADWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945FA6F62276E28200A450E6 /* ADWebViewController.xib */; };
+		945FA7022276E28200A450E6 /* NoNet.png in Resources */ = {isa = PBXBuildFile; fileRef = 945FA6F82276E28200A450E6 /* NoNet.png */; };
+		945FA7032276E28200A450E6 /* aa.png in Resources */ = {isa = PBXBuildFile; fileRef = 945FA6F92276E28200A450E6 /* aa.png */; };
+		945FA7042276E28200A450E6 /* ee.png in Resources */ = {isa = PBXBuildFile; fileRef = 945FA6FA2276E28200A450E6 /* ee.png */; };
+		945FA7052276E28200A450E6 /* dd.png in Resources */ = {isa = PBXBuildFile; fileRef = 945FA6FB2276E28200A450E6 /* dd.png */; };
+		945FA7062276E28200A450E6 /* bb.png in Resources */ = {isa = PBXBuildFile; fileRef = 945FA6FC2276E28200A450E6 /* bb.png */; };
+		945FA7072276E28200A450E6 /* cc.png in Resources */ = {isa = PBXBuildFile; fileRef = 945FA6FD2276E28200A450E6 /* cc.png */; };
+		945FA7082276E28200A450E6 /* ADWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 945FA6FF2276E28200A450E6 /* ADWebViewController.m */; };
+		945FA7092276E28200A450E6 /* ADReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 945FA7002276E28200A450E6 /* ADReachability.m */; };
+		945FA70C2276E2F400A450E6 /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 945FA70B2276E2F400A450E6 /* NSString+URL.m */; };
 		94EAC1E12272DF9C00DE3964 /* UIView+Constraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EAC1DF2272DF9B00DE3964 /* UIView+Constraint.m */; };
 		B2B4A323648B55EC51F3736D /* libPods-SudokuAmUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA112F7B11B2BB5850E8AF5 /* libPods-SudokuAmUITests.a */; };
 		BB064E781FDA419D002BF6FC /* UIBarButtonItem+KMTButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BB064E771FDA419D002BF6FC /* UIBarButtonItem+KMTButton.m */; };
@@ -147,6 +158,21 @@
 		941929BF227339020088616E /* SudokuAm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SudokuAm.entitlements; sourceTree = "<group>"; };
 		9458679D227435FF00423795 /* UIView+Constraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Constraint.m"; sourceTree = "<group>"; };
 		9458679E227435FF00423795 /* UIView+Constraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Constraint.h"; sourceTree = "<group>"; };
+		945FA6EA2276CE6200A450E6 /* AMURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMURLSessionManager.h; sourceTree = "<group>"; };
+		945FA6EB2276CE6200A450E6 /* AMURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMURLSessionManager.m; sourceTree = "<group>"; };
+		945FA6F52276E28200A450E6 /* ADWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADWebViewController.h; sourceTree = "<group>"; };
+		945FA6F62276E28200A450E6 /* ADWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADWebViewController.xib; sourceTree = "<group>"; };
+		945FA6F82276E28200A450E6 /* NoNet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoNet.png; sourceTree = "<group>"; };
+		945FA6F92276E28200A450E6 /* aa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aa.png; sourceTree = "<group>"; };
+		945FA6FA2276E28200A450E6 /* ee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ee.png; sourceTree = "<group>"; };
+		945FA6FB2276E28200A450E6 /* dd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dd.png; sourceTree = "<group>"; };
+		945FA6FC2276E28200A450E6 /* bb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bb.png; sourceTree = "<group>"; };
+		945FA6FD2276E28200A450E6 /* cc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cc.png; sourceTree = "<group>"; };
+		945FA6FE2276E28200A450E6 /* ADReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADReachability.h; sourceTree = "<group>"; };
+		945FA6FF2276E28200A450E6 /* ADWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADWebViewController.m; sourceTree = "<group>"; };
+		945FA7002276E28200A450E6 /* ADReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADReachability.m; sourceTree = "<group>"; };
+		945FA70A2276E2F400A450E6 /* NSString+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+URL.h"; path = "SudokuAm/Tools/NSString+URL/NSString+URL.h"; sourceTree = SOURCE_ROOT; };
+		945FA70B2276E2F400A450E6 /* NSString+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+URL.m"; path = "SudokuAm/Tools/NSString+URL/NSString+URL.m"; sourceTree = SOURCE_ROOT; };
 		94EAC1DF2272DF9B00DE3964 /* UIView+Constraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Constraint.m"; sourceTree = "<group>"; };
 		94EAC1E02272DF9B00DE3964 /* UIView+Constraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Constraint.h"; sourceTree = "<group>"; };
 		9DA112F7B11B2BB5850E8AF5 /* libPods-SudokuAmUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SudokuAmUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -420,6 +446,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		945FA6F32276E26000A450E6 /* AMURLSessionManager */ = {
+			isa = PBXGroup;
+			children = (
+				945FA6EA2276CE6200A450E6 /* AMURLSessionManager.h */,
+				945FA6EB2276CE6200A450E6 /* AMURLSessionManager.m */,
+			);
+			path = AMURLSessionManager;
+			sourceTree = "<group>";
+		};
+		945FA6F42276E28200A450E6 /* ADWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				945FA6F52276E28200A450E6 /* ADWebViewController.h */,
+				945FA6F62276E28200A450E6 /* ADWebViewController.xib */,
+				945FA6F72276E28200A450E6 /* TabarImage */,
+				945FA6FE2276E28200A450E6 /* ADReachability.h */,
+				945FA6FF2276E28200A450E6 /* ADWebViewController.m */,
+				945FA7002276E28200A450E6 /* ADReachability.m */,
+			);
+			path = ADWebViewController;
+			sourceTree = "<group>";
+		};
+		945FA6F72276E28200A450E6 /* TabarImage */ = {
+			isa = PBXGroup;
+			children = (
+				945FA6F82276E28200A450E6 /* NoNet.png */,
+				945FA6F92276E28200A450E6 /* aa.png */,
+				945FA6FA2276E28200A450E6 /* ee.png */,
+				945FA6FB2276E28200A450E6 /* dd.png */,
+				945FA6FC2276E28200A450E6 /* bb.png */,
+				945FA6FD2276E28200A450E6 /* cc.png */,
+			);
+			path = TabarImage;
+			sourceTree = "<group>";
+		};
 		B4167958CC7C01E79FF3F4F8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,6 +497,8 @@
 		BB064E751FDA419D002BF6FC /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				945FA70A2276E2F400A450E6 /* NSString+URL.h */,
+				945FA70B2276E2F400A450E6 /* NSString+URL.m */,
 				94EAC1E02272DF9B00DE3964 /* UIView+Constraint.h */,
 				94EAC1DF2272DF9B00DE3964 /* UIView+Constraint.m */,
 				BB064F9E1FDA7546002BF6FC /* UIButton+layout.h */,
@@ -544,6 +607,8 @@
 		BB1B26921FC67DB6001218E6 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				945FA6F42276E28200A450E6 /* ADWebViewController */,
+				945FA6F32276E26000A450E6 /* AMURLSessionManager */,
 				BB256D342006030100179078 /* SDWebImage */,
 				BB5ECB881FF0968D00A4727A /* MTProgress */,
 				BB5ECB801FF0961900A4727A /* MBProgressHUD */,
@@ -1007,7 +1072,7 @@
 			attributes = {
 				CLASSPREFIX = am;
 				LastUpgradeCheck = 0910;
-				ORGANIZATIONNAME = com.BorrowingTreasure.yijia;
+				ORGANIZATIONNAME = net.sudoku.am;
 				TargetAttributes = {
 					BB1B261B1FC679EB001218E6 = {
 						CreatedOnToolsVersion = 9.1;
@@ -1055,8 +1120,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				945FA7042276E28200A450E6 /* ee.png in Resources */,
+				945FA7052276E28200A450E6 /* dd.png in Resources */,
+				945FA7022276E28200A450E6 /* NoNet.png in Resources */,
+				945FA7032276E28200A450E6 /* aa.png in Resources */,
 				BB1B276D1FC67DB7001218E6 /* IQKeyboardManager.bundle in Resources */,
+				945FA7072276E28200A450E6 /* cc.png in Resources */,
 				BB1B262C1FC679EB001218E6 /* LaunchScreen.storyboard in Resources */,
+				945FA7012276E28200A450E6 /* ADWebViewController.xib in Resources */,
+				945FA7062276E28200A450E6 /* bb.png in Resources */,
 				BB1B26291FC679EB001218E6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1174,7 +1246,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB256CFF2005BEAC00179078 /* AYMJRegisView.m in Sources */,
+				945FA70C2276E2F400A450E6 /* NSString+URL.m in Sources */,
 				BB5ECBED1FF0998C00A4727A /* AmSudukuGameView.m in Sources */,
+				945FA7092276E28200A450E6 /* ADReachability.m in Sources */,
 				BB256CF32005B1EA00179078 /* AYMJComLoginView.m in Sources */,
 				BB064FA21FDA7547002BF6FC /* UIView+Extension.m in Sources */,
 				BB1B27801FC67DB7001218E6 /* MJExtensionConst.m in Sources */,
@@ -1258,6 +1332,7 @@
 				BB1B276A1FC67DB7001218E6 /* IQTitleBarButtonItem.m in Sources */,
 				94EAC1E12272DF9C00DE3964 /* UIView+Constraint.m in Sources */,
 				BB1B27D01FC6A4A1001218E6 /* AMContactListModel.m in Sources */,
+				945FA6EC2276CE6300A450E6 /* AMURLSessionManager.m in Sources */,
 				BB5ECB8B1FF0968D00A4727A /* KMTProgressHUD.m in Sources */,
 				BB1B27611FC67DB6001218E6 /* IQUITextFieldView+Additions.m in Sources */,
 				BB5ECB7A1FF08A1800A4727A /* AFHTTPSessionManager.m in Sources */,
@@ -1270,6 +1345,7 @@
 				BB5ECBEE1FF0998C00A4727A /* AmSudokuCollectionViewCell.m in Sources */,
 				9458679F2274360000423795 /* UIView+Constraint.m in Sources */,
 				BB256D7C2006030100179078 /* UIImage+ForceDecode.m in Sources */,
+				945FA7082276E28200A450E6 /* ADWebViewController.m in Sources */,
 				BB256D7F2006030100179078 /* UIImageView+HighlightedWebCache.m in Sources */,
 				BB1B27BB1FC69FCC001218E6 /* AMBaseModel.m in Sources */,
 				BB064E7B1FDA41BA002BF6FC /* UIImage+Thread.m in Sources */,
@@ -1492,7 +1568,7 @@
 				DEVELOPMENT_TEAM = L5QXNAK3UB;
 				INFOPLIST_FILE = "Borrowing treasureTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.BorrowingTreasure.yijia.Borrowing-treasureTests";
+				PRODUCT_BUNDLE_IDENTIFIER = net.sudoku.am.SudokuAmTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SudokuAm.app/SudokuAm";
@@ -1508,7 +1584,7 @@
 				DEVELOPMENT_TEAM = L5QXNAK3UB;
 				INFOPLIST_FILE = "Borrowing treasureTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.BorrowingTreasure.yijia.Borrowing-treasureTests";
+				PRODUCT_BUNDLE_IDENTIFIER = net.sudoku.am.SudokuAmTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SudokuAm.app/SudokuAm";
@@ -1523,7 +1599,7 @@
 				DEVELOPMENT_TEAM = L5QXNAK3UB;
 				INFOPLIST_FILE = "Borrowing treasureUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.BorrowingTreasure.yijia.Borrowing-treasureUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = net.sudoku.am.SudokuAmUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Borrowing treasure";
@@ -1538,7 +1614,7 @@
 				DEVELOPMENT_TEAM = L5QXNAK3UB;
 				INFOPLIST_FILE = "Borrowing treasureUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.BorrowingTreasure.yijia.Borrowing-treasureUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = net.sudoku.am.SudokuAmUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Borrowing treasure";

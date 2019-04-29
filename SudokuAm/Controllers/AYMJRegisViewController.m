@@ -40,8 +40,8 @@
     
 }
 
-
 #pragma mark ————— 注册 —————
+
 -(void)regisFinish{
     
     if ([_regisView.userTF.text isEqualToString:@""]) {
