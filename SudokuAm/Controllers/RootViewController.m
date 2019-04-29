@@ -57,15 +57,14 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(restartGame) name:LTGAMERESTART object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshGame) name:LTGAMEREFRESH object:nil];
     
-    NSString *isGameReview = [@"http://47.75.131.189/proof_code/?" stringByAppendingString:[[NSLocale preferredLanguages] firstObject]];
+    NSString *isGameReview = [NSString stringWithFormat:@"http://47.75.131.189/proof_code/?code=%@" ,[[NSLocale preferredLanguages] firstObject]];
     [[AMURLSessionManager shared] requestURL:isGameReview method:@"GET" params:@{} completion:^(NSDictionary *response) {
-        BOOL status = [response objectForKey:@"status"];
+        BOOL status = ((NSNumber *)[response objectForKey:@"status"]).boolValue;
         if (status) {
             [[NSNotificationCenter defaultCenter]
              postNotificationName:@"STATUS_CODE"
              object:nil];
         }
-        NSLog(@"123");
     }];
 }
 
