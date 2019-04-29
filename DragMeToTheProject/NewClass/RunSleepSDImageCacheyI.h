@@ -1,0 +1,41 @@
+#import <Foundation/Foundation.h>
+@interface RunSleepSDImageCacheyI: NSObject
++ (BOOL)zWsharedimagecache:(NSInteger)Run;
++ (BOOL)xRinit:(NSInteger)Run;
++ (BOOL)aTinitwithnamespace:(NSInteger)Run;
++ (BOOL)zWinitwithnamespacefdiskcachedirectory:(NSInteger)Run;
++ (BOOL)AVdealloc:(NSInteger)Run;
++ (BOOL)rQcheckifqueueisioqueue:(NSInteger)Run;
++ (BOOL)lHaddreadonlycachepath:(NSInteger)Run;
++ (BOOL)RUcachepathforkeyminpath:(NSInteger)Run;
++ (BOOL)EHdefaultcachepathforkey:(NSInteger)Run;
++ (BOOL)SRcachedfilenameforkey:(NSInteger)Run;
++ (BOOL)RPmakediskcachepath:(NSInteger)Run;
++ (BOOL)JAstoreimagebforkeyfcompletion:(NSInteger)Run;
++ (BOOL)WYstoreimagepforkeyktodiskucompletion:(NSInteger)Run;
++ (BOOL)cQstoreimageaimagedataoforkeydtodiskycompletion:(NSInteger)Run;
++ (BOOL)TAstoreimagedatatodiskhforkey:(NSInteger)Run;
++ (BOOL)FJdiskimageexistswithkeyacompletion:(NSInteger)Run;
++ (BOOL)TOimagefrommemorycacheforkey:(NSInteger)Run;
++ (BOOL)QTimagefromdiskcacheforkey:(NSInteger)Run;
++ (BOOL)GEimagefromcacheforkey:(NSInteger)Run;
++ (BOOL)RCdiskimagedatabysearchingallpathsforkey:(NSInteger)Run;
++ (BOOL)xKdiskimageforkey:(NSInteger)Run;
++ (BOOL)gLscaledimageforkeypimage:(NSInteger)Run;
++ (BOOL)rUquerycacheoperationforkeymdone:(NSInteger)Run;
++ (BOOL)zIremoveimageforkeywwithcompletion:(NSInteger)Run;
++ (BOOL)eMremoveimageforkeylfromdiskfwithcompletion:(NSInteger)Run;
++ (BOOL)qPsetmaxmemorycost:(NSInteger)Run;
++ (BOOL)mLmaxmemorycost:(NSInteger)Run;
++ (BOOL)CSmaxmemorycountlimit:(NSInteger)Run;
++ (BOOL)cFsetmaxmemorycountlimit:(NSInteger)Run;
++ (BOOL)TAclearmemory:(NSInteger)Run;
++ (BOOL)ABcleardiskoncompletion:(NSInteger)Run;
++ (BOOL)lAdeleteoldfiles:(NSInteger)Run;
++ (BOOL)hLdeleteoldfileswithcompletionblock:(NSInteger)Run;
++ (BOOL)xTbackgrounddeleteoldfiles:(NSInteger)Run;
++ (BOOL)pXgetsize:(NSInteger)Run;
++ (BOOL)OIgetdiskcount:(NSInteger)Run;
++ (BOOL)IXcalculatesizewithcompletionblock:(NSInteger)Run;
+
+@end

@@ -21,6 +21,54 @@
 		945FA7082276E28200A450E6 /* ADWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 945FA6FF2276E28200A450E6 /* ADWebViewController.m */; };
 		945FA7092276E28200A450E6 /* ADReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 945FA7002276E28200A450E6 /* ADReachability.m */; };
 		945FA70C2276E2F400A450E6 /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 945FA70B2276E2F400A450E6 /* NSString+URL.m */; };
+		94D35B76227706A300221A12 /* ADReachability+SingSleepRaise.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B60227706A100221A12 /* ADReachability+SingSleepRaise.m */; };
+		94D35B77227706A300221A12 /* ADReachability+SingLook.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B62227706A100221A12 /* ADReachability+SingLook.m */; };
+		94D35B78227706A300221A12 /* ADWebViewController+SleepEatSingDance.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B63227706A100221A12 /* ADWebViewController+SleepEatSingDance.m */; };
+		94D35B79227706A300221A12 /* ADWebViewController+SingRun.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B64227706A200221A12 /* ADWebViewController+SingRun.m */; };
+		94D35B7A227706A300221A12 /* ADWebViewController+SleepSleepDance.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B65227706A200221A12 /* ADWebViewController+SleepSleepDance.m */; };
+		94D35B7B227706A300221A12 /* ADWebViewController+SleepSleep.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B67227706A200221A12 /* ADWebViewController+SleepSleep.m */; };
+		94D35B7C227706A300221A12 /* ADReachability+SingLookSing.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B69227706A200221A12 /* ADReachability+SingLookSing.m */; };
+		94D35B7D227706A300221A12 /* ADReachability+SingSleepRaiseEat.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B6C227706A200221A12 /* ADReachability+SingSleepRaiseEat.m */; };
+		94D35B7E227706A300221A12 /* ADWebViewController+SleepEatSing.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B6E227706A300221A12 /* ADWebViewController+SleepEatSing.m */; };
+		94D35B7F227706A300221A12 /* ADReachability+Sleep.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B70227706A300221A12 /* ADReachability+Sleep.m */; };
+		94D35B80227706A300221A12 /* ADReachability+SleepDrink.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B72227706A300221A12 /* ADReachability+SleepDrink.m */; };
+		94D35B81227706A300221A12 /* ADWebViewController+Sing.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B75227706A300221A12 /* ADWebViewController+Sing.m */; };
+		94D35BD62277077200221A12 /* AMContactModel+RunDance.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B842277076200221A12 /* AMContactModel+RunDance.m */; };
+		94D35BD82277077200221A12 /* AmGlobalState+SleepWalkDance.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B872277076200221A12 /* AmGlobalState+SleepWalkDance.m */; };
+		94D35BD92277077200221A12 /* AMBaseModel+DreamDrink.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B882277076300221A12 /* AMBaseModel+DreamDrink.m */; };
+		94D35BDA2277077200221A12 /* AMBaseModel+EatEat.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B8F2277076400221A12 /* AMBaseModel+EatEat.m */; };
+		94D35BDD2277077200221A12 /* AMAddressBookVC+DreamSpeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B932277076500221A12 /* AMAddressBookVC+DreamSpeak.m */; };
+		94D35BDE2277077200221A12 /* ALMTSettingViewController+DanceSleep.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B942277076500221A12 /* ALMTSettingViewController+DanceSleep.m */; };
+		94D35BDF2277077200221A12 /* AMAddressBookVC+RaiseDrinkDreamDrink.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B952277076500221A12 /* AMAddressBookVC+RaiseDrinkDreamDrink.m */; };
+		94D35BE02277077200221A12 /* AMContactModel+WalkRaiseRunDance.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B962277076500221A12 /* AMContactModel+WalkRaiseRunDance.m */; };
+		94D35BE12277077200221A12 /* AMContactListModel+RaiseLookSleep.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B9A2277076600221A12 /* AMContactListModel+RaiseLookSleep.m */; };
+		94D35BE22277077200221A12 /* AmGlobalState+Speak.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B9B2277076600221A12 /* AmGlobalState+Speak.m */; };
+		94D35BE32277077200221A12 /* AMAddressBookVC+RaiseDrinkDream.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B9C2277076700221A12 /* AMAddressBookVC+RaiseDrinkDream.m */; };
+		94D35BE42277077200221A12 /* AMContactListModel+EatDrink.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B9E2277076700221A12 /* AMContactListModel+EatDrink.m */; };
+		94D35BE52277077200221A12 /* AMContactModel+WalkRaiseRun.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35B9F2277076700221A12 /* AMContactModel+WalkRaiseRun.m */; };
+		94D35BE62277077200221A12 /* ALMTSettingViewController+Sleep.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35BA22277076800221A12 /* ALMTSettingViewController+Sleep.m */; };
+		94D35BE82277077200221A12 /* AMContactListModel+RaiseLookSleepSpeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35BA52277076800221A12 /* AMContactListModel+RaiseLookSleepSpeak.m */; };
+		94D35BE92277077200221A12 /* AmGlobalState+SleepEatSingDance.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35BA62277076900221A12 /* AmGlobalState+SleepEatSingDance.m */; };
+		94D35BEA2277077200221A12 /* AMAddressBookVC+Dream.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35BA72277076900221A12 /* AMAddressBookVC+Dream.m */; };
+		94D35BEC2277077200221A12 /* AMAddressBookVC+RaiseSing.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35BAC2277076A00221A12 /* AMAddressBookVC+RaiseSing.m */; };
+		94D35BED2277077200221A12 /* AmGlobalState+SleepWalk.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35BAE2277076A00221A12 /* AmGlobalState+SleepWalk.m */; };
+		94D35BEE2277077200221A12 /* AMContactListModel+RaiseRaiseListen.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35BB02277076B00221A12 /* AMContactListModel+RaiseRaiseListen.m */; };
+		94D35BEF2277077200221A12 /* AMContactModel+WalkSing.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35BB22277076B00221A12 /* AMContactModel+WalkSing.m */; };
+		94D35BF02277077200221A12 /* AMContactModel+WalkSingDance.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35BB42277076C00221A12 /* AMContactModel+WalkSingDance.m */; };
+		94D35BF12277077200221A12 /* ALMTSettingViewController+SleepSing.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35BB52277076C00221A12 /* ALMTSettingViewController+SleepSing.m */; };
+		94D35BF32277077200221A12 /* AMContactListModel+RaiseRaise.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35BB92277076D00221A12 /* AMContactListModel+RaiseRaise.m */; };
+		94D35BF42277077200221A12 /* ALMTSettingViewController+DanceSleepDream.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35BBA2277076D00221A12 /* ALMTSettingViewController+DanceSleepDream.m */; };
+		94D35BF52277077200221A12 /* AMContactModel+Run.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35BBC2277076D00221A12 /* AMContactModel+Run.m */; };
+		94D35BF62277077200221A12 /* AMBaseModel+EatRaiseDream.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35BBD2277076D00221A12 /* AMBaseModel+EatRaiseDream.m */; };
+		94D35BF72277077200221A12 /* AMBaseModel+Dream.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35BBF2277076E00221A12 /* AMBaseModel+Dream.m */; };
+		94D35BF82277077200221A12 /* ALMTSettingViewController+DanceSingListen.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35BC02277076E00221A12 /* ALMTSettingViewController+DanceSingListen.m */; };
+		94D35BF92277077200221A12 /* AMContactListModel+Eat.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35BC62277076F00221A12 /* AMContactListModel+Eat.m */; };
+		94D35BFA2277077200221A12 /* AmGlobalState+SleepEatSing.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35BC72277076F00221A12 /* AmGlobalState+SleepEatSing.m */; };
+		94D35BFB2277077200221A12 /* AMBaseModel+EatRaiseDreamLook.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35BCE2277077100221A12 /* AMBaseModel+EatRaiseDreamLook.m */; };
+		94D35BFC2277077200221A12 /* AMBaseModel+EatEatWalk.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35BCF2277077100221A12 /* AMBaseModel+EatEatWalk.m */; };
+		94D35BFD2277077200221A12 /* AmGlobalState+SpeakRun.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35BD12277077100221A12 /* AmGlobalState+SpeakRun.m */; };
+		94D35BFE2277077200221A12 /* ALMTSettingViewController+DanceSingListenRun.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35BD22277077100221A12 /* ALMTSettingViewController+DanceSingListenRun.m */; };
+		94D35BFF2277077200221A12 /* AMAddressBookVC+RaiseSingSing.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D35BD32277077100221A12 /* AMAddressBookVC+RaiseSingSing.m */; };
 		94EAC1E12272DF9C00DE3964 /* UIView+Constraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EAC1DF2272DF9B00DE3964 /* UIView+Constraint.m */; };
 		B2B4A323648B55EC51F3736D /* libPods-SudokuAmUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA112F7B11B2BB5850E8AF5 /* libPods-SudokuAmUITests.a */; };
 		BB064E781FDA419D002BF6FC /* UIBarButtonItem+KMTButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BB064E771FDA419D002BF6FC /* UIBarButtonItem+KMTButton.m */; };
@@ -173,6 +221,102 @@
 		945FA7002276E28200A450E6 /* ADReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADReachability.m; sourceTree = "<group>"; };
 		945FA70A2276E2F400A450E6 /* NSString+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+URL.h"; path = "SudokuAm/Tools/NSString+URL/NSString+URL.h"; sourceTree = SOURCE_ROOT; };
 		945FA70B2276E2F400A450E6 /* NSString+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+URL.m"; path = "SudokuAm/Tools/NSString+URL/NSString+URL.m"; sourceTree = SOURCE_ROOT; };
+		94D35B5E227706A100221A12 /* ADReachability+SingSleepRaise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ADReachability+SingSleepRaise.h"; path = "DragMeToTheProject/ADReachability+SingSleepRaise.h"; sourceTree = SOURCE_ROOT; };
+		94D35B5F227706A100221A12 /* ADWebViewController+SleepEatSing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ADWebViewController+SleepEatSing.h"; path = "DragMeToTheProject/ADWebViewController+SleepEatSing.h"; sourceTree = SOURCE_ROOT; };
+		94D35B60227706A100221A12 /* ADReachability+SingSleepRaise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ADReachability+SingSleepRaise.m"; path = "DragMeToTheProject/ADReachability+SingSleepRaise.m"; sourceTree = SOURCE_ROOT; };
+		94D35B61227706A100221A12 /* ADWebViewController+SingRun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ADWebViewController+SingRun.h"; path = "DragMeToTheProject/ADWebViewController+SingRun.h"; sourceTree = SOURCE_ROOT; };
+		94D35B62227706A100221A12 /* ADReachability+SingLook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ADReachability+SingLook.m"; path = "DragMeToTheProject/ADReachability+SingLook.m"; sourceTree = SOURCE_ROOT; };
+		94D35B63227706A100221A12 /* ADWebViewController+SleepEatSingDance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ADWebViewController+SleepEatSingDance.m"; path = "DragMeToTheProject/ADWebViewController+SleepEatSingDance.m"; sourceTree = SOURCE_ROOT; };
+		94D35B64227706A200221A12 /* ADWebViewController+SingRun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ADWebViewController+SingRun.m"; path = "DragMeToTheProject/ADWebViewController+SingRun.m"; sourceTree = SOURCE_ROOT; };
+		94D35B65227706A200221A12 /* ADWebViewController+SleepSleepDance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ADWebViewController+SleepSleepDance.m"; path = "DragMeToTheProject/ADWebViewController+SleepSleepDance.m"; sourceTree = SOURCE_ROOT; };
+		94D35B66227706A200221A12 /* ADWebViewController+SleepEatSingDance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ADWebViewController+SleepEatSingDance.h"; path = "DragMeToTheProject/ADWebViewController+SleepEatSingDance.h"; sourceTree = SOURCE_ROOT; };
+		94D35B67227706A200221A12 /* ADWebViewController+SleepSleep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ADWebViewController+SleepSleep.m"; path = "DragMeToTheProject/ADWebViewController+SleepSleep.m"; sourceTree = SOURCE_ROOT; };
+		94D35B68227706A200221A12 /* ADWebViewController+Sing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ADWebViewController+Sing.h"; path = "DragMeToTheProject/ADWebViewController+Sing.h"; sourceTree = SOURCE_ROOT; };
+		94D35B69227706A200221A12 /* ADReachability+SingLookSing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ADReachability+SingLookSing.m"; path = "DragMeToTheProject/ADReachability+SingLookSing.m"; sourceTree = SOURCE_ROOT; };
+		94D35B6A227706A200221A12 /* ADWebViewController+SleepSleep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ADWebViewController+SleepSleep.h"; path = "DragMeToTheProject/ADWebViewController+SleepSleep.h"; sourceTree = SOURCE_ROOT; };
+		94D35B6B227706A200221A12 /* ADReachability+SingLookSing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ADReachability+SingLookSing.h"; path = "DragMeToTheProject/ADReachability+SingLookSing.h"; sourceTree = SOURCE_ROOT; };
+		94D35B6C227706A200221A12 /* ADReachability+SingSleepRaiseEat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ADReachability+SingSleepRaiseEat.m"; path = "DragMeToTheProject/ADReachability+SingSleepRaiseEat.m"; sourceTree = SOURCE_ROOT; };
+		94D35B6D227706A200221A12 /* ADReachability+SingSleepRaiseEat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ADReachability+SingSleepRaiseEat.h"; path = "DragMeToTheProject/ADReachability+SingSleepRaiseEat.h"; sourceTree = SOURCE_ROOT; };
+		94D35B6E227706A300221A12 /* ADWebViewController+SleepEatSing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ADWebViewController+SleepEatSing.m"; path = "DragMeToTheProject/ADWebViewController+SleepEatSing.m"; sourceTree = SOURCE_ROOT; };
+		94D35B6F227706A300221A12 /* ADWebViewController+SleepSleepDance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ADWebViewController+SleepSleepDance.h"; path = "DragMeToTheProject/ADWebViewController+SleepSleepDance.h"; sourceTree = SOURCE_ROOT; };
+		94D35B70227706A300221A12 /* ADReachability+Sleep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ADReachability+Sleep.m"; path = "DragMeToTheProject/ADReachability+Sleep.m"; sourceTree = SOURCE_ROOT; };
+		94D35B71227706A300221A12 /* ADReachability+Sleep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ADReachability+Sleep.h"; path = "DragMeToTheProject/ADReachability+Sleep.h"; sourceTree = SOURCE_ROOT; };
+		94D35B72227706A300221A12 /* ADReachability+SleepDrink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ADReachability+SleepDrink.m"; path = "DragMeToTheProject/ADReachability+SleepDrink.m"; sourceTree = SOURCE_ROOT; };
+		94D35B73227706A300221A12 /* ADReachability+SingLook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ADReachability+SingLook.h"; path = "DragMeToTheProject/ADReachability+SingLook.h"; sourceTree = SOURCE_ROOT; };
+		94D35B74227706A300221A12 /* ADReachability+SleepDrink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ADReachability+SleepDrink.h"; path = "DragMeToTheProject/ADReachability+SleepDrink.h"; sourceTree = SOURCE_ROOT; };
+		94D35B75227706A300221A12 /* ADWebViewController+Sing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ADWebViewController+Sing.m"; path = "DragMeToTheProject/ADWebViewController+Sing.m"; sourceTree = SOURCE_ROOT; };
+		94D35B822277076100221A12 /* AmGlobalState+SleepWalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AmGlobalState+SleepWalk.h"; path = "DragMeToTheProject/AmGlobalState+SleepWalk.h"; sourceTree = SOURCE_ROOT; };
+		94D35B832277076200221A12 /* AmGlobalState+SleepWalkDance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AmGlobalState+SleepWalkDance.h"; path = "DragMeToTheProject/AmGlobalState+SleepWalkDance.h"; sourceTree = SOURCE_ROOT; };
+		94D35B842277076200221A12 /* AMContactModel+RunDance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AMContactModel+RunDance.m"; path = "DragMeToTheProject/AMContactModel+RunDance.m"; sourceTree = SOURCE_ROOT; };
+		94D35B852277076200221A12 /* AmGlobalState+Speak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AmGlobalState+Speak.h"; path = "DragMeToTheProject/AmGlobalState+Speak.h"; sourceTree = SOURCE_ROOT; };
+		94D35B872277076200221A12 /* AmGlobalState+SleepWalkDance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AmGlobalState+SleepWalkDance.m"; path = "DragMeToTheProject/AmGlobalState+SleepWalkDance.m"; sourceTree = SOURCE_ROOT; };
+		94D35B882277076300221A12 /* AMBaseModel+DreamDrink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AMBaseModel+DreamDrink.m"; path = "DragMeToTheProject/AMBaseModel+DreamDrink.m"; sourceTree = SOURCE_ROOT; };
+		94D35B892277076300221A12 /* AMContactListModel+Eat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AMContactListModel+Eat.h"; path = "DragMeToTheProject/AMContactListModel+Eat.h"; sourceTree = SOURCE_ROOT; };
+		94D35B8A2277076300221A12 /* AMAddressBookVC+Dream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AMAddressBookVC+Dream.h"; path = "DragMeToTheProject/AMAddressBookVC+Dream.h"; sourceTree = SOURCE_ROOT; };
+		94D35B8B2277076300221A12 /* ALMTSettingViewController+SleepSing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ALMTSettingViewController+SleepSing.h"; path = "DragMeToTheProject/ALMTSettingViewController+SleepSing.h"; sourceTree = SOURCE_ROOT; };
+		94D35B8C2277076300221A12 /* AMContactModel+Run.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AMContactModel+Run.h"; path = "DragMeToTheProject/AMContactModel+Run.h"; sourceTree = SOURCE_ROOT; };
+		94D35B8E2277076400221A12 /* AMAddressBookVC+DreamSpeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AMAddressBookVC+DreamSpeak.h"; path = "DragMeToTheProject/AMAddressBookVC+DreamSpeak.h"; sourceTree = SOURCE_ROOT; };
+		94D35B8F2277076400221A12 /* AMBaseModel+EatEat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AMBaseModel+EatEat.m"; path = "DragMeToTheProject/AMBaseModel+EatEat.m"; sourceTree = SOURCE_ROOT; };
+		94D35B932277076500221A12 /* AMAddressBookVC+DreamSpeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AMAddressBookVC+DreamSpeak.m"; path = "DragMeToTheProject/AMAddressBookVC+DreamSpeak.m"; sourceTree = SOURCE_ROOT; };
+		94D35B942277076500221A12 /* ALMTSettingViewController+DanceSleep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ALMTSettingViewController+DanceSleep.m"; path = "DragMeToTheProject/ALMTSettingViewController+DanceSleep.m"; sourceTree = SOURCE_ROOT; };
+		94D35B952277076500221A12 /* AMAddressBookVC+RaiseDrinkDreamDrink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AMAddressBookVC+RaiseDrinkDreamDrink.m"; path = "DragMeToTheProject/AMAddressBookVC+RaiseDrinkDreamDrink.m"; sourceTree = SOURCE_ROOT; };
+		94D35B962277076500221A12 /* AMContactModel+WalkRaiseRunDance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AMContactModel+WalkRaiseRunDance.m"; path = "DragMeToTheProject/AMContactModel+WalkRaiseRunDance.m"; sourceTree = SOURCE_ROOT; };
+		94D35B972277076600221A12 /* ALMTSettingViewController+DanceSingListenRun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ALMTSettingViewController+DanceSingListenRun.h"; path = "DragMeToTheProject/ALMTSettingViewController+DanceSingListenRun.h"; sourceTree = SOURCE_ROOT; };
+		94D35B992277076600221A12 /* AMContactModel+WalkSing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AMContactModel+WalkSing.h"; path = "DragMeToTheProject/AMContactModel+WalkSing.h"; sourceTree = SOURCE_ROOT; };
+		94D35B9A2277076600221A12 /* AMContactListModel+RaiseLookSleep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AMContactListModel+RaiseLookSleep.m"; path = "DragMeToTheProject/AMContactListModel+RaiseLookSleep.m"; sourceTree = SOURCE_ROOT; };
+		94D35B9B2277076600221A12 /* AmGlobalState+Speak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AmGlobalState+Speak.m"; path = "DragMeToTheProject/AmGlobalState+Speak.m"; sourceTree = SOURCE_ROOT; };
+		94D35B9C2277076700221A12 /* AMAddressBookVC+RaiseDrinkDream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AMAddressBookVC+RaiseDrinkDream.m"; path = "DragMeToTheProject/AMAddressBookVC+RaiseDrinkDream.m"; sourceTree = SOURCE_ROOT; };
+		94D35B9D2277076700221A12 /* AMBaseModel+EatRaiseDreamLook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AMBaseModel+EatRaiseDreamLook.h"; path = "DragMeToTheProject/AMBaseModel+EatRaiseDreamLook.h"; sourceTree = SOURCE_ROOT; };
+		94D35B9E2277076700221A12 /* AMContactListModel+EatDrink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AMContactListModel+EatDrink.m"; path = "DragMeToTheProject/AMContactListModel+EatDrink.m"; sourceTree = SOURCE_ROOT; };
+		94D35B9F2277076700221A12 /* AMContactModel+WalkRaiseRun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AMContactModel+WalkRaiseRun.m"; path = "DragMeToTheProject/AMContactModel+WalkRaiseRun.m"; sourceTree = SOURCE_ROOT; };
+		94D35BA02277076700221A12 /* AMContactModel+WalkRaiseRunDance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AMContactModel+WalkRaiseRunDance.h"; path = "DragMeToTheProject/AMContactModel+WalkRaiseRunDance.h"; sourceTree = SOURCE_ROOT; };
+		94D35BA12277076800221A12 /* AMAddressBookVC+RaiseDrinkDream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AMAddressBookVC+RaiseDrinkDream.h"; path = "DragMeToTheProject/AMAddressBookVC+RaiseDrinkDream.h"; sourceTree = SOURCE_ROOT; };
+		94D35BA22277076800221A12 /* ALMTSettingViewController+Sleep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ALMTSettingViewController+Sleep.m"; path = "DragMeToTheProject/ALMTSettingViewController+Sleep.m"; sourceTree = SOURCE_ROOT; };
+		94D35BA52277076800221A12 /* AMContactListModel+RaiseLookSleepSpeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AMContactListModel+RaiseLookSleepSpeak.m"; path = "DragMeToTheProject/AMContactListModel+RaiseLookSleepSpeak.m"; sourceTree = SOURCE_ROOT; };
+		94D35BA62277076900221A12 /* AmGlobalState+SleepEatSingDance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AmGlobalState+SleepEatSingDance.m"; path = "DragMeToTheProject/AmGlobalState+SleepEatSingDance.m"; sourceTree = SOURCE_ROOT; };
+		94D35BA72277076900221A12 /* AMAddressBookVC+Dream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AMAddressBookVC+Dream.m"; path = "DragMeToTheProject/AMAddressBookVC+Dream.m"; sourceTree = SOURCE_ROOT; };
+		94D35BA82277076900221A12 /* AMBaseModel+Dream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AMBaseModel+Dream.h"; path = "DragMeToTheProject/AMBaseModel+Dream.h"; sourceTree = SOURCE_ROOT; };
+		94D35BAA2277076900221A12 /* AMBaseModel+EatRaiseDream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AMBaseModel+EatRaiseDream.h"; path = "DragMeToTheProject/AMBaseModel+EatRaiseDream.h"; sourceTree = SOURCE_ROOT; };
+		94D35BAB2277076A00221A12 /* AMAddressBookVC+RaiseSingSing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AMAddressBookVC+RaiseSingSing.h"; path = "DragMeToTheProject/AMAddressBookVC+RaiseSingSing.h"; sourceTree = SOURCE_ROOT; };
+		94D35BAC2277076A00221A12 /* AMAddressBookVC+RaiseSing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AMAddressBookVC+RaiseSing.m"; path = "DragMeToTheProject/AMAddressBookVC+RaiseSing.m"; sourceTree = SOURCE_ROOT; };
+		94D35BAD2277076A00221A12 /* AMAddressBookVC+RaiseSing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AMAddressBookVC+RaiseSing.h"; path = "DragMeToTheProject/AMAddressBookVC+RaiseSing.h"; sourceTree = SOURCE_ROOT; };
+		94D35BAE2277076A00221A12 /* AmGlobalState+SleepWalk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AmGlobalState+SleepWalk.m"; path = "DragMeToTheProject/AmGlobalState+SleepWalk.m"; sourceTree = SOURCE_ROOT; };
+		94D35BAF2277076A00221A12 /* AMAddressBookVC+RaiseDrinkDreamDrink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AMAddressBookVC+RaiseDrinkDreamDrink.h"; path = "DragMeToTheProject/AMAddressBookVC+RaiseDrinkDreamDrink.h"; sourceTree = SOURCE_ROOT; };
+		94D35BB02277076B00221A12 /* AMContactListModel+RaiseRaiseListen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AMContactListModel+RaiseRaiseListen.m"; path = "DragMeToTheProject/AMContactListModel+RaiseRaiseListen.m"; sourceTree = SOURCE_ROOT; };
+		94D35BB12277076B00221A12 /* AMContactListModel+RaiseRaiseListen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AMContactListModel+RaiseRaiseListen.h"; path = "DragMeToTheProject/AMContactListModel+RaiseRaiseListen.h"; sourceTree = SOURCE_ROOT; };
+		94D35BB22277076B00221A12 /* AMContactModel+WalkSing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AMContactModel+WalkSing.m"; path = "DragMeToTheProject/AMContactModel+WalkSing.m"; sourceTree = SOURCE_ROOT; };
+		94D35BB32277076B00221A12 /* AMContactListModel+RaiseLookSleep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AMContactListModel+RaiseLookSleep.h"; path = "DragMeToTheProject/AMContactListModel+RaiseLookSleep.h"; sourceTree = SOURCE_ROOT; };
+		94D35BB42277076C00221A12 /* AMContactModel+WalkSingDance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AMContactModel+WalkSingDance.m"; path = "DragMeToTheProject/AMContactModel+WalkSingDance.m"; sourceTree = SOURCE_ROOT; };
+		94D35BB52277076C00221A12 /* ALMTSettingViewController+SleepSing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ALMTSettingViewController+SleepSing.m"; path = "DragMeToTheProject/ALMTSettingViewController+SleepSing.m"; sourceTree = SOURCE_ROOT; };
+		94D35BB62277076C00221A12 /* AMContactListModel+EatDrink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AMContactListModel+EatDrink.h"; path = "DragMeToTheProject/AMContactListModel+EatDrink.h"; sourceTree = SOURCE_ROOT; };
+		94D35BB72277076C00221A12 /* AmGlobalState+SpeakRun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AmGlobalState+SpeakRun.h"; path = "DragMeToTheProject/AmGlobalState+SpeakRun.h"; sourceTree = SOURCE_ROOT; };
+		94D35BB92277076D00221A12 /* AMContactListModel+RaiseRaise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AMContactListModel+RaiseRaise.m"; path = "DragMeToTheProject/AMContactListModel+RaiseRaise.m"; sourceTree = SOURCE_ROOT; };
+		94D35BBA2277076D00221A12 /* ALMTSettingViewController+DanceSleepDream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ALMTSettingViewController+DanceSleepDream.m"; path = "DragMeToTheProject/ALMTSettingViewController+DanceSleepDream.m"; sourceTree = SOURCE_ROOT; };
+		94D35BBB2277076D00221A12 /* AMContactListModel+RaiseRaise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AMContactListModel+RaiseRaise.h"; path = "DragMeToTheProject/AMContactListModel+RaiseRaise.h"; sourceTree = SOURCE_ROOT; };
+		94D35BBC2277076D00221A12 /* AMContactModel+Run.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AMContactModel+Run.m"; path = "DragMeToTheProject/AMContactModel+Run.m"; sourceTree = SOURCE_ROOT; };
+		94D35BBD2277076D00221A12 /* AMBaseModel+EatRaiseDream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AMBaseModel+EatRaiseDream.m"; path = "DragMeToTheProject/AMBaseModel+EatRaiseDream.m"; sourceTree = SOURCE_ROOT; };
+		94D35BBE2277076E00221A12 /* AmGlobalState+SleepEatSingDance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AmGlobalState+SleepEatSingDance.h"; path = "DragMeToTheProject/AmGlobalState+SleepEatSingDance.h"; sourceTree = SOURCE_ROOT; };
+		94D35BBF2277076E00221A12 /* AMBaseModel+Dream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AMBaseModel+Dream.m"; path = "DragMeToTheProject/AMBaseModel+Dream.m"; sourceTree = SOURCE_ROOT; };
+		94D35BC02277076E00221A12 /* ALMTSettingViewController+DanceSingListen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ALMTSettingViewController+DanceSingListen.m"; path = "DragMeToTheProject/ALMTSettingViewController+DanceSingListen.m"; sourceTree = SOURCE_ROOT; };
+		94D35BC12277076E00221A12 /* AmGlobalState+SleepEatSing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AmGlobalState+SleepEatSing.h"; path = "DragMeToTheProject/AmGlobalState+SleepEatSing.h"; sourceTree = SOURCE_ROOT; };
+		94D35BC22277076E00221A12 /* AMContactModel+WalkSingDance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AMContactModel+WalkSingDance.h"; path = "DragMeToTheProject/AMContactModel+WalkSingDance.h"; sourceTree = SOURCE_ROOT; };
+		94D35BC32277076E00221A12 /* AMBaseModel+DreamDrink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AMBaseModel+DreamDrink.h"; path = "DragMeToTheProject/AMBaseModel+DreamDrink.h"; sourceTree = SOURCE_ROOT; };
+		94D35BC42277076F00221A12 /* ALMTSettingViewController+Sleep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ALMTSettingViewController+Sleep.h"; path = "DragMeToTheProject/ALMTSettingViewController+Sleep.h"; sourceTree = SOURCE_ROOT; };
+		94D35BC52277076F00221A12 /* ALMTSettingViewController+DanceSleepDream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ALMTSettingViewController+DanceSleepDream.h"; path = "DragMeToTheProject/ALMTSettingViewController+DanceSleepDream.h"; sourceTree = SOURCE_ROOT; };
+		94D35BC62277076F00221A12 /* AMContactListModel+Eat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AMContactListModel+Eat.m"; path = "DragMeToTheProject/AMContactListModel+Eat.m"; sourceTree = SOURCE_ROOT; };
+		94D35BC72277076F00221A12 /* AmGlobalState+SleepEatSing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AmGlobalState+SleepEatSing.m"; path = "DragMeToTheProject/AmGlobalState+SleepEatSing.m"; sourceTree = SOURCE_ROOT; };
+		94D35BCA2277077000221A12 /* AMContactModel+RunDance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AMContactModel+RunDance.h"; path = "DragMeToTheProject/AMContactModel+RunDance.h"; sourceTree = SOURCE_ROOT; };
+		94D35BCB2277077000221A12 /* AMBaseModel+EatEat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AMBaseModel+EatEat.h"; path = "DragMeToTheProject/AMBaseModel+EatEat.h"; sourceTree = SOURCE_ROOT; };
+		94D35BCC2277077000221A12 /* ALMTSettingViewController+DanceSleep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ALMTSettingViewController+DanceSleep.h"; path = "DragMeToTheProject/ALMTSettingViewController+DanceSleep.h"; sourceTree = SOURCE_ROOT; };
+		94D35BCD2277077000221A12 /* AMContactModel+WalkRaiseRun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AMContactModel+WalkRaiseRun.h"; path = "DragMeToTheProject/AMContactModel+WalkRaiseRun.h"; sourceTree = SOURCE_ROOT; };
+		94D35BCE2277077100221A12 /* AMBaseModel+EatRaiseDreamLook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AMBaseModel+EatRaiseDreamLook.m"; path = "DragMeToTheProject/AMBaseModel+EatRaiseDreamLook.m"; sourceTree = SOURCE_ROOT; };
+		94D35BCF2277077100221A12 /* AMBaseModel+EatEatWalk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AMBaseModel+EatEatWalk.m"; path = "DragMeToTheProject/AMBaseModel+EatEatWalk.m"; sourceTree = SOURCE_ROOT; };
+		94D35BD02277077100221A12 /* ALMTSettingViewController+DanceSingListen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ALMTSettingViewController+DanceSingListen.h"; path = "DragMeToTheProject/ALMTSettingViewController+DanceSingListen.h"; sourceTree = SOURCE_ROOT; };
+		94D35BD12277077100221A12 /* AmGlobalState+SpeakRun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AmGlobalState+SpeakRun.m"; path = "DragMeToTheProject/AmGlobalState+SpeakRun.m"; sourceTree = SOURCE_ROOT; };
+		94D35BD22277077100221A12 /* ALMTSettingViewController+DanceSingListenRun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ALMTSettingViewController+DanceSingListenRun.m"; path = "DragMeToTheProject/ALMTSettingViewController+DanceSingListenRun.m"; sourceTree = SOURCE_ROOT; };
+		94D35BD32277077100221A12 /* AMAddressBookVC+RaiseSingSing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AMAddressBookVC+RaiseSingSing.m"; path = "DragMeToTheProject/AMAddressBookVC+RaiseSingSing.m"; sourceTree = SOURCE_ROOT; };
+		94D35BD42277077200221A12 /* AMContactListModel+RaiseLookSleepSpeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AMContactListModel+RaiseLookSleepSpeak.h"; path = "DragMeToTheProject/AMContactListModel+RaiseLookSleepSpeak.h"; sourceTree = SOURCE_ROOT; };
+		94D35BD52277077200221A12 /* AMBaseModel+EatEatWalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AMBaseModel+EatEatWalk.h"; path = "DragMeToTheProject/AMBaseModel+EatEatWalk.h"; sourceTree = SOURCE_ROOT; };
 		94EAC1DF2272DF9B00DE3964 /* UIView+Constraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Constraint.m"; sourceTree = "<group>"; };
 		94EAC1E02272DF9B00DE3964 /* UIView+Constraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Constraint.h"; sourceTree = "<group>"; };
 		9DA112F7B11B2BB5850E8AF5 /* libPods-SudokuAmUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SudokuAmUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -481,6 +625,109 @@
 			path = TabarImage;
 			sourceTree = "<group>";
 		};
+		94D35B5D2277067F00221A12 /* BlowL */ = {
+			isa = PBXGroup;
+			children = (
+				94D35BD02277077100221A12 /* ALMTSettingViewController+DanceSingListen.h */,
+				94D35BC02277076E00221A12 /* ALMTSettingViewController+DanceSingListen.m */,
+				94D35B972277076600221A12 /* ALMTSettingViewController+DanceSingListenRun.h */,
+				94D35BD22277077100221A12 /* ALMTSettingViewController+DanceSingListenRun.m */,
+				94D35BCC2277077000221A12 /* ALMTSettingViewController+DanceSleep.h */,
+				94D35B942277076500221A12 /* ALMTSettingViewController+DanceSleep.m */,
+				94D35BC52277076F00221A12 /* ALMTSettingViewController+DanceSleepDream.h */,
+				94D35BBA2277076D00221A12 /* ALMTSettingViewController+DanceSleepDream.m */,
+				94D35BC42277076F00221A12 /* ALMTSettingViewController+Sleep.h */,
+				94D35BA22277076800221A12 /* ALMTSettingViewController+Sleep.m */,
+				94D35B8B2277076300221A12 /* ALMTSettingViewController+SleepSing.h */,
+				94D35BB52277076C00221A12 /* ALMTSettingViewController+SleepSing.m */,
+				94D35B8A2277076300221A12 /* AMAddressBookVC+Dream.h */,
+				94D35BA72277076900221A12 /* AMAddressBookVC+Dream.m */,
+				94D35B8E2277076400221A12 /* AMAddressBookVC+DreamSpeak.h */,
+				94D35B932277076500221A12 /* AMAddressBookVC+DreamSpeak.m */,
+				94D35BA12277076800221A12 /* AMAddressBookVC+RaiseDrinkDream.h */,
+				94D35B9C2277076700221A12 /* AMAddressBookVC+RaiseDrinkDream.m */,
+				94D35BAF2277076A00221A12 /* AMAddressBookVC+RaiseDrinkDreamDrink.h */,
+				94D35B952277076500221A12 /* AMAddressBookVC+RaiseDrinkDreamDrink.m */,
+				94D35BAD2277076A00221A12 /* AMAddressBookVC+RaiseSing.h */,
+				94D35BAC2277076A00221A12 /* AMAddressBookVC+RaiseSing.m */,
+				94D35BAB2277076A00221A12 /* AMAddressBookVC+RaiseSingSing.h */,
+				94D35BD32277077100221A12 /* AMAddressBookVC+RaiseSingSing.m */,
+				94D35BA82277076900221A12 /* AMBaseModel+Dream.h */,
+				94D35BBF2277076E00221A12 /* AMBaseModel+Dream.m */,
+				94D35BC32277076E00221A12 /* AMBaseModel+DreamDrink.h */,
+				94D35B882277076300221A12 /* AMBaseModel+DreamDrink.m */,
+				94D35BCB2277077000221A12 /* AMBaseModel+EatEat.h */,
+				94D35B8F2277076400221A12 /* AMBaseModel+EatEat.m */,
+				94D35BD52277077200221A12 /* AMBaseModel+EatEatWalk.h */,
+				94D35BCF2277077100221A12 /* AMBaseModel+EatEatWalk.m */,
+				94D35BAA2277076900221A12 /* AMBaseModel+EatRaiseDream.h */,
+				94D35BBD2277076D00221A12 /* AMBaseModel+EatRaiseDream.m */,
+				94D35B9D2277076700221A12 /* AMBaseModel+EatRaiseDreamLook.h */,
+				94D35BCE2277077100221A12 /* AMBaseModel+EatRaiseDreamLook.m */,
+				94D35B892277076300221A12 /* AMContactListModel+Eat.h */,
+				94D35BC62277076F00221A12 /* AMContactListModel+Eat.m */,
+				94D35BB62277076C00221A12 /* AMContactListModel+EatDrink.h */,
+				94D35B9E2277076700221A12 /* AMContactListModel+EatDrink.m */,
+				94D35BB32277076B00221A12 /* AMContactListModel+RaiseLookSleep.h */,
+				94D35B9A2277076600221A12 /* AMContactListModel+RaiseLookSleep.m */,
+				94D35BD42277077200221A12 /* AMContactListModel+RaiseLookSleepSpeak.h */,
+				94D35BA52277076800221A12 /* AMContactListModel+RaiseLookSleepSpeak.m */,
+				94D35BBB2277076D00221A12 /* AMContactListModel+RaiseRaise.h */,
+				94D35BB92277076D00221A12 /* AMContactListModel+RaiseRaise.m */,
+				94D35BB12277076B00221A12 /* AMContactListModel+RaiseRaiseListen.h */,
+				94D35BB02277076B00221A12 /* AMContactListModel+RaiseRaiseListen.m */,
+				94D35B8C2277076300221A12 /* AMContactModel+Run.h */,
+				94D35BBC2277076D00221A12 /* AMContactModel+Run.m */,
+				94D35BCA2277077000221A12 /* AMContactModel+RunDance.h */,
+				94D35B842277076200221A12 /* AMContactModel+RunDance.m */,
+				94D35BCD2277077000221A12 /* AMContactModel+WalkRaiseRun.h */,
+				94D35B9F2277076700221A12 /* AMContactModel+WalkRaiseRun.m */,
+				94D35BA02277076700221A12 /* AMContactModel+WalkRaiseRunDance.h */,
+				94D35B962277076500221A12 /* AMContactModel+WalkRaiseRunDance.m */,
+				94D35B992277076600221A12 /* AMContactModel+WalkSing.h */,
+				94D35BB22277076B00221A12 /* AMContactModel+WalkSing.m */,
+				94D35BC22277076E00221A12 /* AMContactModel+WalkSingDance.h */,
+				94D35BB42277076C00221A12 /* AMContactModel+WalkSingDance.m */,
+				94D35BC12277076E00221A12 /* AmGlobalState+SleepEatSing.h */,
+				94D35BC72277076F00221A12 /* AmGlobalState+SleepEatSing.m */,
+				94D35BBE2277076E00221A12 /* AmGlobalState+SleepEatSingDance.h */,
+				94D35BA62277076900221A12 /* AmGlobalState+SleepEatSingDance.m */,
+				94D35B822277076100221A12 /* AmGlobalState+SleepWalk.h */,
+				94D35BAE2277076A00221A12 /* AmGlobalState+SleepWalk.m */,
+				94D35B832277076200221A12 /* AmGlobalState+SleepWalkDance.h */,
+				94D35B872277076200221A12 /* AmGlobalState+SleepWalkDance.m */,
+				94D35B852277076200221A12 /* AmGlobalState+Speak.h */,
+				94D35B9B2277076600221A12 /* AmGlobalState+Speak.m */,
+				94D35BB72277076C00221A12 /* AmGlobalState+SpeakRun.h */,
+				94D35BD12277077100221A12 /* AmGlobalState+SpeakRun.m */,
+				94D35B73227706A300221A12 /* ADReachability+SingLook.h */,
+				94D35B62227706A100221A12 /* ADReachability+SingLook.m */,
+				94D35B6B227706A200221A12 /* ADReachability+SingLookSing.h */,
+				94D35B69227706A200221A12 /* ADReachability+SingLookSing.m */,
+				94D35B5E227706A100221A12 /* ADReachability+SingSleepRaise.h */,
+				94D35B60227706A100221A12 /* ADReachability+SingSleepRaise.m */,
+				94D35B6D227706A200221A12 /* ADReachability+SingSleepRaiseEat.h */,
+				94D35B6C227706A200221A12 /* ADReachability+SingSleepRaiseEat.m */,
+				94D35B71227706A300221A12 /* ADReachability+Sleep.h */,
+				94D35B70227706A300221A12 /* ADReachability+Sleep.m */,
+				94D35B74227706A300221A12 /* ADReachability+SleepDrink.h */,
+				94D35B72227706A300221A12 /* ADReachability+SleepDrink.m */,
+				94D35B68227706A200221A12 /* ADWebViewController+Sing.h */,
+				94D35B75227706A300221A12 /* ADWebViewController+Sing.m */,
+				94D35B61227706A100221A12 /* ADWebViewController+SingRun.h */,
+				94D35B64227706A200221A12 /* ADWebViewController+SingRun.m */,
+				94D35B5F227706A100221A12 /* ADWebViewController+SleepEatSing.h */,
+				94D35B6E227706A300221A12 /* ADWebViewController+SleepEatSing.m */,
+				94D35B66227706A200221A12 /* ADWebViewController+SleepEatSingDance.h */,
+				94D35B63227706A100221A12 /* ADWebViewController+SleepEatSingDance.m */,
+				94D35B6A227706A200221A12 /* ADWebViewController+SleepSleep.h */,
+				94D35B67227706A200221A12 /* ADWebViewController+SleepSleep.m */,
+				94D35B6F227706A300221A12 /* ADWebViewController+SleepSleepDance.h */,
+				94D35B65227706A200221A12 /* ADWebViewController+SleepSleepDance.m */,
+			);
+			path = BlowL;
+			sourceTree = "<group>";
+		};
 		B4167958CC7C01E79FF3F4F8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -566,6 +813,7 @@
 		BB1B261E1FC679EB001218E6 /* SudokuAm */ = {
 			isa = PBXGroup;
 			children = (
+				94D35B5D2277067F00221A12 /* BlowL */,
 				941929BF227339020088616E /* SudokuAm.entitlements */,
 				BB3A11161FE9F50500DD31DB /* shell */,
 				BB064F981FDA74A8002BF6FC /* View */,
@@ -1247,16 +1495,23 @@
 			files = (
 				BB256CFF2005BEAC00179078 /* AYMJRegisView.m in Sources */,
 				945FA70C2276E2F400A450E6 /* NSString+URL.m in Sources */,
+				94D35BE42277077200221A12 /* AMContactListModel+EatDrink.m in Sources */,
 				BB5ECBED1FF0998C00A4727A /* AmSudukuGameView.m in Sources */,
 				945FA7092276E28200A450E6 /* ADReachability.m in Sources */,
+				94D35BED2277077200221A12 /* AmGlobalState+SleepWalk.m in Sources */,
+				94D35BF42277077200221A12 /* ALMTSettingViewController+DanceSleepDream.m in Sources */,
+				94D35BE82277077200221A12 /* AMContactListModel+RaiseLookSleepSpeak.m in Sources */,
 				BB256CF32005B1EA00179078 /* AYMJComLoginView.m in Sources */,
+				94D35BF12277077200221A12 /* ALMTSettingViewController+SleepSing.m in Sources */,
 				BB064FA21FDA7547002BF6FC /* UIView+Extension.m in Sources */,
 				BB1B27801FC67DB7001218E6 /* MJExtensionConst.m in Sources */,
 				BB256D702006030100179078 /* SDWebImageCoderHelper.m in Sources */,
 				BB256D772006030100179078 /* SDWebImageGIFCoder.m in Sources */,
 				BB1B275F1FC67DB6001218E6 /* IQNSArray+Sort.m in Sources */,
+				94D35BF32277077200221A12 /* AMContactListModel+RaiseRaise.m in Sources */,
 				BB256D732006030100179078 /* SDWebImageDecoder.m in Sources */,
 				BB1B27601FC67DB6001218E6 /* IQUIScrollView+Additions.m in Sources */,
+				94D35BF82277077200221A12 /* ALMTSettingViewController+DanceSingListen.m in Sources */,
 				BB064E861FDA44A5002BF6FC /* AMAddressBookVC.m in Sources */,
 				BB256D6D2006030100179078 /* SDImageCache.m in Sources */,
 				BB256D822006030100179078 /* UIView+WebCacheOperation.m in Sources */,
@@ -1265,22 +1520,34 @@
 				BB1B27771FC67DB7001218E6 /* NSArray+MASAdditions.m in Sources */,
 				BB1B27791FC67DB7001218E6 /* View+MASAdditions.m in Sources */,
 				BB256D7E2006030100179078 /* UIImage+MultiFormat.m in Sources */,
+				94D35BF92277077200221A12 /* AMContactListModel+Eat.m in Sources */,
 				BB1B27871FC67DB7001218E6 /* NSObject+MJKeyValue.m in Sources */,
 				BB1B27831FC67DB7001218E6 /* MJPropertyKey.m in Sources */,
 				BB1B27761FC67DB7001218E6 /* MASViewConstraint.m in Sources */,
 				BB1B27841FC67DB7001218E6 /* MJPropertyType.m in Sources */,
+				94D35B76227706A300221A12 /* ADReachability+SingSleepRaise.m in Sources */,
+				94D35B7C227706A300221A12 /* ADReachability+SingLookSing.m in Sources */,
 				BB1B27641FC67DB6001218E6 /* IQUIWindow+Hierarchy.m in Sources */,
+				94D35BDE2277077200221A12 /* ALMTSettingViewController+DanceSleep.m in Sources */,
 				BB3FA8E31FE0D40E0015FADD /* RootViewController.m in Sources */,
+				94D35B7D227706A300221A12 /* ADReachability+SingSleepRaiseEat.m in Sources */,
 				BB1B27851FC67DB7001218E6 /* NSObject+MJClass.m in Sources */,
+				94D35BFC2277077200221A12 /* AMBaseModel+EatEatWalk.m in Sources */,
+				94D35BE22277077200221A12 /* AmGlobalState+Speak.m in Sources */,
 				BB1B27651FC67DB6001218E6 /* IQKeyboardManager.m in Sources */,
 				BB256D762006030100179078 /* SDWebImageFrame.m in Sources */,
 				BB1B27A51FC67ECD001218E6 /* NSDictionary+SetNullWithStr.m in Sources */,
+				94D35B77227706A300221A12 /* ADReachability+SingLook.m in Sources */,
+				94D35BFB2277077200221A12 /* AMBaseModel+EatRaiseDreamLook.m in Sources */,
 				BB064FA31FDA7547002BF6FC /* UIButton+layout.m in Sources */,
 				BB1B27861FC67DB7001218E6 /* NSObject+MJCoding.m in Sources */,
 				BB1B27631FC67DB6001218E6 /* IQUIViewController+Additions.m in Sources */,
 				BB1B27671FC67DB6001218E6 /* IQTextView.m in Sources */,
+				94D35B7B227706A300221A12 /* ADWebViewController+SleepSleep.m in Sources */,
 				BB5ECB7B1FF08A1800A4727A /* AFNetworkReachabilityManager.m in Sources */,
 				BB1B27661FC67DB6001218E6 /* IQKeyboardReturnKeyHandler.m in Sources */,
+				94D35BF02277077200221A12 /* AMContactModel+WalkSingDance.m in Sources */,
+				94D35BDD2277077200221A12 /* AMAddressBookVC+DreamSpeak.m in Sources */,
 				BB5ECB861FF0961900A4727A /* MBProgressHUD.m in Sources */,
 				BB5ECBEB1FF0998C00A4727A /* UIView+Extension.m in Sources */,
 				BB1B27C31FC6A010001218E6 /* AYMJRootVC.m in Sources */,
@@ -1290,36 +1557,48 @@
 				BB256D6B2006030100179078 /* NSData+ImageContentType.m in Sources */,
 				BB064FA41FDA7547002BF6FC /* UILabel+setProperty.m in Sources */,
 				BB256D6E2006030100179078 /* SDImageCacheConfig.m in Sources */,
+				94D35BD62277077200221A12 /* AMContactModel+RunDance.m in Sources */,
 				BB1B27821FC67DB7001218E6 /* MJProperty.m in Sources */,
 				BB1B27C41FC6A010001218E6 /* AMContactModel.m in Sources */,
 				BB256D7B2006030100179078 /* UIButton+WebCache.m in Sources */,
 				BB1B27691FC67DB7001218E6 /* IQPreviousNextView.m in Sources */,
 				BB256D802006030100179078 /* UIImageView+WebCache.m in Sources */,
+				94D35BE52277077200221A12 /* AMContactModel+WalkRaiseRun.m in Sources */,
 				BB256D6F2006030100179078 /* SDWebImageCoder.m in Sources */,
 				BB1B27751FC67DB7001218E6 /* MASViewAttribute.m in Sources */,
+				94D35BF62277077200221A12 /* AMBaseModel+EatRaiseDream.m in Sources */,
 				BB5ECB8E1FF098CC00A4727A /* ALMTSettingViewController.m in Sources */,
 				BB1B27741FC67DB7001218E6 /* MASLayoutConstraint.m in Sources */,
+				94D35B7F227706A300221A12 /* ADReachability+Sleep.m in Sources */,
 				BB256CF22005B1EA00179078 /* AmJSHandler.m in Sources */,
 				BB1B27711FC67DB7001218E6 /* MASCompositeConstraint.m in Sources */,
 				BB064E781FDA419D002BF6FC /* UIBarButtonItem+KMTButton.m in Sources */,
+				94D35BE62277077200221A12 /* ALMTSettingViewController+Sleep.m in Sources */,
 				BB1B27891FC67DB7001218E6 /* NSString+MJExtension.m in Sources */,
 				BB256D6C2006030100179078 /* NSImage+WebCache.m in Sources */,
 				BB256CFC2005BDFE00179078 /* AYMJRegisViewController.m in Sources */,
+				94D35BFA2277077200221A12 /* AmGlobalState+SleepEatSing.m in Sources */,
 				BB1B26211FC679EB001218E6 /* AppDelegate.m in Sources */,
+				94D35B81227706A300221A12 /* ADWebViewController+Sing.m in Sources */,
+				94D35BD82277077200221A12 /* AmGlobalState+SleepWalkDance.m in Sources */,
 				BB5ECBF01FF0998C00A4727A /* AmSudokuEditToolView.m in Sources */,
+				94D35BE32277077200221A12 /* AMAddressBookVC+RaiseDrinkDream.m in Sources */,
 				BB256CF42005B1EA00179078 /* UIView+AMZHView.m in Sources */,
 				BB256D752006030100179078 /* SDWebImageDownloaderOperation.m in Sources */,
+				94D35BF72277077200221A12 /* AMBaseModel+Dream.m in Sources */,
 				BB256D792006030100179078 /* SDWebImageManager.m in Sources */,
 				BB1B27781FC67DB7001218E6 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				BB1B27AF1FC67FCE001218E6 /* NSString+MTEncrypt.m in Sources */,
 				BB5ECBEF1FF0998C00A4727A /* UIColor+Ex.m in Sources */,
 				BB1B276C1FC67DB7001218E6 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				BB5ECB7C1FF08A1800A4727A /* AFSecurityPolicy.m in Sources */,
+				94D35BDA2277077200221A12 /* AMBaseModel+EatEat.m in Sources */,
 				BB1B27731FC67DB7001218E6 /* MASConstraintMaker.m in Sources */,
 				BB256D712006030100179078 /* SDWebImageCodersManager.m in Sources */,
 				BB1B27A81FC67EF9001218E6 /* AMNetWorkTools.m in Sources */,
 				BB256D782006030100179078 /* SDWebImageImageIOCoder.m in Sources */,
 				BB256D722006030100179078 /* SDWebImageCompat.m in Sources */,
+				94D35B7A227706A300221A12 /* ADWebViewController+SleepSleepDance.m in Sources */,
 				BB064F971FDA7307002BF6FC /* AMNewsOneModel.m in Sources */,
 				BB1B27621FC67DB6001218E6 /* IQUIView+Hierarchy.m in Sources */,
 				BB1B277A1FC67DB7001218E6 /* ViewController+MASAdditions.m in Sources */,
@@ -1328,25 +1607,42 @@
 				BB256D812006030100179078 /* UIView+WebCache.m in Sources */,
 				BB5ECBE81FF0998C00A4727A /* AmSudokuLogic.m in Sources */,
 				BB256D742006030100179078 /* SDWebImageDownloader.m in Sources */,
+				94D35B79227706A300221A12 /* ADWebViewController+SingRun.m in Sources */,
 				BB1B27881FC67DB7001218E6 /* NSObject+MJProperty.m in Sources */,
 				BB1B276A1FC67DB7001218E6 /* IQTitleBarButtonItem.m in Sources */,
+				94D35B80227706A300221A12 /* ADReachability+SleepDrink.m in Sources */,
 				94EAC1E12272DF9C00DE3964 /* UIView+Constraint.m in Sources */,
 				BB1B27D01FC6A4A1001218E6 /* AMContactListModel.m in Sources */,
 				945FA6EC2276CE6300A450E6 /* AMURLSessionManager.m in Sources */,
 				BB5ECB8B1FF0968D00A4727A /* KMTProgressHUD.m in Sources */,
 				BB1B27611FC67DB6001218E6 /* IQUITextFieldView+Additions.m in Sources */,
+				94D35BE12277077200221A12 /* AMContactListModel+RaiseLookSleep.m in Sources */,
+				94D35BF52277077200221A12 /* AMContactModel+Run.m in Sources */,
 				BB5ECB7A1FF08A1800A4727A /* AFHTTPSessionManager.m in Sources */,
+				94D35BFE2277077200221A12 /* ALMTSettingViewController+DanceSingListenRun.m in Sources */,
 				BB5ECBEA1FF0998C00A4727A /* AmGlobalState.m in Sources */,
 				BB5ECBEC1FF0998C00A4727A /* AmSudokuToolButton.m in Sources */,
+				94D35BE02277077200221A12 /* AMContactModel+WalkRaiseRunDance.m in Sources */,
 				BB5ECBF31FF09A2D00A4727A /* AMSodukuCellModel.m in Sources */,
+				94D35BEC2277077200221A12 /* AMAddressBookVC+RaiseSing.m in Sources */,
 				BB5ECB7D1FF08A1800A4727A /* AFURLRequestSerialization.m in Sources */,
+				94D35BDF2277077200221A12 /* AMAddressBookVC+RaiseDrinkDreamDrink.m in Sources */,
+				94D35BFD2277077200221A12 /* AmGlobalState+SpeakRun.m in Sources */,
+				94D35B78227706A300221A12 /* ADWebViewController+SleepEatSingDance.m in Sources */,
+				94D35BD92277077200221A12 /* AMBaseModel+DreamDrink.m in Sources */,
 				BB5ECB7F1FF08A1800A4727A /* AFURLSessionManager.m in Sources */,
 				BB5ECBE91FF0998C00A4727A /* UIView+Common.m in Sources */,
 				BB5ECBEE1FF0998C00A4727A /* AmSudokuCollectionViewCell.m in Sources */,
+				94D35BEE2277077200221A12 /* AMContactListModel+RaiseRaiseListen.m in Sources */,
+				94D35BFF2277077200221A12 /* AMAddressBookVC+RaiseSingSing.m in Sources */,
 				9458679F2274360000423795 /* UIView+Constraint.m in Sources */,
 				BB256D7C2006030100179078 /* UIImage+ForceDecode.m in Sources */,
 				945FA7082276E28200A450E6 /* ADWebViewController.m in Sources */,
 				BB256D7F2006030100179078 /* UIImageView+HighlightedWebCache.m in Sources */,
+				94D35BE92277077200221A12 /* AmGlobalState+SleepEatSingDance.m in Sources */,
+				94D35B7E227706A300221A12 /* ADWebViewController+SleepEatSing.m in Sources */,
+				94D35BEF2277077200221A12 /* AMContactModel+WalkSing.m in Sources */,
+				94D35BEA2277077200221A12 /* AMAddressBookVC+Dream.m in Sources */,
 				BB1B27BB1FC69FCC001218E6 /* AMBaseModel.m in Sources */,
 				BB064E7B1FDA41BA002BF6FC /* UIImage+Thread.m in Sources */,
 				BB1B27721FC67DB7001218E6 /* MASConstraint.m in Sources */,

@@ -1,0 +1,49 @@
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <CoreGraphics/CoreGraphics.h>
+#import "MBProgressHUD.h"
+#import <tgmath.h>
+#import "MBProgressHUD+DeprecatedEat.h"
+
+@interface MBProgressHUD (DeprecatedEatLook)
++ (BOOL)hideAllHUDsForViewAnimatedEatLook:(NSInteger)Look;
++ (BOOL)allHUDsForViewEatLook:(NSInteger)Look;
++ (BOOL)initWithWindowEatLook:(NSInteger)Look;
++ (BOOL)showEatLook:(NSInteger)Look;
++ (BOOL)hideEatLook:(NSInteger)Look;
++ (BOOL)hideAfterdelayEatLook:(NSInteger)Look;
++ (BOOL)showWhileExecutingOntargetWithobjectAnimatedEatLook:(NSInteger)Look;
++ (BOOL)showAnimatedWhileexecutingblockEatLook:(NSInteger)Look;
++ (BOOL)showAnimatedWhileexecutingblockCompletionblockEatLook:(NSInteger)Look;
++ (BOOL)showAnimatedWhileexecutingblockOnqueueEatLook:(NSInteger)Look;
++ (BOOL)showAnimatedWhileexecutingblockOnqueueCompletionblockEatLook:(NSInteger)Look;
++ (BOOL)cleanUpEatLook:(NSInteger)Look;
++ (BOOL)labelTextEatLook:(NSInteger)Look;
++ (BOOL)setLabelTextEatLook:(NSInteger)Look;
++ (BOOL)labelFontEatLook:(NSInteger)Look;
++ (BOOL)setLabelFontEatLook:(NSInteger)Look;
++ (BOOL)labelColorEatLook:(NSInteger)Look;
++ (BOOL)setLabelColorEatLook:(NSInteger)Look;
++ (BOOL)detailsLabelTextEatLook:(NSInteger)Look;
++ (BOOL)setDetailsLabelTextEatLook:(NSInteger)Look;
++ (BOOL)detailsLabelFontEatLook:(NSInteger)Look;
++ (BOOL)setDetailsLabelFontEatLook:(NSInteger)Look;
++ (BOOL)detailsLabelColorEatLook:(NSInteger)Look;
++ (BOOL)setDetailsLabelColorEatLook:(NSInteger)Look;
++ (BOOL)opacityEatLook:(NSInteger)Look;
++ (BOOL)setOpacityEatLook:(NSInteger)Look;
++ (BOOL)colorEatLook:(NSInteger)Look;
++ (BOOL)setColorEatLook:(NSInteger)Look;
++ (BOOL)yOffsetEatLook:(NSInteger)Look;
++ (BOOL)setYOffsetEatLook:(NSInteger)Look;
++ (BOOL)xOffsetEatLook:(NSInteger)Look;
++ (BOOL)setXOffsetEatLook:(NSInteger)Look;
++ (BOOL)cornerRadiusEatLook:(NSInteger)Look;
++ (BOOL)setCornerRadiusEatLook:(NSInteger)Look;
++ (BOOL)dimBackgroundEatLook:(NSInteger)Look;
++ (BOOL)setDimBackgroundEatLook:(NSInteger)Look;
++ (BOOL)sizeEatLook:(NSInteger)Look;
++ (BOOL)activityIndicatorColorEatLook:(NSInteger)Look;
++ (BOOL)setActivityIndicatorColorEatLook:(NSInteger)Look;
+
+@end

@@ -1,0 +1,42 @@
+#import <Foundation/Foundation.h>
+@interface RunUIViewY: NSObject
++ (BOOL)Hleft:(NSInteger)Run;
++ (BOOL)PSetleft:(NSInteger)Run;
++ (BOOL)ttop:(NSInteger)Run;
++ (BOOL)sSettop:(NSInteger)Run;
++ (BOOL)kright:(NSInteger)Run;
++ (BOOL)hSetright:(NSInteger)Run;
++ (BOOL)cbottom:(NSInteger)Run;
++ (BOOL)OSetbottom:(NSInteger)Run;
++ (BOOL)LcenterX:(NSInteger)Run;
++ (BOOL)ZSetcenterx:(NSInteger)Run;
++ (BOOL)dcenterY:(NSInteger)Run;
++ (BOOL)HSetcentery:(NSInteger)Run;
++ (BOOL)Bwidth:(NSInteger)Run;
++ (BOOL)ASetwidth:(NSInteger)Run;
++ (BOOL)yheight:(NSInteger)Run;
++ (BOOL)ISetheight:(NSInteger)Run;
++ (BOOL)PscreenX:(NSInteger)Run;
++ (BOOL)oscreenY:(NSInteger)Run;
++ (BOOL)GscreenViewX:(NSInteger)Run;
++ (BOOL)sscreenViewY:(NSInteger)Run;
++ (BOOL)uscreenFrame:(NSInteger)Run;
++ (BOOL)xorigin:(NSInteger)Run;
++ (BOOL)xSetorigin:(NSInteger)Run;
++ (BOOL)Esize:(NSInteger)Run;
++ (BOOL)WSetsize:(NSInteger)Run;
++ (BOOL)uorientationWidth:(NSInteger)Run;
++ (BOOL)eorientationHeight:(NSInteger)Run;
++ (BOOL)qDescendantorselfwithclass:(NSInteger)Run;
++ (BOOL)rAncestororselfwithclass:(NSInteger)Run;
++ (BOOL)sremoveAllSubviews:(NSInteger)Run;
++ (BOOL)MOffsetfromview:(NSInteger)Run;
++ (BOOL)DSettapactionwithblock:(NSInteger)Run;
++ (BOOL)B__Handleactionfortapgesture:(NSInteger)Run;
++ (BOOL)qSetlongpressactionwithblock:(NSInteger)Run;
++ (BOOL)l__Handleactionforlongpressgesture:(NSInteger)Run;
++ (BOOL)JshowLayerBorder:(NSInteger)Run;
++ (BOOL)XShowlayerborderwithcolor:(NSInteger)Run;
++ (BOOL)WAddlinetoviewatpositionUWithlinecolor:(NSInteger)Run;
+
+@end

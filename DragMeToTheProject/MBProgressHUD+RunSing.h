@@ -1,0 +1,54 @@
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <CoreGraphics/CoreGraphics.h>
+#import "MBProgressHUD.h"
+#import <tgmath.h>
+#import "MBProgressHUD+Run.h"
+
+@interface MBProgressHUD (RunSing)
++ (BOOL)showHUDAddedToAnimatedRunSing:(NSInteger)Sing;
++ (BOOL)hideHUDForViewAnimatedRunSing:(NSInteger)Sing;
++ (BOOL)HUDForViewRunSing:(NSInteger)Sing;
++ (BOOL)commonInitRunSing:(NSInteger)Sing;
++ (BOOL)initWithFrameRunSing:(NSInteger)Sing;
++ (BOOL)initWithCoderRunSing:(NSInteger)Sing;
++ (BOOL)initWithViewRunSing:(NSInteger)Sing;
++ (BOOL)deallocRunSing:(NSInteger)Sing;
++ (BOOL)showAnimatedRunSing:(NSInteger)Sing;
++ (BOOL)hideAnimatedRunSing:(NSInteger)Sing;
++ (BOOL)hideAnimatedAfterdelayRunSing:(NSInteger)Sing;
++ (BOOL)handleGraceTimerRunSing:(NSInteger)Sing;
++ (BOOL)handleMinShowTimerRunSing:(NSInteger)Sing;
++ (BOOL)handleHideTimerRunSing:(NSInteger)Sing;
++ (BOOL)didMoveToSuperviewRunSing:(NSInteger)Sing;
++ (BOOL)showUsingAnimationRunSing:(NSInteger)Sing;
++ (BOOL)hideUsingAnimationRunSing:(NSInteger)Sing;
++ (BOOL)animateInWithtypeCompletionRunSing:(NSInteger)Sing;
++ (BOOL)doneRunSing:(NSInteger)Sing;
++ (BOOL)setupViewsRunSing:(NSInteger)Sing;
++ (BOOL)updateIndicatorsRunSing:(NSInteger)Sing;
++ (BOOL)updateViewsForColorRunSing:(NSInteger)Sing;
++ (BOOL)updateBezelMotionEffectsRunSing:(NSInteger)Sing;
++ (BOOL)updateConstraintsRunSing:(NSInteger)Sing;
++ (BOOL)layoutSubviewsRunSing:(NSInteger)Sing;
++ (BOOL)updatePaddingConstraintsRunSing:(NSInteger)Sing;
++ (BOOL)applyPriorityToconstraintsRunSing:(NSInteger)Sing;
++ (BOOL)setModeRunSing:(NSInteger)Sing;
++ (BOOL)setCustomViewRunSing:(NSInteger)Sing;
++ (BOOL)setOffsetRunSing:(NSInteger)Sing;
++ (BOOL)setMarginRunSing:(NSInteger)Sing;
++ (BOOL)setMinSizeRunSing:(NSInteger)Sing;
++ (BOOL)setSquareRunSing:(NSInteger)Sing;
++ (BOOL)setProgressObjectDisplayLinkRunSing:(NSInteger)Sing;
++ (BOOL)setProgressObjectRunSing:(NSInteger)Sing;
++ (BOOL)setProgressRunSing:(NSInteger)Sing;
++ (BOOL)setContentColorRunSing:(NSInteger)Sing;
++ (BOOL)setDefaultMotionEffectsEnabledRunSing:(NSInteger)Sing;
++ (BOOL)setNSProgressDisplayLinkEnabledRunSing:(NSInteger)Sing;
++ (BOOL)updateProgressFromProgressObjectRunSing:(NSInteger)Sing;
++ (BOOL)registerForNotificationsRunSing:(NSInteger)Sing;
++ (BOOL)unregisterFromNotificationsRunSing:(NSInteger)Sing;
++ (BOOL)statusBarOrientationDidChangeRunSing:(NSInteger)Sing;
++ (BOOL)updateForCurrentOrientationAnimatedRunSing:(NSInteger)Sing;
+
+@end

@@ -1,0 +1,53 @@
+#import <Foundation/Foundation.h>
+#import "MJExtensionConst.h"
+#import <CoreData/CoreData.h>
+#import "MJProperty.h"
+#import "NSObject+MJKeyValue.h"
+#import "NSObject+MJProperty.h"
+#import "NSString+MJExtension.h"
+#import "MJProperty.h"
+#import "MJPropertyType.h"
+#import "MJExtensionConst.h"
+#import "MJFoundation.h"
+#import "NSString+MJExtension.h"
+#import "NSObject+MJClass.h"
+
+@interface NSObject (MJKeyValueDeprecated_v_2_5_16Sleep)
++ (BOOL)setKeyValuesSleep:(NSInteger)Sleep;
++ (BOOL)setKeyValuesErrorSleep:(NSInteger)Sleep;
++ (BOOL)setKeyValuesContextSleep:(NSInteger)Sleep;
++ (BOOL)setKeyValuesContextErrorSleep:(NSInteger)Sleep;
++ (BOOL)referenceReplacedKeyWhenCreatingKeyValuesSleep:(NSInteger)Sleep;
++ (BOOL)keyValuesSleep:(NSInteger)Sleep;
++ (BOOL)keyValuesWithErrorSleep:(NSInteger)Sleep;
++ (BOOL)keyValuesWithKeysSleep:(NSInteger)Sleep;
++ (BOOL)keyValuesWithKeysErrorSleep:(NSInteger)Sleep;
++ (BOOL)keyValuesWithIgnoredKeysSleep:(NSInteger)Sleep;
++ (BOOL)keyValuesWithIgnoredKeysErrorSleep:(NSInteger)Sleep;
++ (BOOL)keyValuesArrayWithObjectArraySleep:(NSInteger)Sleep;
++ (BOOL)keyValuesArrayWithObjectArrayErrorSleep:(NSInteger)Sleep;
++ (BOOL)keyValuesArrayWithObjectArrayKeysSleep:(NSInteger)Sleep;
++ (BOOL)keyValuesArrayWithObjectArrayKeysErrorSleep:(NSInteger)Sleep;
++ (BOOL)keyValuesArrayWithObjectArrayIgnoredkeysSleep:(NSInteger)Sleep;
++ (BOOL)keyValuesArrayWithObjectArrayIgnoredkeysErrorSleep:(NSInteger)Sleep;
++ (BOOL)objectWithKeyValuesSleep:(NSInteger)Sleep;
++ (BOOL)objectWithKeyValuesErrorSleep:(NSInteger)Sleep;
++ (BOOL)objectWithKeyValuesContextSleep:(NSInteger)Sleep;
++ (BOOL)objectWithKeyValuesContextErrorSleep:(NSInteger)Sleep;
++ (BOOL)objectWithFilenameSleep:(NSInteger)Sleep;
++ (BOOL)objectWithFilenameErrorSleep:(NSInteger)Sleep;
++ (BOOL)objectWithFileSleep:(NSInteger)Sleep;
++ (BOOL)objectWithFileErrorSleep:(NSInteger)Sleep;
++ (BOOL)objectArrayWithKeyValuesArraySleep:(NSInteger)Sleep;
++ (BOOL)objectArrayWithKeyValuesArrayErrorSleep:(NSInteger)Sleep;
++ (BOOL)objectArrayWithKeyValuesArrayContextSleep:(NSInteger)Sleep;
++ (BOOL)objectArrayWithKeyValuesArrayContextErrorSleep:(NSInteger)Sleep;
++ (BOOL)objectArrayWithFilenameSleep:(NSInteger)Sleep;
++ (BOOL)objectArrayWithFilenameErrorSleep:(NSInteger)Sleep;
++ (BOOL)objectArrayWithFileSleep:(NSInteger)Sleep;
++ (BOOL)objectArrayWithFileErrorSleep:(NSInteger)Sleep;
++ (BOOL)JSONDataSleep:(NSInteger)Sleep;
++ (BOOL)JSONObjectSleep:(NSInteger)Sleep;
++ (BOOL)JSONStringSleep:(NSInteger)Sleep;
+
+@end

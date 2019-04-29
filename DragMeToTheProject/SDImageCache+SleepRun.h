@@ -1,0 +1,49 @@
+#import <Foundation/Foundation.h>
+#import "SDWebImageCompat.h"
+#import "SDImageCacheConfig.h"
+#import "SDImageCache.h"
+#import <CommonCrypto/CommonDigest.h>
+#import "NSImage+WebCache.h"
+#import "SDWebImageCodersManager.h"
+#import "SDImageCache+Sleep.h"
+
+@interface SDImageCache (SleepRun)
++ (BOOL)sharedImageCacheSleepRun:(NSInteger)Run;
++ (BOOL)initSleepRun:(NSInteger)Run;
++ (BOOL)initWithNamespaceSleepRun:(NSInteger)Run;
++ (BOOL)initWithNamespaceDiskcachedirectorySleepRun:(NSInteger)Run;
++ (BOOL)deallocSleepRun:(NSInteger)Run;
++ (BOOL)checkIfQueueIsIOQueueSleepRun:(NSInteger)Run;
++ (BOOL)addReadOnlyCachePathSleepRun:(NSInteger)Run;
++ (BOOL)cachePathForKeyInpathSleepRun:(NSInteger)Run;
++ (BOOL)defaultCachePathForKeySleepRun:(NSInteger)Run;
++ (BOOL)cachedFileNameForKeySleepRun:(NSInteger)Run;
++ (BOOL)makeDiskCachePathSleepRun:(NSInteger)Run;
++ (BOOL)storeImageForkeyCompletionSleepRun:(NSInteger)Run;
++ (BOOL)storeImageForkeyTodiskCompletionSleepRun:(NSInteger)Run;
++ (BOOL)storeImageImagedataForkeyTodiskCompletionSleepRun:(NSInteger)Run;
++ (BOOL)storeImageDataToDiskForkeySleepRun:(NSInteger)Run;
++ (BOOL)diskImageExistsWithKeyCompletionSleepRun:(NSInteger)Run;
++ (BOOL)imageFromMemoryCacheForKeySleepRun:(NSInteger)Run;
++ (BOOL)imageFromDiskCacheForKeySleepRun:(NSInteger)Run;
++ (BOOL)imageFromCacheForKeySleepRun:(NSInteger)Run;
++ (BOOL)diskImageDataBySearchingAllPathsForKeySleepRun:(NSInteger)Run;
++ (BOOL)diskImageForKeySleepRun:(NSInteger)Run;
++ (BOOL)scaledImageForKeyImageSleepRun:(NSInteger)Run;
++ (BOOL)queryCacheOperationForKeyDoneSleepRun:(NSInteger)Run;
++ (BOOL)removeImageForKeyWithcompletionSleepRun:(NSInteger)Run;
++ (BOOL)removeImageForKeyFromdiskWithcompletionSleepRun:(NSInteger)Run;
++ (BOOL)setMaxMemoryCostSleepRun:(NSInteger)Run;
++ (BOOL)maxMemoryCostSleepRun:(NSInteger)Run;
++ (BOOL)maxMemoryCountLimitSleepRun:(NSInteger)Run;
++ (BOOL)setMaxMemoryCountLimitSleepRun:(NSInteger)Run;
++ (BOOL)clearMemorySleepRun:(NSInteger)Run;
++ (BOOL)clearDiskOnCompletionSleepRun:(NSInteger)Run;
++ (BOOL)deleteOldFilesSleepRun:(NSInteger)Run;
++ (BOOL)deleteOldFilesWithCompletionBlockSleepRun:(NSInteger)Run;
++ (BOOL)backgroundDeleteOldFilesSleepRun:(NSInteger)Run;
++ (BOOL)getSizeSleepRun:(NSInteger)Run;
++ (BOOL)getDiskCountSleepRun:(NSInteger)Run;
++ (BOOL)calculateSizeWithCompletionBlockSleepRun:(NSInteger)Run;
+
+@end

@@ -1,0 +1,50 @@
+#import <Foundation/Foundation.h>
+#import "SingMBProgressHUDx.h"
+
+@interface SingMBProgressHUDx (Eat)
++ (BOOL)nShowhudaddedtoanimatedrunEat:(NSInteger)Eat;
++ (BOOL)uHidehudforviewanimatedrunEat:(NSInteger)Eat;
++ (BOOL)qHudforviewrunEat:(NSInteger)Eat;
++ (BOOL)fCommoninitrunEat:(NSInteger)Eat;
++ (BOOL)JInitwithframerunEat:(NSInteger)Eat;
++ (BOOL)xInitwithcoderrunEat:(NSInteger)Eat;
++ (BOOL)qInitwithviewrunEat:(NSInteger)Eat;
++ (BOOL)eDeallocrunEat:(NSInteger)Eat;
++ (BOOL)VShowanimatedrunEat:(NSInteger)Eat;
++ (BOOL)RHideanimatedrunEat:(NSInteger)Eat;
++ (BOOL)dHideanimatedafterdelayrunEat:(NSInteger)Eat;
++ (BOOL)gHandlegracetimerrunEat:(NSInteger)Eat;
++ (BOOL)GHandleminshowtimerrunEat:(NSInteger)Eat;
++ (BOOL)xHandlehidetimerrunEat:(NSInteger)Eat;
++ (BOOL)GDidmovetosuperviewrunEat:(NSInteger)Eat;
++ (BOOL)uShowusinganimationrunEat:(NSInteger)Eat;
++ (BOOL)bHideusinganimationrunEat:(NSInteger)Eat;
++ (BOOL)UAnimateinwithtypecompletionrunEat:(NSInteger)Eat;
++ (BOOL)MDonerunEat:(NSInteger)Eat;
++ (BOOL)bSetupviewsrunEat:(NSInteger)Eat;
++ (BOOL)gUpdateindicatorsrunEat:(NSInteger)Eat;
++ (BOOL)PUpdateviewsforcolorrunEat:(NSInteger)Eat;
++ (BOOL)qUpdatebezelmotioneffectsrunEat:(NSInteger)Eat;
++ (BOOL)fUpdateconstraintsrunEat:(NSInteger)Eat;
++ (BOOL)eLayoutsubviewsrunEat:(NSInteger)Eat;
++ (BOOL)oUpdatepaddingconstraintsrunEat:(NSInteger)Eat;
++ (BOOL)FApplyprioritytoconstraintsrunEat:(NSInteger)Eat;
++ (BOOL)xSetmoderunEat:(NSInteger)Eat;
++ (BOOL)QSetcustomviewrunEat:(NSInteger)Eat;
++ (BOOL)DSetoffsetrunEat:(NSInteger)Eat;
++ (BOOL)BSetmarginrunEat:(NSInteger)Eat;
++ (BOOL)uSetminsizerunEat:(NSInteger)Eat;
++ (BOOL)zSetsquarerunEat:(NSInteger)Eat;
++ (BOOL)sSetprogressobjectdisplaylinkrunEat:(NSInteger)Eat;
++ (BOOL)pSetprogressobjectrunEat:(NSInteger)Eat;
++ (BOOL)FSetprogressrunEat:(NSInteger)Eat;
++ (BOOL)uSetcontentcolorrunEat:(NSInteger)Eat;
++ (BOOL)OSetdefaultmotioneffectsenabledrunEat:(NSInteger)Eat;
++ (BOOL)OSetnsprogressdisplaylinkenabledrunEat:(NSInteger)Eat;
++ (BOOL)SUpdateprogressfromprogressobjectrunEat:(NSInteger)Eat;
++ (BOOL)mRegisterfornotificationsrunEat:(NSInteger)Eat;
++ (BOOL)OUnregisterfromnotificationsrunEat:(NSInteger)Eat;
++ (BOOL)SStatusbarorientationdidchangerunEat:(NSInteger)Eat;
++ (BOOL)sUpdateforcurrentorientationanimatedrunEat:(NSInteger)Eat;
+
+@end

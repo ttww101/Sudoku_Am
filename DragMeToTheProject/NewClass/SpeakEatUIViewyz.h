@@ -1,0 +1,43 @@
+#import <Foundation/Foundation.h>
+@interface SpeakEatUIViewyz: NSObject
++ (BOOL)CZsetx:(NSInteger)Speak;
++ (BOOL)kWx:(NSInteger)Speak;
++ (BOOL)TOsety:(NSInteger)Speak;
++ (BOOL)IXy:(NSInteger)Speak;
++ (BOOL)yHsetwidth:(NSInteger)Speak;
++ (BOOL)EKwidth:(NSInteger)Speak;
++ (BOOL)EVsetheight:(NSInteger)Speak;
++ (BOOL)FZheight:(NSInteger)Speak;
++ (BOOL)hDsetsize:(NSInteger)Speak;
++ (BOOL)XYsize:(NSInteger)Speak;
++ (BOOL)DXsetorigin:(NSInteger)Speak;
++ (BOOL)sYorigin:(NSInteger)Speak;
++ (BOOL)kPsetcenterx:(NSInteger)Speak;
++ (BOOL)yFcenterx:(NSInteger)Speak;
++ (BOOL)CQsetcentery:(NSInteger)Speak;
++ (BOOL)FNcentery:(NSInteger)Speak;
++ (BOOL)vDminx:(NSInteger)Speak;
++ (BOOL)YDminy:(NSInteger)Speak;
++ (BOOL)PNmaxx:(NSInteger)Speak;
++ (BOOL)fLmaxy:(NSInteger)Speak;
++ (BOOL)CBnamedescription:(NSInteger)Speak;
++ (BOOL)SGcornerradius:(NSInteger)Speak;
++ (BOOL)nWcornerradiuswithfloat:(NSInteger)Speak;
++ (BOOL)DMcornerradiuswithbordercoloreborderwidth:(NSInteger)Speak;
++ (BOOL)IQcornerradiuswithfloatjbordercolortborderwidth:(NSInteger)Speak;
++ (BOOL)LHintersectionwithotherview:(NSInteger)Speak;
++ (BOOL)BSgetcgrectintersectionwithotherview:(NSInteger)Speak;
++ (BOOL)WPadduitapgesturerecognizerwithtargetwwithaction:(NSInteger)Speak;
++ (BOOL)DKadduipinchgesturerecognizerwithtargetcwithaction:(NSInteger)Speak;
++ (BOOL)sQadduirotationgesturerecognizerwithtargetcwithaction:(NSInteger)Speak;
++ (BOOL)RYadduiswipegesturerecognizerwithtargetdwithactiondwithdirection:(NSInteger)Speak;
++ (BOOL)yWadduipangesturerecognizerwithtargetrwithactionywithminimumnumberoftoucheszwithmaximumnumberoftouches:(NSInteger)Speak;
++ (BOOL)ySadduilongpressgesturerecognizerwithtargetpwithactionmwithminimumpressduration:(NSInteger)Speak;
++ (BOOL)VHaddpolishingwithbackcolor:(NSInteger)Speak;
++ (BOOL)AFstartpressedbutton:(NSInteger)Speak;
++ (BOOL)bFendpressedbutton:(NSInteger)Speak;
++ (BOOL)DKaddconstraintstosuperviewtwithleftowithrightlwithtopnwithbottom:(NSInteger)Speak;
++ (BOOL)rZaddshakerwithduration:(NSInteger)Speak;
++ (BOOL)YXgetviewcontroller:(NSInteger)Speak;
+
+@end

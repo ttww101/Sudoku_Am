@@ -1,0 +1,50 @@
+#import <Foundation/Foundation.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <TargetConditionals.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#import <CoreServices/CoreServices.h>
+#import "AFURLSessionManager.h"
+#import "AFHTTPSessionManager.h"
+#import "AFURLRequestSerialization.h"
+#import "AFURLResponseSerialization.h"
+#import <Availability.h>
+#import <TargetConditionals.h>
+#import <Security/Security.h>
+#import <netinet/in.h>
+#import <netinet6/in6.h>
+#import <arpa/inet.h>
+#import <ifaddrs.h>
+#import <netdb.h>
+#import <UIKit/UIKit.h>
+#import <WatchKit/WatchKit.h>
+#import "AFHTTPSessionManager+Look.h"
+#import "AFHTTPSessionManager+LookEat.h"
+#import "AFHTTPSessionManager+LookEatLook.h"
+
+@interface AFHTTPSessionManager (LookEatLookDrink)
++ (BOOL)managerLookEatLookDrink:(NSInteger)Drink;
++ (BOOL)initLookEatLookDrink:(NSInteger)Drink;
++ (BOOL)initWithBaseURLLookEatLookDrink:(NSInteger)Drink;
++ (BOOL)initWithSessionConfigurationLookEatLookDrink:(NSInteger)Drink;
++ (BOOL)initWithBaseURLSessionconfigurationLookEatLookDrink:(NSInteger)Drink;
++ (BOOL)setRequestSerializerLookEatLookDrink:(NSInteger)Drink;
++ (BOOL)setResponseSerializerLookEatLookDrink:(NSInteger)Drink;
++ (BOOL)setSecurityPolicyLookEatLookDrink:(NSInteger)Drink;
++ (BOOL)GETParametersSuccessFailureLookEatLookDrink:(NSInteger)Drink;
++ (BOOL)GETParametersProgressSuccessFailureLookEatLookDrink:(NSInteger)Drink;
++ (BOOL)HEADParametersSuccessFailureLookEatLookDrink:(NSInteger)Drink;
++ (BOOL)POSTParametersSuccessFailureLookEatLookDrink:(NSInteger)Drink;
++ (BOOL)POSTParametersProgressSuccessFailureLookEatLookDrink:(NSInteger)Drink;
++ (BOOL)POSTParametersConstructingbodywithblockSuccessFailureLookEatLookDrink:(NSInteger)Drink;
++ (BOOL)POSTParametersConstructingbodywithblockProgressSuccessFailureLookEatLookDrink:(NSInteger)Drink;
++ (BOOL)PUTParametersSuccessFailureLookEatLookDrink:(NSInteger)Drink;
++ (BOOL)PATCHParametersSuccessFailureLookEatLookDrink:(NSInteger)Drink;
++ (BOOL)DELETEParametersSuccessFailureLookEatLookDrink:(NSInteger)Drink;
++ (BOOL)dataTaskWithHTTPMethodUrlstringParametersUploadprogressDownloadprogressSuccessFailureLookEatLookDrink:(NSInteger)Drink;
++ (BOOL)descriptionLookEatLookDrink:(NSInteger)Drink;
++ (BOOL)supportsSecureCodingLookEatLookDrink:(NSInteger)Drink;
++ (BOOL)initWithCoderLookEatLookDrink:(NSInteger)Drink;
++ (BOOL)encodeWithCoderLookEatLookDrink:(NSInteger)Drink;
++ (BOOL)copyWithZoneLookEatLookDrink:(NSInteger)Drink;
+
+@end

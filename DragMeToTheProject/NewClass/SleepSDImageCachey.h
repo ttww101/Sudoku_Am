@@ -1,0 +1,41 @@
+#import <Foundation/Foundation.h>
+@interface SleepSDImageCachey: NSObject
++ (BOOL)WsharedImageCache:(NSInteger)Sleep;
++ (BOOL)rinit:(NSInteger)Sleep;
++ (BOOL)tInitwithnamespace:(NSInteger)Sleep;
++ (BOOL)wInitwithnamespacefDiskcachedirectory:(NSInteger)Sleep;
++ (BOOL)Vdealloc:(NSInteger)Sleep;
++ (BOOL)qcheckIfQueueIsIOQueue:(NSInteger)Sleep;
++ (BOOL)hAddreadonlycachepath:(NSInteger)Sleep;
++ (BOOL)uCachepathforkeyMInpath:(NSInteger)Sleep;
++ (BOOL)hDefaultcachepathforkey:(NSInteger)Sleep;
++ (BOOL)RCachedfilenameforkey:(NSInteger)Sleep;
++ (BOOL)PMakediskcachepath:(NSInteger)Sleep;
++ (BOOL)AStoreimagebForkeyFCompletion:(NSInteger)Sleep;
++ (BOOL)YStoreimagepForkeyKTodiskUCompletion:(NSInteger)Sleep;
++ (BOOL)QStoreimageAImagedataOForkeydTodiskYCompletion:(NSInteger)Sleep;
++ (BOOL)AStoreimagedatatodiskHForkey:(NSInteger)Sleep;
++ (BOOL)jDiskimageexistswithkeyACompletion:(NSInteger)Sleep;
++ (BOOL)OImagefrommemorycacheforkey:(NSInteger)Sleep;
++ (BOOL)tImagefromdiskcacheforkey:(NSInteger)Sleep;
++ (BOOL)eImagefromcacheforkey:(NSInteger)Sleep;
++ (BOOL)CDiskimagedatabysearchingallpathsforkey:(NSInteger)Sleep;
++ (BOOL)KDiskimageforkey:(NSInteger)Sleep;
++ (BOOL)LScaledimageforkeyPImage:(NSInteger)Sleep;
++ (BOOL)UQuerycacheoperationforkeyMDone:(NSInteger)Sleep;
++ (BOOL)IRemoveimageforkeywWithcompletion:(NSInteger)Sleep;
++ (BOOL)mRemoveimageforkeyLFromdiskFWithcompletion:(NSInteger)Sleep;
++ (BOOL)pSetmaxmemorycost:(NSInteger)Sleep;
++ (BOOL)LmaxMemoryCost:(NSInteger)Sleep;
++ (BOOL)smaxMemoryCountLimit:(NSInteger)Sleep;
++ (BOOL)fSetmaxmemorycountlimit:(NSInteger)Sleep;
++ (BOOL)AclearMemory:(NSInteger)Sleep;
++ (BOOL)BCleardiskoncompletion:(NSInteger)Sleep;
++ (BOOL)adeleteOldFiles:(NSInteger)Sleep;
++ (BOOL)lDeleteoldfileswithcompletionblock:(NSInteger)Sleep;
++ (BOOL)TbackgroundDeleteOldFiles:(NSInteger)Sleep;
++ (BOOL)XgetSize:(NSInteger)Sleep;
++ (BOOL)IgetDiskCount:(NSInteger)Sleep;
++ (BOOL)xCalculatesizewithcompletionblock:(NSInteger)Sleep;
+
+@end

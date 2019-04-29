@@ -1,0 +1,43 @@
+#import <Foundation/Foundation.h>
+@interface EatMBProgressHUDi: NSObject
++ (BOOL)LHideallhudsforviewTAnimated:(NSInteger)Eat;
++ (BOOL)KAllhudsforview:(NSInteger)Eat;
++ (BOOL)KInitwithwindow:(NSInteger)Eat;
++ (BOOL)sShow:(NSInteger)Eat;
++ (BOOL)xHide:(NSInteger)Eat;
++ (BOOL)xHideuAfterdelay:(NSInteger)Eat;
++ (BOOL)pShowwhileexecutinguOntargetcWithobjectbAnimated:(NSInteger)Eat;
++ (BOOL)IShowanimatedmWhileexecutingblock:(NSInteger)Eat;
++ (BOOL)IShowanimatedoWhileexecutingblockcCompletionblock:(NSInteger)Eat;
++ (BOOL)iShowanimatedAWhileexecutingblockGOnqueue:(NSInteger)Eat;
++ (BOOL)JShowanimatedUWhileexecutingblockQOnqueueDCompletionblock:(NSInteger)Eat;
++ (BOOL)XcleanUp:(NSInteger)Eat;
++ (BOOL)mlabelText:(NSInteger)Eat;
++ (BOOL)GSetlabeltext:(NSInteger)Eat;
++ (BOOL)XlabelFont:(NSInteger)Eat;
++ (BOOL)NSetlabelfont:(NSInteger)Eat;
++ (BOOL)hlabelColor:(NSInteger)Eat;
++ (BOOL)lSetlabelcolor:(NSInteger)Eat;
++ (BOOL)DdetailsLabelText:(NSInteger)Eat;
++ (BOOL)iSetdetailslabeltext:(NSInteger)Eat;
++ (BOOL)XdetailsLabelFont:(NSInteger)Eat;
++ (BOOL)zSetdetailslabelfont:(NSInteger)Eat;
++ (BOOL)hdetailsLabelColor:(NSInteger)Eat;
++ (BOOL)qSetdetailslabelcolor:(NSInteger)Eat;
++ (BOOL)nopacity:(NSInteger)Eat;
++ (BOOL)GSetopacity:(NSInteger)Eat;
++ (BOOL)ucolor:(NSInteger)Eat;
++ (BOOL)lSetcolor:(NSInteger)Eat;
++ (BOOL)LyOffset:(NSInteger)Eat;
++ (BOOL)ASetyoffset:(NSInteger)Eat;
++ (BOOL)PxOffset:(NSInteger)Eat;
++ (BOOL)ySetxoffset:(NSInteger)Eat;
++ (BOOL)zcornerRadius:(NSInteger)Eat;
++ (BOOL)bSetcornerradius:(NSInteger)Eat;
++ (BOOL)ydimBackground:(NSInteger)Eat;
++ (BOOL)NSetdimbackground:(NSInteger)Eat;
++ (BOOL)Lsize:(NSInteger)Eat;
++ (BOOL)FactivityIndicatorColor:(NSInteger)Eat;
++ (BOOL)KSetactivityindicatorcolor:(NSInteger)Eat;
+
+@end

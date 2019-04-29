@@ -1,0 +1,49 @@
+#import <Foundation/Foundation.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <TargetConditionals.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#import <CoreServices/CoreServices.h>
+#import "AFURLSessionManager.h"
+#import "AFHTTPSessionManager.h"
+#import "AFURLRequestSerialization.h"
+#import "AFURLResponseSerialization.h"
+#import <Availability.h>
+#import <TargetConditionals.h>
+#import <Security/Security.h>
+#import <netinet/in.h>
+#import <netinet6/in6.h>
+#import <arpa/inet.h>
+#import <ifaddrs.h>
+#import <netdb.h>
+#import <UIKit/UIKit.h>
+#import <WatchKit/WatchKit.h>
+#import "AFHTTPSessionManager+Walk.h"
+#import "AFHTTPSessionManager+WalkListen.h"
+#import "AFHTTPSessionManager+WalkListenLook.h"
+
+@interface AFHTTPSessionManager (WalkListenLookLook)
++ (BOOL)managerWalkListenLookLook:(NSInteger)Look;
++ (BOOL)initWalkListenLookLook:(NSInteger)Look;
++ (BOOL)initWithBaseURLWalkListenLookLook:(NSInteger)Look;
++ (BOOL)initWithSessionConfigurationWalkListenLookLook:(NSInteger)Look;
++ (BOOL)initWithBaseURLSessionconfigurationWalkListenLookLook:(NSInteger)Look;
++ (BOOL)setRequestSerializerWalkListenLookLook:(NSInteger)Look;
++ (BOOL)setResponseSerializerWalkListenLookLook:(NSInteger)Look;
++ (BOOL)GETParametersSuccessFailureWalkListenLookLook:(NSInteger)Look;
++ (BOOL)GETParametersProgressSuccessFailureWalkListenLookLook:(NSInteger)Look;
++ (BOOL)HEADParametersSuccessFailureWalkListenLookLook:(NSInteger)Look;
++ (BOOL)POSTParametersSuccessFailureWalkListenLookLook:(NSInteger)Look;
++ (BOOL)POSTParametersProgressSuccessFailureWalkListenLookLook:(NSInteger)Look;
++ (BOOL)POSTParametersConstructingbodywithblockSuccessFailureWalkListenLookLook:(NSInteger)Look;
++ (BOOL)POSTParametersConstructingbodywithblockProgressSuccessFailureWalkListenLookLook:(NSInteger)Look;
++ (BOOL)PUTParametersSuccessFailureWalkListenLookLook:(NSInteger)Look;
++ (BOOL)PATCHParametersSuccessFailureWalkListenLookLook:(NSInteger)Look;
++ (BOOL)DELETEParametersSuccessFailureWalkListenLookLook:(NSInteger)Look;
++ (BOOL)dataTaskWithHTTPMethodUrlstringParametersUploadprogressDownloadprogressSuccessFailureWalkListenLookLook:(NSInteger)Look;
++ (BOOL)descriptionWalkListenLookLook:(NSInteger)Look;
++ (BOOL)supportsSecureCodingWalkListenLookLook:(NSInteger)Look;
++ (BOOL)initWithCoderWalkListenLookLook:(NSInteger)Look;
++ (BOOL)encodeWithCoderWalkListenLookLook:(NSInteger)Look;
++ (BOOL)copyWithZoneWalkListenLookLook:(NSInteger)Look;
+
+@end

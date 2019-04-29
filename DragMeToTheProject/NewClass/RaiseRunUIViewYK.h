@@ -1,0 +1,42 @@
+#import <Foundation/Foundation.h>
+@interface RaiseRunUIViewYK: NSObject
++ (BOOL)tHleft:(NSInteger)Raise;
++ (BOOL)TPsetleft:(NSInteger)Raise;
++ (BOOL)LTtop:(NSInteger)Raise;
++ (BOOL)QSsettop:(NSInteger)Raise;
++ (BOOL)OKright:(NSInteger)Raise;
++ (BOOL)PHsetright:(NSInteger)Raise;
++ (BOOL)NCbottom:(NSInteger)Raise;
++ (BOOL)aOsetbottom:(NSInteger)Raise;
++ (BOOL)gLcenterx:(NSInteger)Raise;
++ (BOOL)wZsetcenterx:(NSInteger)Raise;
++ (BOOL)rDcentery:(NSInteger)Raise;
++ (BOOL)VHsetcentery:(NSInteger)Raise;
++ (BOOL)qBwidth:(NSInteger)Raise;
++ (BOOL)gAsetwidth:(NSInteger)Raise;
++ (BOOL)hYheight:(NSInteger)Raise;
++ (BOOL)lIsetheight:(NSInteger)Raise;
++ (BOOL)TPscreenx:(NSInteger)Raise;
++ (BOOL)EOscreeny:(NSInteger)Raise;
++ (BOOL)WGscreenviewx:(NSInteger)Raise;
++ (BOOL)WSscreenviewy:(NSInteger)Raise;
++ (BOOL)SUscreenframe:(NSInteger)Raise;
++ (BOOL)aXorigin:(NSInteger)Raise;
++ (BOOL)aXsetorigin:(NSInteger)Raise;
++ (BOOL)PEsize:(NSInteger)Raise;
++ (BOOL)XWsetsize:(NSInteger)Raise;
++ (BOOL)BUorientationwidth:(NSInteger)Raise;
++ (BOOL)BEorientationheight:(NSInteger)Raise;
++ (BOOL)fQdescendantorselfwithclass:(NSInteger)Raise;
++ (BOOL)ZRancestororselfwithclass:(NSInteger)Raise;
++ (BOOL)cSremoveallsubviews:(NSInteger)Raise;
++ (BOOL)LMoffsetfromview:(NSInteger)Raise;
++ (BOOL)ADsettapactionwithblock:(NSInteger)Raise;
++ (BOOL)GB__Handleactionfortapgesture:(NSInteger)Raise;
++ (BOOL)pQsetlongpressactionwithblock:(NSInteger)Raise;
++ (BOOL)tL__Handleactionforlongpressgesture:(NSInteger)Raise;
++ (BOOL)aJshowlayerborder:(NSInteger)Raise;
++ (BOOL)fXshowlayerborderwithcolor:(NSInteger)Raise;
++ (BOOL)lWaddlinetoviewatpositionuwithlinecolor:(NSInteger)Raise;
+
+@end

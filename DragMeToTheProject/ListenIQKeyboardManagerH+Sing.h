@@ -1,0 +1,51 @@
+#import <Foundation/Foundation.h>
+#import "ListenIQKeyboardManagerH.h"
+
+@interface ListenIQKeyboardManagerH (Sing)
++ (BOOL)iloadSing:(NSInteger)Sing;
++ (BOOL)MinitSing:(NSInteger)Sing;
++ (BOOL)fsharedManagerSing:(NSInteger)Sing;
++ (BOOL)xdeallocSing:(NSInteger)Sing;
++ (BOOL)uSetenableSing:(NSInteger)Sing;
++ (BOOL)jprivateIsEnabledSing:(NSInteger)Sing;
++ (BOOL)JshouldShowTextFieldPlaceholderSing:(NSInteger)Sing;
++ (BOOL)VSetshouldshowtextfieldplaceholderSing:(NSInteger)Sing;
++ (BOOL)CSetkeyboarddistancefromtextfieldSing:(NSInteger)Sing;
++ (BOOL)VSetshouldresignontouchoutsideSing:(NSInteger)Sing;
++ (BOOL)eprivateShouldResignOnTouchOutsideSing:(NSInteger)Sing;
++ (BOOL)zSetenableautotoolbarSing:(NSInteger)Sing;
++ (BOOL)SprivateIsEnableAutoToolbarSing:(NSInteger)Sing;
++ (BOOL)JkeyWindowSing:(NSInteger)Sing;
++ (BOOL)RSetrootviewframeSing:(NSInteger)Sing;
++ (BOOL)NadjustFrameSing:(NSInteger)Sing;
++ (BOOL)hreloadLayoutIfNeededSing:(NSInteger)Sing;
++ (BOOL)LKeyboardwillshowSing:(NSInteger)Sing;
++ (BOOL)JKeyboarddidshowSing:(NSInteger)Sing;
++ (BOOL)lKeyboardwillhideSing:(NSInteger)Sing;
++ (BOOL)qKeyboarddidhideSing:(NSInteger)Sing;
++ (BOOL)ZTextfieldviewdidbegineditingSing:(NSInteger)Sing;
++ (BOOL)XTextfieldviewdidendeditingSing:(NSInteger)Sing;
++ (BOOL)lWillchangestatusbarorientationSing:(NSInteger)Sing;
++ (BOOL)LDidchangestatusbarframeSing:(NSInteger)Sing;
++ (BOOL)dTaprecognizedVIdSing:(NSInteger)Sing;
++ (BOOL)mGesturerecognizerUShouldrecognizesimultaneouslywithgesturerecognizerSing:(NSInteger)Sing;
++ (BOOL)qGesturerecognizeraShouldreceivetouchSing:(NSInteger)Sing;
++ (BOOL)CresignFirstResponderSing:(NSInteger)Sing;
++ (BOOL)bcanGoPreviousSing:(NSInteger)Sing;
++ (BOOL)UcanGoNextSing:(NSInteger)Sing;
++ (BOOL)dgoPreviousSing:(NSInteger)Sing;
++ (BOOL)TgoNextSing:(NSInteger)Sing;
++ (BOOL)QresponderViewsSing:(NSInteger)Sing;
++ (BOOL)EaddToolbarIfRequiredSing:(NSInteger)Sing;
++ (BOOL)bIdSing:(NSInteger)Sing;
++ (BOOL)kreloadInputViewsSing:(NSInteger)Sing;
++ (BOOL)DPreviousactionSing:(NSInteger)Sing;
++ (BOOL)ENextactionSing:(NSInteger)Sing;
++ (BOOL)mDoneactionSing:(NSInteger)Sing;
++ (BOOL)TRegistertextfieldviewclassPDidbegineditingnotificationnamerDidendeditingnotificationnameSing:(NSInteger)Sing;
++ (BOOL)BUnregistertextfieldviewclassYDidbegineditingnotificationnamepDidendeditingnotificationnameSing:(NSInteger)Sing;
++ (BOOL)BregisterAllNotificationsSing:(NSInteger)Sing;
++ (BOOL)WunregisterAllNotificationsSing:(NSInteger)Sing;
++ (BOOL)fShowlogSing:(NSInteger)Sing;
+
+@end

@@ -1,0 +1,40 @@
+#import <Foundation/Foundation.h>
+@interface SleepNSObjectb: NSObject
++ (BOOL)HSetkeyvaluessleep:(NSInteger)Sleep;
++ (BOOL)BSetkeyvalueserrorsleep:(NSInteger)Sleep;
++ (BOOL)lSetkeyvaluescontextsleep:(NSInteger)Sleep;
++ (BOOL)xSetkeyvaluescontexterrorsleep:(NSInteger)Sleep;
++ (BOOL)AReferencereplacedkeywhencreatingkeyvaluessleep:(NSInteger)Sleep;
++ (BOOL)YKeyvaluessleep:(NSInteger)Sleep;
++ (BOOL)zKeyvalueswitherrorsleep:(NSInteger)Sleep;
++ (BOOL)OKeyvalueswithkeyssleep:(NSInteger)Sleep;
++ (BOOL)UKeyvalueswithkeyserrorsleep:(NSInteger)Sleep;
++ (BOOL)kKeyvalueswithignoredkeyssleep:(NSInteger)Sleep;
++ (BOOL)fKeyvalueswithignoredkeyserrorsleep:(NSInteger)Sleep;
++ (BOOL)UKeyvaluesarraywithobjectarraysleep:(NSInteger)Sleep;
++ (BOOL)vKeyvaluesarraywithobjectarrayerrorsleep:(NSInteger)Sleep;
++ (BOOL)wKeyvaluesarraywithobjectarraykeyssleep:(NSInteger)Sleep;
++ (BOOL)iKeyvaluesarraywithobjectarraykeyserrorsleep:(NSInteger)Sleep;
++ (BOOL)FKeyvaluesarraywithobjectarrayignoredkeyssleep:(NSInteger)Sleep;
++ (BOOL)TKeyvaluesarraywithobjectarrayignoredkeyserrorsleep:(NSInteger)Sleep;
++ (BOOL)cObjectwithkeyvaluessleep:(NSInteger)Sleep;
++ (BOOL)qObjectwithkeyvalueserrorsleep:(NSInteger)Sleep;
++ (BOOL)EObjectwithkeyvaluescontextsleep:(NSInteger)Sleep;
++ (BOOL)pObjectwithkeyvaluescontexterrorsleep:(NSInteger)Sleep;
++ (BOOL)wObjectwithfilenamesleep:(NSInteger)Sleep;
++ (BOOL)sObjectwithfilenameerrorsleep:(NSInteger)Sleep;
++ (BOOL)XObjectwithfilesleep:(NSInteger)Sleep;
++ (BOOL)TObjectwithfileerrorsleep:(NSInteger)Sleep;
++ (BOOL)PObjectarraywithkeyvaluesarraysleep:(NSInteger)Sleep;
++ (BOOL)GObjectarraywithkeyvaluesarrayerrorsleep:(NSInteger)Sleep;
++ (BOOL)fObjectarraywithkeyvaluesarraycontextsleep:(NSInteger)Sleep;
++ (BOOL)SObjectarraywithkeyvaluesarraycontexterrorsleep:(NSInteger)Sleep;
++ (BOOL)lObjectarraywithfilenamesleep:(NSInteger)Sleep;
++ (BOOL)GObjectarraywithfilenameerrorsleep:(NSInteger)Sleep;
++ (BOOL)dObjectarraywithfilesleep:(NSInteger)Sleep;
++ (BOOL)QObjectarraywithfileerrorsleep:(NSInteger)Sleep;
++ (BOOL)CJsondatasleep:(NSInteger)Sleep;
++ (BOOL)YJsonobjectsleep:(NSInteger)Sleep;
++ (BOOL)LJsonstringsleep:(NSInteger)Sleep;
+
+@end

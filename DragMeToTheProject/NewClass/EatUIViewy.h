@@ -1,0 +1,43 @@
+#import <Foundation/Foundation.h>
+@interface EatUIViewy: NSObject
++ (BOOL)ZSetx:(NSInteger)Eat;
++ (BOOL)Wx:(NSInteger)Eat;
++ (BOOL)oSety:(NSInteger)Eat;
++ (BOOL)Xy:(NSInteger)Eat;
++ (BOOL)HSetwidth:(NSInteger)Eat;
++ (BOOL)Kwidth:(NSInteger)Eat;
++ (BOOL)VSetheight:(NSInteger)Eat;
++ (BOOL)Zheight:(NSInteger)Eat;
++ (BOOL)dSetsize:(NSInteger)Eat;
++ (BOOL)ysize:(NSInteger)Eat;
++ (BOOL)xSetorigin:(NSInteger)Eat;
++ (BOOL)yorigin:(NSInteger)Eat;
++ (BOOL)PSetcenterx:(NSInteger)Eat;
++ (BOOL)FcenterX:(NSInteger)Eat;
++ (BOOL)qSetcentery:(NSInteger)Eat;
++ (BOOL)NcenterY:(NSInteger)Eat;
++ (BOOL)DminX:(NSInteger)Eat;
++ (BOOL)dminY:(NSInteger)Eat;
++ (BOOL)NmaxX:(NSInteger)Eat;
++ (BOOL)lmaxY:(NSInteger)Eat;
++ (BOOL)BnameDescription:(NSInteger)Eat;
++ (BOOL)gcornerRadius:(NSInteger)Eat;
++ (BOOL)wCornerradiuswithfloat:(NSInteger)Eat;
++ (BOOL)mCornerradiuswithbordercoloreBorderwidth:(NSInteger)Eat;
++ (BOOL)qCornerradiuswithfloatJBordercolorTBorderwidth:(NSInteger)Eat;
++ (BOOL)hIntersectionwithotherview:(NSInteger)Eat;
++ (BOOL)SGetcgrectintersectionwithotherview:(NSInteger)Eat;
++ (BOOL)PAdduitapgesturerecognizerwithtargetwWithaction:(NSInteger)Eat;
++ (BOOL)KAdduipinchgesturerecognizerwithtargetCWithaction:(NSInteger)Eat;
++ (BOOL)QAdduirotationgesturerecognizerwithtargetCWithaction:(NSInteger)Eat;
++ (BOOL)yAdduiswipegesturerecognizerwithtargetDWithactiondWithdirection:(NSInteger)Eat;
++ (BOOL)WAdduipangesturerecognizerwithtargetrWithactionYWithminimumnumberoftouchesZWithmaximumnumberoftouches:(NSInteger)Eat;
++ (BOOL)sAdduilongpressgesturerecognizerwithtargetPWithactionmWithminimumpressduration:(NSInteger)Eat;
++ (BOOL)HAddpolishingwithbackcolor:(NSInteger)Eat;
++ (BOOL)FstartPressedButton:(NSInteger)Eat;
++ (BOOL)fendPressedButton:(NSInteger)Eat;
++ (BOOL)kAddconstraintstosuperviewtWithleftoWithrightlWithtopnWithbottom:(NSInteger)Eat;
++ (BOOL)ZAddshakerwithduration:(NSInteger)Eat;
++ (BOOL)XgetViewController:(NSInteger)Eat;
+
+@end

@@ -1,0 +1,40 @@
+#import <Foundation/Foundation.h>
+@interface RaiseSleepNSObjectbR: NSObject
++ (BOOL)kHsetkeyvaluessleep:(NSInteger)Raise;
++ (BOOL)xBsetkeyvalueserrorsleep:(NSInteger)Raise;
++ (BOOL)cLsetkeyvaluescontextsleep:(NSInteger)Raise;
++ (BOOL)vXsetkeyvaluescontexterrorsleep:(NSInteger)Raise;
++ (BOOL)OAreferencereplacedkeywhencreatingkeyvaluessleep:(NSInteger)Raise;
++ (BOOL)IYkeyvaluessleep:(NSInteger)Raise;
++ (BOOL)oZkeyvalueswitherrorsleep:(NSInteger)Raise;
++ (BOOL)HOkeyvalueswithkeyssleep:(NSInteger)Raise;
++ (BOOL)kUkeyvalueswithkeyserrorsleep:(NSInteger)Raise;
++ (BOOL)zKkeyvalueswithignoredkeyssleep:(NSInteger)Raise;
++ (BOOL)BFkeyvalueswithignoredkeyserrorsleep:(NSInteger)Raise;
++ (BOOL)KUkeyvaluesarraywithobjectarraysleep:(NSInteger)Raise;
++ (BOOL)HVkeyvaluesarraywithobjectarrayerrorsleep:(NSInteger)Raise;
++ (BOOL)GWkeyvaluesarraywithobjectarraykeyssleep:(NSInteger)Raise;
++ (BOOL)WIkeyvaluesarraywithobjectarraykeyserrorsleep:(NSInteger)Raise;
++ (BOOL)sFkeyvaluesarraywithobjectarrayignoredkeyssleep:(NSInteger)Raise;
++ (BOOL)STkeyvaluesarraywithobjectarrayignoredkeyserrorsleep:(NSInteger)Raise;
++ (BOOL)XCobjectwithkeyvaluessleep:(NSInteger)Raise;
++ (BOOL)WQobjectwithkeyvalueserrorsleep:(NSInteger)Raise;
++ (BOOL)XEobjectwithkeyvaluescontextsleep:(NSInteger)Raise;
++ (BOOL)rPobjectwithkeyvaluescontexterrorsleep:(NSInteger)Raise;
++ (BOOL)UWobjectwithfilenamesleep:(NSInteger)Raise;
++ (BOOL)WSobjectwithfilenameerrorsleep:(NSInteger)Raise;
++ (BOOL)ZXobjectwithfilesleep:(NSInteger)Raise;
++ (BOOL)DTobjectwithfileerrorsleep:(NSInteger)Raise;
++ (BOOL)RPobjectarraywithkeyvaluesarraysleep:(NSInteger)Raise;
++ (BOOL)dGobjectarraywithkeyvaluesarrayerrorsleep:(NSInteger)Raise;
++ (BOOL)UFobjectarraywithkeyvaluesarraycontextsleep:(NSInteger)Raise;
++ (BOOL)RSobjectarraywithkeyvaluesarraycontexterrorsleep:(NSInteger)Raise;
++ (BOOL)PLobjectarraywithfilenamesleep:(NSInteger)Raise;
++ (BOOL)KGobjectarraywithfilenameerrorsleep:(NSInteger)Raise;
++ (BOOL)sDobjectarraywithfilesleep:(NSInteger)Raise;
++ (BOOL)eQobjectarraywithfileerrorsleep:(NSInteger)Raise;
++ (BOOL)PCjsondatasleep:(NSInteger)Raise;
++ (BOOL)HYjsonobjectsleep:(NSInteger)Raise;
++ (BOOL)dLjsonstringsleep:(NSInteger)Raise;
+
+@end

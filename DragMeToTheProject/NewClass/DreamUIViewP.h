@@ -1,0 +1,42 @@
+#import <Foundation/Foundation.h>
+@interface DreamUIViewP: NSObject
++ (BOOL)TLeftrun:(NSInteger)Dream;
++ (BOOL)ISetleftrun:(NSInteger)Dream;
++ (BOOL)eToprun:(NSInteger)Dream;
++ (BOOL)pSettoprun:(NSInteger)Dream;
++ (BOOL)kRightrun:(NSInteger)Dream;
++ (BOOL)TSetrightrun:(NSInteger)Dream;
++ (BOOL)jBottomrun:(NSInteger)Dream;
++ (BOOL)hSetbottomrun:(NSInteger)Dream;
++ (BOOL)JCenterxrun:(NSInteger)Dream;
++ (BOOL)vSetcenterxrun:(NSInteger)Dream;
++ (BOOL)bCenteryrun:(NSInteger)Dream;
++ (BOOL)NSetcenteryrun:(NSInteger)Dream;
++ (BOOL)zWidthrun:(NSInteger)Dream;
++ (BOOL)zSetwidthrun:(NSInteger)Dream;
++ (BOOL)kHeightrun:(NSInteger)Dream;
++ (BOOL)kSetheightrun:(NSInteger)Dream;
++ (BOOL)uScreenxrun:(NSInteger)Dream;
++ (BOOL)xScreenyrun:(NSInteger)Dream;
++ (BOOL)KScreenviewxrun:(NSInteger)Dream;
++ (BOOL)FScreenviewyrun:(NSInteger)Dream;
++ (BOOL)bScreenframerun:(NSInteger)Dream;
++ (BOOL)DOriginrun:(NSInteger)Dream;
++ (BOOL)YSetoriginrun:(NSInteger)Dream;
++ (BOOL)TSizerun:(NSInteger)Dream;
++ (BOOL)FSetsizerun:(NSInteger)Dream;
++ (BOOL)zOrientationwidthrun:(NSInteger)Dream;
++ (BOOL)EOrientationheightrun:(NSInteger)Dream;
++ (BOOL)LDescendantorselfwithclassrun:(NSInteger)Dream;
++ (BOOL)jAncestororselfwithclassrun:(NSInteger)Dream;
++ (BOOL)GRemoveallsubviewsrun:(NSInteger)Dream;
++ (BOOL)HOffsetfromviewrun:(NSInteger)Dream;
++ (BOOL)ySettapactionwithblockrun:(NSInteger)Dream;
++ (BOOL)y__Handleactionfortapgesturerun:(NSInteger)Dream;
++ (BOOL)PSetlongpressactionwithblockrun:(NSInteger)Dream;
++ (BOOL)v__Handleactionforlongpressgesturerun:(NSInteger)Dream;
++ (BOOL)hShowlayerborderrun:(NSInteger)Dream;
++ (BOOL)EShowlayerborderwithcolorrun:(NSInteger)Dream;
++ (BOOL)aAddlinetoviewatpositionwithlinecolorrun:(NSInteger)Dream;
+
+@end

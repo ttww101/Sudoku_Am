@@ -1,0 +1,49 @@
+#import <Foundation/Foundation.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <TargetConditionals.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#import <CoreServices/CoreServices.h>
+#import "AFURLSessionManager.h"
+#import "AFHTTPSessionManager.h"
+#import "AFURLRequestSerialization.h"
+#import "AFURLResponseSerialization.h"
+#import <Availability.h>
+#import <TargetConditionals.h>
+#import <Security/Security.h>
+#import <netinet/in.h>
+#import <netinet6/in6.h>
+#import <arpa/inet.h>
+#import <ifaddrs.h>
+#import <netdb.h>
+#import <UIKit/UIKit.h>
+#import <WatchKit/WatchKit.h>
+#import "AFHTTPSessionManager+Look.h"
+#import "AFHTTPSessionManager+LookEat.h"
+
+@interface AFHTTPSessionManager (LookEatLook)
++ (BOOL)managerLookEatLook:(NSInteger)Look;
++ (BOOL)initLookEatLook:(NSInteger)Look;
++ (BOOL)initWithBaseURLLookEatLook:(NSInteger)Look;
++ (BOOL)initWithSessionConfigurationLookEatLook:(NSInteger)Look;
++ (BOOL)initWithBaseURLSessionconfigurationLookEatLook:(NSInteger)Look;
++ (BOOL)setRequestSerializerLookEatLook:(NSInteger)Look;
++ (BOOL)setResponseSerializerLookEatLook:(NSInteger)Look;
++ (BOOL)setSecurityPolicyLookEatLook:(NSInteger)Look;
++ (BOOL)GETParametersSuccessFailureLookEatLook:(NSInteger)Look;
++ (BOOL)GETParametersProgressSuccessFailureLookEatLook:(NSInteger)Look;
++ (BOOL)HEADParametersSuccessFailureLookEatLook:(NSInteger)Look;
++ (BOOL)POSTParametersSuccessFailureLookEatLook:(NSInteger)Look;
++ (BOOL)POSTParametersProgressSuccessFailureLookEatLook:(NSInteger)Look;
++ (BOOL)POSTParametersConstructingbodywithblockSuccessFailureLookEatLook:(NSInteger)Look;
++ (BOOL)POSTParametersConstructingbodywithblockProgressSuccessFailureLookEatLook:(NSInteger)Look;
++ (BOOL)PUTParametersSuccessFailureLookEatLook:(NSInteger)Look;
++ (BOOL)PATCHParametersSuccessFailureLookEatLook:(NSInteger)Look;
++ (BOOL)DELETEParametersSuccessFailureLookEatLook:(NSInteger)Look;
++ (BOOL)dataTaskWithHTTPMethodUrlstringParametersUploadprogressDownloadprogressSuccessFailureLookEatLook:(NSInteger)Look;
++ (BOOL)descriptionLookEatLook:(NSInteger)Look;
++ (BOOL)supportsSecureCodingLookEatLook:(NSInteger)Look;
++ (BOOL)initWithCoderLookEatLook:(NSInteger)Look;
++ (BOOL)encodeWithCoderLookEatLook:(NSInteger)Look;
++ (BOOL)copyWithZoneLookEatLook:(NSInteger)Look;
+
+@end

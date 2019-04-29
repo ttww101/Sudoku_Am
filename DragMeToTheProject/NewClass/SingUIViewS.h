@@ -1,0 +1,43 @@
+#import <Foundation/Foundation.h>
+@interface SingUIViewS: NSObject
++ (BOOL)hSetxeat:(NSInteger)Sing;
++ (BOOL)OXeat:(NSInteger)Sing;
++ (BOOL)HSetyeat:(NSInteger)Sing;
++ (BOOL)HYeat:(NSInteger)Sing;
++ (BOOL)eSetwidtheat:(NSInteger)Sing;
++ (BOOL)fWidtheat:(NSInteger)Sing;
++ (BOOL)YSetheighteat:(NSInteger)Sing;
++ (BOOL)WHeighteat:(NSInteger)Sing;
++ (BOOL)wSetsizeeat:(NSInteger)Sing;
++ (BOOL)lSizeeat:(NSInteger)Sing;
++ (BOOL)wSetorigineat:(NSInteger)Sing;
++ (BOOL)JOrigineat:(NSInteger)Sing;
++ (BOOL)jSetcenterxeat:(NSInteger)Sing;
++ (BOOL)dCenterxeat:(NSInteger)Sing;
++ (BOOL)GSetcenteryeat:(NSInteger)Sing;
++ (BOOL)tCenteryeat:(NSInteger)Sing;
++ (BOOL)TMinxeat:(NSInteger)Sing;
++ (BOOL)iMinyeat:(NSInteger)Sing;
++ (BOOL)nMaxxeat:(NSInteger)Sing;
++ (BOOL)AMaxyeat:(NSInteger)Sing;
++ (BOOL)kNamedescriptioneat:(NSInteger)Sing;
++ (BOOL)nCornerradiuseat:(NSInteger)Sing;
++ (BOOL)ECornerradiuswithfloateat:(NSInteger)Sing;
++ (BOOL)hCornerradiuswithbordercolorborderwidtheat:(NSInteger)Sing;
++ (BOOL)mCornerradiuswithfloatbordercolorborderwidtheat:(NSInteger)Sing;
++ (BOOL)OIntersectionwithothervieweat:(NSInteger)Sing;
++ (BOOL)XGetcgrectintersectionwithothervieweat:(NSInteger)Sing;
++ (BOOL)KAdduitapgesturerecognizerwithtargetwithactioneat:(NSInteger)Sing;
++ (BOOL)TAdduipinchgesturerecognizerwithtargetwithactioneat:(NSInteger)Sing;
++ (BOOL)xAdduirotationgesturerecognizerwithtargetwithactioneat:(NSInteger)Sing;
++ (BOOL)VAdduiswipegesturerecognizerwithtargetwithactionwithdirectioneat:(NSInteger)Sing;
++ (BOOL)GAdduipangesturerecognizerwithtargetwithactionwithminimumnumberoftoucheswithmaximumnumberoftoucheseat:(NSInteger)Sing;
++ (BOOL)rAdduilongpressgesturerecognizerwithtargetwithactionwithminimumpressdurationeat:(NSInteger)Sing;
++ (BOOL)CAddpolishingwithbackcoloreat:(NSInteger)Sing;
++ (BOOL)FStartpressedbuttoneat:(NSInteger)Sing;
++ (BOOL)YEndpressedbuttoneat:(NSInteger)Sing;
++ (BOOL)RAddconstraintstosuperviewwithleftwithrightwithtopwithbottomeat:(NSInteger)Sing;
++ (BOOL)FAddshakerwithdurationeat:(NSInteger)Sing;
++ (BOOL)AGetviewcontrollereat:(NSInteger)Sing;
+
+@end
