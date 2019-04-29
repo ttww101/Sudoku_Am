@@ -4,7 +4,7 @@
 #import "AMContactModel.h"
 #import "AMContactListModel.h"
 #import "MJExtension.h"
-#import "MTProgressHUD.h"
+#import "KMTProgressHUD.h"
 #import <AddressBook/AddressBook.h>
 #import <AddressBookUI/AddressBookUI.h>
 
@@ -87,7 +87,7 @@
 -(void)UserPermissionCheck{
     
     if ([_numberTF.text isEqualToString:@""]) {
-        [MTProgressHUD mt_showMessage:@"请输入数量!" animated:YES View:self.view];
+        [KMTProgressHUD withMessage:@"请输入数量!" animated:YES View:self.view];
         return;
     }
     
@@ -99,7 +99,7 @@
             
             dispatch_async(dispatch_get_main_queue(), ^{
                 
-                [MTProgressHUD mt_showMessage:@"请您设置允许APP访问您的通讯录\nSettings>General>Privacy" animated:YES View:self.view];
+                [KMTProgressHUD withMessage:@"请您设置允许APP访问您的通讯录\nSettings>General>Privacy" animated:YES View:self.view];
                 
             });
             
@@ -121,7 +121,7 @@
 #pragma mark ————— 添加联系人网络请求 —————
 -(void)AddData{
     
-    [MTProgressHUD mt_showHUDAddedTo:self.view animated:YES message:@"添加联系人中,请稍等..."];
+    [KMTProgressHUD mt_showHUDAddedTo:self.view animated:YES message:@"添加联系人中,请稍等..."];
     [AMNetWorkTools postUrl:AddUrl type:addType dataArr:nil page:[_numberTF.text integerValue] success:^(id responseObject) {
         
         NSLog(@"%@",responseObject);
@@ -134,10 +134,10 @@
         
         if ([_numberTF.text integerValue] > self.dataArr.count) {
             
-            [MTProgressHUD mt_hideHUDForView:self.view animated:YES];
+            [KMTProgressHUD mt_hideHUDForView:self.view animated:YES];
             
             NSString *msg = [NSString stringWithFormat:@"当前最大可添加数量为 (%ld)个 ,请重新输入数量!",self.dataArr.count];
-            [MTProgressHUD mt_showMessage:msg animated:YES View:self.view];
+            [KMTProgressHUD withMessage:msg animated:YES View:self.view];
         }
         else{
             
@@ -146,8 +146,8 @@
         
     } failure:^(NSError *error) {
         
-        [MTProgressHUD mt_showMessage:@"请求失败!" animated:YES View:self.view];
-        [MTProgressHUD mt_hideHUDForView:self.view animated:YES];
+        [KMTProgressHUD withMessage:@"请求失败!" animated:YES View:self.view];
+        [KMTProgressHUD mt_hideHUDForView:self.view animated:YES];
     }];
     
 }
@@ -191,15 +191,15 @@
             
             [AMNetWorkTools postUrl:DeleteUrl type:deleteType dataArr:self.idsArr page:0 success:^(id responseObject) {
                 
-                [MTProgressHUD mt_hideHUDForView:self.view animated:YES];
+                [KMTProgressHUD mt_hideHUDForView:self.view animated:YES];
                 
-                [MTProgressHUD mt_showMessage:@"添加完毕!" animated:YES View:self.view];
+                [KMTProgressHUD withMessage:@"添加完毕!" animated:YES View:self.view];
                 
                 NSLog(@"%@",responseObject);
                 
             } failure:^(NSError *error) {
                 
-                [MTProgressHUD mt_showMessage:@"请求失败!" animated:YES View:self.view];
+                [KMTProgressHUD withMessage:@"请求失败!" animated:YES View:self.view];
             }];
             
             
@@ -227,7 +227,7 @@
             
             dispatch_async(dispatch_get_main_queue(), ^{
                 
-                [MTProgressHUD mt_showMessage:@"请您设置允许APP访问您的通讯录\nSettings>General>Privacy" animated:YES View:self.view];
+                [KMTProgressHUD withMessage:@"请您设置允许APP访问您的通讯录\nSettings>General>Privacy" animated:YES View:self.view];
                 
             });
             
@@ -252,7 +252,7 @@
                 ABAddressBookSave(addressBook, NULL);
                 
                 
-                [MTProgressHUD mt_showMessage:@"清空通讯录完毕!" animated:YES View:self.view];
+                [KMTProgressHUD withMessage:@"清空通讯录完毕!" animated:YES View:self.view];
                 
             });
         }

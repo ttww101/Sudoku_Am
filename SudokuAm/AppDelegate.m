@@ -8,8 +8,11 @@
 #import "RootViewController.h"
 #import <AdSupport/AdSupport.h>
 #import "JANALYTICSService.h"
-#import "AYMJMineComLoginVC.h"
+#import "AYMJLoginViewController.h"
+#import <AVOSCloud/AVOSCloud.h>
 
+#define kAVOS_Key @"vPICUYu94bVLuhItM26tbCDk-gzGzoHsz"
+#define kAVOS_ID @"DWnYR2CmCFwDglwBQwSYhN9N"
 #define kJPushAppKey @"3b5c09a167f03fea9a3f8bb6"
 #define kJPushChannel @"am sudoku"
 #define kJPushProduction YES
@@ -22,6 +25,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [AVOSCloud setApplicationId:kAVOS_Key clientKey:kAVOS_ID];
     
     //JPush
     JPUSHRegisterEntity * entity = [[JPUSHRegisterEntity alloc] init];
@@ -67,16 +72,8 @@
     _window.backgroundColor = [UIColor whiteColor];
     [_window makeKeyAndVisible];
 
-    
     RootViewController *vc = [[RootViewController alloc] init];
     _window.rootViewController = vc;
-    
-//    AYMJMineComLoginVC *login=[[AYMJMineComLoginVC alloc]init];
-//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:login];
-//    nav.viewControllers = @[login];
-//    nav.navigationBar.barTintColor=[UIColor whiteColor];
-//    nav.navigationBar.translucent = YES;
-//    self.window.rootViewController = nav;
 
     return YES;
 }

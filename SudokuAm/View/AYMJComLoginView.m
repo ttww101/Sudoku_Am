@@ -61,6 +61,8 @@
         
         //登录按钮
         self.loginBtn = [UIButton buttonWithType:0];
+        self.loginBtn.layer.cornerRadius = 5;
+        self.loginBtn.layer.masksToBounds = YES;
         [self.loginBtn setProperty:Color(18, 17,17, 1) title:@"提交" textColor:[UIColor whiteColor] font:13*Height_Scale];
         [self.loginBtn addTarget:self action:@selector(Surelogin:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.loginBtn];

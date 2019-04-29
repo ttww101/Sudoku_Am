@@ -8,9 +8,7 @@ typedef void(^YJRegisViewExamBlock)(void);
 @property (nonatomic, strong) UITextField *userTF;
 @property (nonatomic, strong) UITextField *passTF;
 @property (nonatomic, strong) UITextField *repassTF;
-@property (nonatomic, strong) UITextField *examTF;
-@property (nonatomic, strong) UIImageView *examImageV;
-@property (nonatomic, strong) UIButton *examImageButton;
+@property (nonatomic, strong) UITextField *emailTF;
 @property (nonatomic, strong) UIButton *regisBtn;
 
 -(instancetype)initWithFrame:(CGRect)frame;

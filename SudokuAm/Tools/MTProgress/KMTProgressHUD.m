@@ -1,19 +1,19 @@
 //
-//  MTProgressHUD.m
+//  KMTProgressHUD.m
 //  onemoney
 //
 //  Created by Maktub on 16/3/6.
 //  Copyright © 2016年 Maktub-小明. All rights reserved.
 //
 
-#import "MTProgressHUD.h"
+#import "KMTProgressHUD.h"
 #import "MBProgressHUD.h"
 
 //#import "UIView+MTGetVc.h"
 
 
 
-@implementation MTProgressHUD
+@implementation KMTProgressHUD
 
 + (BOOL)mt_showHUDAddedTo:(UIView *)view animated:(BOOL)animated message:(NSString *)message{
     if (nil != view) {
@@ -42,7 +42,7 @@
     return NO;
 }
 
-+ (BOOL)mt_showMessage:(NSString *)message animated:(BOOL)animated View:(UIView *)view{
++ (BOOL)withMessage:(NSString *)message animated:(BOOL)animated View:(UIView *)view{
 
     return [self mt_showMessage:message animated:animated View:view complete:nil];
 }

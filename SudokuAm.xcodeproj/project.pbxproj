@@ -72,8 +72,8 @@
 		BB256CF22005B1EA00179078 /* AmJSHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BB256CE82005B1E900179078 /* AmJSHandler.m */; };
 		BB256CF32005B1EA00179078 /* AYMJComLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB256CE92005B1E900179078 /* AYMJComLoginView.m */; };
 		BB256CF42005B1EA00179078 /* UIView+AMZHView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB256CEA2005B1E900179078 /* UIView+AMZHView.m */; };
-		BB256CF92005B36000179078 /* AYMJMineComLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BB256CF82005B36000179078 /* AYMJMineComLoginVC.m */; };
-		BB256CFC2005BDFE00179078 /* AYMJMineRegisVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BB256CFB2005BDFE00179078 /* AYMJMineRegisVC.m */; };
+		BB256CF92005B36000179078 /* AYMJLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB256CF82005B36000179078 /* AYMJLoginViewController.m */; };
+		BB256CFC2005BDFE00179078 /* AYMJRegisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB256CFB2005BDFE00179078 /* AYMJRegisViewController.m */; };
 		BB256CFF2005BEAC00179078 /* AYMJRegisView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB256CFE2005BEAC00179078 /* AYMJRegisView.m */; };
 		BB256D6B2006030100179078 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = BB256D392006030100179078 /* NSData+ImageContentType.m */; };
 		BB256D6C2006030100179078 /* NSImage+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BB256D3B2006030100179078 /* NSImage+WebCache.m */; };
@@ -107,7 +107,7 @@
 		BB5ECB7E1FF08A1800A4727A /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECB771FF08A1700A4727A /* AFURLResponseSerialization.m */; };
 		BB5ECB7F1FF08A1800A4727A /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECB791FF08A1700A4727A /* AFURLSessionManager.m */; };
 		BB5ECB861FF0961900A4727A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECB831FF0961900A4727A /* MBProgressHUD.m */; };
-		BB5ECB8B1FF0968D00A4727A /* MTProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECB8A1FF0968D00A4727A /* MTProgressHUD.m */; };
+		BB5ECB8B1FF0968D00A4727A /* KMTProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECB8A1FF0968D00A4727A /* KMTProgressHUD.m */; };
 		BB5ECB8E1FF098CC00A4727A /* ALMTSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECB8D1FF098CC00A4727A /* ALMTSettingViewController.m */; };
 		BB5ECBE81FF0998C00A4727A /* AmSudokuLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECBD61FF0998A00A4727A /* AmSudokuLogic.m */; };
 		BB5ECBE91FF0998C00A4727A /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5ECBD91FF0998A00A4727A /* UIView+Common.m */; };
@@ -286,10 +286,10 @@
 		BB256CEB2005B1E900179078 /* AmJSHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmJSHandler.h; sourceTree = "<group>"; };
 		BB256CEE2005B1EA00179078 /* UIView+AMZHView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AMZHView.h"; sourceTree = "<group>"; };
 		BB256CF02005B1EA00179078 /* AYMJComLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYMJComLoginView.h; sourceTree = "<group>"; };
-		BB256CF72005B36000179078 /* AYMJMineComLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYMJMineComLoginVC.h; sourceTree = "<group>"; };
-		BB256CF82005B36000179078 /* AYMJMineComLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYMJMineComLoginVC.m; sourceTree = "<group>"; };
-		BB256CFA2005BDFE00179078 /* AYMJMineRegisVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AYMJMineRegisVC.h; sourceTree = "<group>"; };
-		BB256CFB2005BDFE00179078 /* AYMJMineRegisVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AYMJMineRegisVC.m; sourceTree = "<group>"; };
+		BB256CF72005B36000179078 /* AYMJLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYMJLoginViewController.h; sourceTree = "<group>"; };
+		BB256CF82005B36000179078 /* AYMJLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYMJLoginViewController.m; sourceTree = "<group>"; };
+		BB256CFA2005BDFE00179078 /* AYMJRegisViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AYMJRegisViewController.h; sourceTree = "<group>"; };
+		BB256CFB2005BDFE00179078 /* AYMJRegisViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AYMJRegisViewController.m; sourceTree = "<group>"; };
 		BB256CFD2005BEAC00179078 /* AYMJRegisView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AYMJRegisView.h; sourceTree = "<group>"; };
 		BB256CFE2005BEAC00179078 /* AYMJRegisView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AYMJRegisView.m; sourceTree = "<group>"; };
 		BB256D352006030100179078 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -362,8 +362,8 @@
 		BB5ECB821FF0961900A4727A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		BB5ECB831FF0961900A4727A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		BB5ECB841FF0961900A4727A /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
-		BB5ECB891FF0968D00A4727A /* MTProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTProgressHUD.h; sourceTree = "<group>"; };
-		BB5ECB8A1FF0968D00A4727A /* MTProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTProgressHUD.m; sourceTree = "<group>"; };
+		BB5ECB891FF0968D00A4727A /* KMTProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMTProgressHUD.h; sourceTree = "<group>"; };
+		BB5ECB8A1FF0968D00A4727A /* KMTProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMTProgressHUD.m; sourceTree = "<group>"; };
 		BB5ECB8C1FF098CB00A4727A /* ALMTSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALMTSettingViewController.h; sourceTree = "<group>"; };
 		BB5ECB8D1FF098CC00A4727A /* ALMTSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALMTSettingViewController.m; sourceTree = "<group>"; };
 		BB5ECBD61FF0998A00A4727A /* AmSudokuLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmSudokuLogic.m; sourceTree = "<group>"; };
@@ -763,10 +763,10 @@
 		BB1B27BC1FC6A00F001218E6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BB256CF72005B36000179078 /* AYMJMineComLoginVC.h */,
-				BB256CF82005B36000179078 /* AYMJMineComLoginVC.m */,
-				BB256CFA2005BDFE00179078 /* AYMJMineRegisVC.h */,
-				BB256CFB2005BDFE00179078 /* AYMJMineRegisVC.m */,
+				BB256CF72005B36000179078 /* AYMJLoginViewController.h */,
+				BB256CF82005B36000179078 /* AYMJLoginViewController.m */,
+				BB256CFA2005BDFE00179078 /* AYMJRegisViewController.h */,
+				BB256CFB2005BDFE00179078 /* AYMJRegisViewController.m */,
 				BB5ECB8C1FF098CB00A4727A /* ALMTSettingViewController.h */,
 				BB5ECB8D1FF098CC00A4727A /* ALMTSettingViewController.m */,
 				BB3FA8E11FE0D40D0015FADD /* RootViewController.h */,
@@ -933,8 +933,8 @@
 		BB5ECB881FF0968D00A4727A /* MTProgress */ = {
 			isa = PBXGroup;
 			children = (
-				BB5ECB891FF0968D00A4727A /* MTProgressHUD.h */,
-				BB5ECB8A1FF0968D00A4727A /* MTProgressHUD.m */,
+				BB5ECB891FF0968D00A4727A /* KMTProgressHUD.h */,
+				BB5ECB8A1FF0968D00A4727A /* KMTProgressHUD.m */,
 			);
 			path = MTProgress;
 			sourceTree = "<group>";
@@ -1187,7 +1187,7 @@
 				BB256D6D2006030100179078 /* SDImageCache.m in Sources */,
 				BB256D822006030100179078 /* UIView+WebCacheOperation.m in Sources */,
 				BB1B27811FC67DB7001218E6 /* MJFoundation.m in Sources */,
-				BB256CF92005B36000179078 /* AYMJMineComLoginVC.m in Sources */,
+				BB256CF92005B36000179078 /* AYMJLoginViewController.m in Sources */,
 				BB1B27771FC67DB7001218E6 /* NSArray+MASAdditions.m in Sources */,
 				BB1B27791FC67DB7001218E6 /* View+MASAdditions.m in Sources */,
 				BB256D7E2006030100179078 /* UIImage+MultiFormat.m in Sources */,
@@ -1230,7 +1230,7 @@
 				BB064E781FDA419D002BF6FC /* UIBarButtonItem+KMTButton.m in Sources */,
 				BB1B27891FC67DB7001218E6 /* NSString+MJExtension.m in Sources */,
 				BB256D6C2006030100179078 /* NSImage+WebCache.m in Sources */,
-				BB256CFC2005BDFE00179078 /* AYMJMineRegisVC.m in Sources */,
+				BB256CFC2005BDFE00179078 /* AYMJRegisViewController.m in Sources */,
 				BB1B26211FC679EB001218E6 /* AppDelegate.m in Sources */,
 				BB5ECBF01FF0998C00A4727A /* AmSudokuEditToolView.m in Sources */,
 				BB256CF42005B1EA00179078 /* UIView+AMZHView.m in Sources */,
@@ -1258,7 +1258,7 @@
 				BB1B276A1FC67DB7001218E6 /* IQTitleBarButtonItem.m in Sources */,
 				94EAC1E12272DF9C00DE3964 /* UIView+Constraint.m in Sources */,
 				BB1B27D01FC6A4A1001218E6 /* AMContactListModel.m in Sources */,
-				BB5ECB8B1FF0968D00A4727A /* MTProgressHUD.m in Sources */,
+				BB5ECB8B1FF0968D00A4727A /* KMTProgressHUD.m in Sources */,
 				BB1B27611FC67DB6001218E6 /* IQUITextFieldView+Additions.m in Sources */,
 				BB5ECB7A1FF08A1800A4727A /* AFHTTPSessionManager.m in Sources */,
 				BB5ECBEA1FF0998C00A4727A /* AmGlobalState.m in Sources */,

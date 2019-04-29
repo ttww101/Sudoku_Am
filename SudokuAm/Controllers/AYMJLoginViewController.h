@@ -1,5 +1,5 @@
 //
-//  AYMJMineComLoginVC.h
+//  AYMJLoginViewController.h
 //  意料之外
 //
 //  Created by  何浩贤 on 2017/8/22.
@@ -10,7 +10,7 @@
 
 typedef void(^YJMineComLoginVCInitBlock)(void);
 
-@interface AYMJMineComLoginVC : AYMJRootVC
+@interface AYMJLoginViewController : AYMJRootVC
 
 @property (nonatomic, copy) YJMineComLoginVCInitBlock block;
 @end

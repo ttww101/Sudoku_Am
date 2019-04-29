@@ -73,38 +73,27 @@
         
         
         //密码
-        self.examTF = [[UITextField alloc]init];
-        UIImageView *examLeftViewIV = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"icn-piccode"]];
+        self.emailTF = [[UITextField alloc]init];
+        UIImageView *examLeftViewIV = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"mail"]];
         examLeftViewIV.frame = CGRectMake(0, 0, 30*Width_Scale, 30*Height_Scale);
         examLeftViewIV.contentMode= UIViewContentModeCenter;
         
-        self.examTF.rightViewMode = UITextFieldViewModeAlways;
-        self.examTF.leftViewMode= UITextFieldViewModeAlways;
-        self.examTF.secureTextEntry = YES;
-        self.examTF.leftView= examLeftViewIV;
-        self.examTF.placeholder = @"验证码";
-        self.examTF.clearButtonMode = UITextFieldViewModeWhileEditing;
-        [self addSubview:self.examTF];
-        
-        
-        //图片验证码
-        self.examImageV = [[UIImageView alloc]init];
-        [self addSubview:self.examImageV];
-        
-        //图片验证码按钮
-        self.examImageButton = [UIButton buttonWithType:0];
-        [self.examImageButton setImage:[UIImage imageNamed:@"btn-refresh"] forState:0];
-        [self.examImageButton addTarget:self action:@selector(change) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview:self.examImageButton];
+        self.emailTF.rightViewMode = UITextFieldViewModeAlways;
+        self.emailTF.leftViewMode= UITextFieldViewModeAlways;
+        self.emailTF.leftView= examLeftViewIV;
+        self.emailTF.placeholder = @"邮箱";
+        self.emailTF.clearButtonMode = UITextFieldViewModeWhileEditing;
+        [self addSubview:self.emailTF];
         
         //验证码输入框的线
         UIView *examLineView = [[UIView alloc]init];
         examLineView.backgroundColor = Color(240, 240, 240, 1);
         [self addSubview:examLineView];
         
-        
         //注册按钮
         self.regisBtn = [UIButton buttonWithType:0];
+        self.regisBtn.layer.cornerRadius = 5;
+        self.regisBtn.layer.masksToBounds = YES;
         [self.regisBtn setProperty:Color(18, 17,17, 1) title:@"注册" textColor:[UIColor whiteColor] font:13*Height_Scale];
         [self.regisBtn addTarget:self action:@selector(regis) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.regisBtn];
@@ -174,7 +163,7 @@
             make.leading.equalTo(self.passTF);
         }];
         
-        [self.examTF mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self.emailTF mas_makeConstraints:^(MASConstraintMaker *make) {
             
         make.top.equalTo(userRePassLineView.mas_bottom).offset(20*Height_Scale);
             make.left.equalTo(self.repassTF.mas_left);
@@ -182,28 +171,9 @@
             
         }];
         
-        
-        [self.examImageV mas_makeConstraints:^(MASConstraintMaker *make) {
-           
-            make.centerY.equalTo(self.examTF);
-            make.left.equalTo(self.examTF.mas_right);
-            make.width.equalTo(@(100*Width_Scale));
-            make.height.equalTo(self.examTF.mas_height);
-        }];
-        
-        
-        [self.examImageButton mas_makeConstraints:^(MASConstraintMaker *make) {
-           
-            make.centerY.equalTo(self.examTF);
-            make.left.equalTo(self.examImageV.mas_right);
-            make.width.equalTo(@(30*Width_Scale));
-            make.height.equalTo(@(30*Width_Scale));
-        }];
-        
-        
         [examLineView mas_makeConstraints:^(MASConstraintMaker *make) {
             
-            make.top.equalTo(self.examTF.mas_bottom).offset(10*Height_Scale);
+            make.top.equalTo(self.emailTF.mas_bottom).offset(10*Height_Scale);
             make.height.equalTo(@(2));
             make.width.equalTo(self.passTF);
             make.leading.equalTo(self.passTF);
