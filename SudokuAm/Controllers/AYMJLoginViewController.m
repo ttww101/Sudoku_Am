@@ -107,7 +107,6 @@
                 if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"status"] isEqualToString:@"1"]) {
                     [KMTProgressHUD mt_showMessage:@"登入成功"  animated:YES View:self.view complete:^{
                         [self dismissViewControllerAnimated:YES completion:^{
-                            self.block();
                         }];
                     }];
                 } else {
