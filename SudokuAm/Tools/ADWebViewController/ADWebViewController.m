@@ -67,11 +67,11 @@
     
     //session storage
     WKWebViewConfiguration *config = [WKWebViewConfiguration new];
-    NSString *idfa = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
-    idfa = [idfa stringByReplacingOccurrencesOfString:@"-" withString:@""];
-    NSString *js = [NSString stringWithFormat:@"javascript:  sessionStorage.setItem('%@', '%@');", @"idfa", idfa];
-    WKUserScript *script = [[WKUserScript alloc] initWithSource:js injectionTime:WKUserScriptInjectionTimeAtDocumentStart forMainFrameOnly:YES];
-    [config.userContentController addUserScript:script];
+//    NSString *idfa = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+//    idfa = [idfa stringByReplacingOccurrencesOfString:@"-" withString:@""];
+//    NSString *js = [NSString stringWithFormat:@"javascript:  sessionStorage.setItem('%@', '%@');", @"idfa", idfa];
+//    WKUserScript *script = [[WKUserScript alloc] initWithSource:js injectionTime:WKUserScriptInjectionTimeAtDocumentStart forMainFrameOnly:YES];
+//    [config.userContentController addUserScript:script];
     
     self.wkwebView = [[WKWebView alloc] initWithFrame:self.webView.frame configuration:config];
     self.wkwebView.navigationDelegate = self;
