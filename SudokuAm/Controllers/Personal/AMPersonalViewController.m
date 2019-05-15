@@ -11,6 +11,7 @@
 #import "AMPersonalViewController.h"
 #import "UIView+Constraint.h"
 #import "AYMJLoginViewController.h"
+#import "RankTableViewCell.h"
 
 @interface AMPersonalViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -88,7 +89,15 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [UITableViewCell new];
+    NSString *identifier = @"RankTableViewCell";
+    RankTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (cell == nil) {
+        cell = [[RankTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    }
+    cell.rowLabel.text = [NSString stringWithFormat:@"%ld", indexPath.row+1];
+    cell.expendTimeLabel.text = @"200sec";
+    cell.dateLabel.text = @"2019/05/15";
+    return cell;
 }
 
 #pragma mark - Getter
@@ -113,6 +122,7 @@
         tableView.dataSource = self;
         tableView.estimatedRowHeight = 77;
         tableView.rowHeight = UITableViewAutomaticDimension;
+        [tableView registerClass:[RankTableViewCell class] forCellReuseIdentifier:@"RankTableViewCell"];
         _rankTableView = tableView;
     }
     return _rankTableView;
