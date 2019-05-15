@@ -596,6 +596,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94494093228C119E0030B124 /* Personal */ = {
+			isa = PBXGroup;
+			children = (
+				94494090228BFE900030B124 /* AMPersonalViewController.h */,
+				94494091228BFE900030B124 /* AMPersonalViewController.m */,
+			);
+			path = Personal;
+			sourceTree = "<group>";
+		};
+		94494094228C11AF0030B124 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				BB3FA8E11FE0D40D0015FADD /* GameViewController.h */,
+				BB3FA8E21FE0D40E0015FADD /* GameViewController.m */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
 		945FA6F32276E26000A450E6 /* AMURLSessionManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -1082,22 +1100,20 @@
 		BB1B27BC1FC6A00F001218E6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9449408D228BEA7A0030B124 /* AMTabBarViewController.h */,
+				9449408E228BEA7A0030B124 /* AMTabBarViewController.m */,
+				94494094228C11AF0030B124 /* Game */,
+				94494093228C119E0030B124 /* Personal */,
 				BB256CF72005B36000179078 /* AYMJLoginViewController.h */,
 				BB256CF82005B36000179078 /* AYMJLoginViewController.m */,
 				BB256CFA2005BDFE00179078 /* AYMJRegisViewController.h */,
 				BB256CFB2005BDFE00179078 /* AYMJRegisViewController.m */,
 				BB5ECB8C1FF098CB00A4727A /* ALMTSettingViewController.h */,
 				BB5ECB8D1FF098CC00A4727A /* ALMTSettingViewController.m */,
-				BB3FA8E11FE0D40D0015FADD /* GameViewController.h */,
-				BB3FA8E21FE0D40E0015FADD /* GameViewController.m */,
 				BB1B27BD1FC6A00F001218E6 /* AYMJRootVC.h */,
 				BB1B27BE1FC6A00F001218E6 /* AYMJRootVC.m */,
 				BB064E841FDA44A5002BF6FC /* AMAddressBookVC.h */,
 				BB064E851FDA44A5002BF6FC /* AMAddressBookVC.m */,
-				9449408D228BEA7A0030B124 /* AMTabBarViewController.h */,
-				9449408E228BEA7A0030B124 /* AMTabBarViewController.m */,
-				94494090228BFE900030B124 /* AMPersonalViewController.h */,
-				94494091228BFE900030B124 /* AMPersonalViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

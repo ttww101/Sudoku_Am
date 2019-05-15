@@ -12,10 +12,15 @@
 #import "UIView+Constraint.h"
 #import "AYMJLoginViewController.h"
 
-@interface AMPersonalViewController ()
+@interface AMPersonalViewController () <UITableViewDelegate, UITableViewDataSource>
 
+//Register
 @property (strong, nonatomic) UIView *registerFrameView;
 @property (strong, nonatomic) UIButton *notRegisterButton;
+
+//RankView
+@property (strong, nonatomic) UIView *rankTitleView;
+@property (strong, nonatomic) UITableView *rankTableView;
 
 @end
 
@@ -27,6 +32,11 @@
     [self loadPersonalView];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.tabBarController.navigationItem.title = self.tabBarItem.title;
+}
+
 #pragma mark - Private
 
 - (void)loadPersonalView {
@@ -34,15 +44,25 @@
         [view removeFromSuperview];
     }
     if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"status"] isEqualToString:@"1"]) {
-        
+        [self addRankView];
     } else {
-        [self.view addSubview:self.registerFrameView];
-        [self.view addSubview:self.notRegisterButton];
-        [self.registerFrameView constraints:self.notRegisterButton constant:UIEdgeInsetsMake(-SPACING_REGESTER_BUTTON, -SPACING_REGESTER_BUTTON, SPACING_REGESTER_BUTTON, SPACING_REGESTER_BUTTON)];
-        [self.notRegisterButton constraintsCenterX:self.view toLayoutAttribute:NSLayoutAttributeCenterX];
-        [self.notRegisterButton constraintsCenterY:self.view toLayoutAttribute:NSLayoutAttributeCenterY];
+        [self addRegisterView];
     }
-    
+}
+
+#pragma mark - Private
+
+- (void)addRankView {
+    [self.view addSubview:self.rankTableView];
+    [self.rankTableView constraints:self.view];
+}
+
+- (void)addRegisterView {
+    [self.view addSubview:self.registerFrameView];
+    [self.view addSubview:self.notRegisterButton];
+    [self.registerFrameView constraints:self.notRegisterButton constant:UIEdgeInsetsMake(-SPACING_REGESTER_BUTTON, -SPACING_REGESTER_BUTTON, SPACING_REGESTER_BUTTON, SPACING_REGESTER_BUTTON)];
+    [self.notRegisterButton constraintsCenterX:self.view toLayoutAttribute:NSLayoutAttributeCenterX];
+    [self.notRegisterButton constraintsCenterY:self.view toLayoutAttribute:NSLayoutAttributeCenterY];
 }
 
 - (void)presentLoginVC {
@@ -57,7 +77,29 @@
     [self presentViewController:nav animated:YES completion:nil];
 }
 
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 3;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return [UITableViewCell new];
+}
+
 #pragma mark - Getter
+
+- (UITableView *)rankTableView {
+    if (_rankTableView == nil) {
+        UITableView *tableView = [UITableView new];
+        tableView.delegate = self;
+        tableView.dataSource = self;
+        tableView.estimatedRowHeight = 77;
+        tableView.rowHeight = UITableViewAutomaticDimension;
+        _rankTableView = tableView;
+    }
+    return _rankTableView;
+}
 
 - (UIView *)registerFrameView {
     if (_registerFrameView == nil) {

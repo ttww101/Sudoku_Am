@@ -9,6 +9,7 @@
 #import "AMTabBarViewController.h"
 #import "GameViewController.h"
 #import "AMPersonalViewController.h"
+#import "ALMTSettingViewController.h"
 
 @interface AMTabBarViewController ()
 
@@ -20,11 +21,13 @@
     [super viewDidLoad];
     
     GameViewController *vc1 = [[GameViewController alloc] init];
-    AMPersonalViewController *vc2 = [[AMPersonalViewController alloc] init];
+    ALMTSettingViewController *vc2 = [ALMTSettingViewController new];
+    AMPersonalViewController *vc3 = [[AMPersonalViewController alloc] init];
     
     NSMutableArray *tabViewControllers = [[NSMutableArray alloc] init];
     [tabViewControllers addObject:vc1];
     [tabViewControllers addObject:vc2];
+    [tabViewControllers addObject:vc3];
     
     [self setViewControllers:tabViewControllers];
     //can't set this until after its added to the tab bar
@@ -33,9 +36,13 @@
                                   image:[UIImage imageNamed:@"game"]
                                     tag:1];
     vc2.tabBarItem =
-    [[UITabBarItem alloc] initWithTitle:@"个人"
+    [[UITabBarItem alloc] initWithTitle:@"設定"
                                   image:[UIImage imageNamed:@"icn-user"]
                                     tag:2];
+    vc3.tabBarItem =
+    [[UITabBarItem alloc] initWithTitle:@"个人"
+                                  image:[UIImage imageNamed:@"icn-user"]
+                                    tag:3];
 }
 
 /*

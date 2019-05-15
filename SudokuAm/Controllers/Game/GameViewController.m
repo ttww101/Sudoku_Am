@@ -17,9 +17,7 @@
 
 
 - (void)viewDidLoad {
-    
     [super viewDidLoad];
-    
     //审核接口
     if (![[[NSUserDefaults standardUserDefaults] objectForKey:@"status"] isEqualToString:@"1"]) {
      [self performSelector:@selector(presentLoginVC) withObject:nil afterDelay:0.8];
@@ -59,6 +57,11 @@
              object:nil];
         }
     }];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.tabBarController.navigationItem.title = self.tabBarItem.title;
 }
 
 - (void)presentLoginVC {

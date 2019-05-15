@@ -2,15 +2,16 @@
 //  ALMTSettingViewController.m
 //  AmSoduku
 //
-//  Created by lt on 2017/9/28.
-//  Copyright © 2017年 tl. All rights reserved.
+//  Created by wu on 2017/9/28.
+//  Copyright © 2019年 am. All rights reserved.
 //
 
 #import "ALMTSettingViewController.h"
+#import "UIView+Constraint.h"
 
 @interface ALMTSettingViewController () <UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UIAlertController *alertVC;
 
 @end
@@ -20,7 +21,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"设置";
+    [self.view addSubview:self.tableView];
+    [self.tableView constraints:self.view];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"settingCell"];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.tabBarController.navigationItem.title = self.tabBarItem.title;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,7 +44,6 @@
 }
 
 # pragma mark - public
-
 
 
 # pragma mark - tableViewDataSource
@@ -59,9 +66,10 @@
         case 0:     // 难度选择
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"settingCell"];
             cell.textLabel.text = @"难度";
-            cell.detailTextLabel.text = @[@"低级",@"中级",@"高级"][[AmSudokuLogic sharedInstance].gameLevel];
             
+            cell.detailTextLabel.text = @[@"低级",@"中级",@"高级"][[AmSudokuLogic sharedInstance].gameLevel];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            [AmSudokuLogic restartGame];
             break;
             
         default:
@@ -111,5 +119,19 @@
     
     return _alertVC;
 }
+
+- (UITableView *)tableView {
+    if (_tableView == nil) {
+        UITableView *tableView = [UITableView new];
+        tableView.delegate = self;
+        tableView.dataSource = self;
+        tableView.estimatedRowHeight = 77;
+        tableView.rowHeight = UITableViewAutomaticDimension;
+        tableView.tableFooterView = [UIView new];
+        _tableView = tableView;
+    }
+    return _tableView;
+}
+
 
 @end

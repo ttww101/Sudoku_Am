@@ -74,8 +74,9 @@
     [_window makeKeyAndVisible];
 
 //    GameViewController *vc = [[GameViewController alloc] init];
-    AMTabBarViewController *vc = [[AMTabBarViewController alloc] init];
-    _window.rootViewController = vc;
+    AMTabBarViewController *tabVC = [[AMTabBarViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:tabVC];
+    _window.rootViewController = nav;
 
     return YES;
 }
