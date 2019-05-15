@@ -79,6 +79,10 @@
 
 #pragma mark - UITableViewDataSource
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    return self.rankTitleView;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 3;
 }
@@ -88,6 +92,19 @@
 }
 
 #pragma mark - Getter
+
+- (UIView *)rankTitleView {
+    if (_rankTitleView == nil) {
+        UIView *view = [UIView new];
+        UILabel *label = [UILabel new];
+        label.text = @"排行榜";
+        label.textAlignment = NSTextAlignmentCenter;
+        [view addSubview:label];
+        [label constraints:view constant:UIEdgeInsetsMake(10, 10, -10, -10)];
+        _rankTitleView = view;
+    }
+    return _rankTitleView;
+}
 
 - (UITableView *)rankTableView {
     if (_rankTableView == nil) {

@@ -37,11 +37,11 @@
                                     tag:1];
     vc2.tabBarItem =
     [[UITabBarItem alloc] initWithTitle:@"設定"
-                                  image:[UIImage imageNamed:@"icn-user"]
+                                  image:[UIImage imageNamed:@"setting"]
                                     tag:2];
     vc3.tabBarItem =
     [[UITabBarItem alloc] initWithTitle:@"个人"
-                                  image:[UIImage imageNamed:@"icn-user"]
+                                  image:[UIImage imageNamed:@"mask"]
                                     tag:3];
 }
 
