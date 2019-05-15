@@ -12,14 +12,24 @@
 #import "AYMJRegisViewController.h"
 #import "NSString+MTEncrypt.h"
 #import <AVOSCloud/AVOSCloud.h>
+#import "UIView+Constraint.h"
 
 @interface AYMJLoginViewController ()<AYMJComLoginViewDelegate,UITextFieldDelegate>
 
 @property (nonatomic, strong) AYMJComLoginView *loginView;
+@property (nonatomic, strong) UIButton *nextTimeLoginButton;
+
 @end
 
 @implementation AYMJLoginViewController
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.dismissBlock = ^{};
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,7 +43,32 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:regis];
     [self initLoginView];
     
+    [self.view addSubview:self.nextTimeLoginButton];
+    [self.nextTimeLoginButton constraintsBottom:self.view toLayoutAttribute:NSLayoutAttributeBottom constant:-16];
+    [self.nextTimeLoginButton constraintsLeading:self.view toLayoutAttribute:NSLayoutAttributeLeading constant:8];
+    [self.nextTimeLoginButton constraintsTrailing:self.view toLayoutAttribute:NSLayoutAttributeTrailing constant:-16];
+    [self.nextTimeLoginButton constraintSelfWidthHeightByRatio:5/1.f];
 //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(gameStatusChanged:) name:@"STATUS_CODE" object:nil];
+}
+
+#pragma mark - Getter
+
+- (UIButton *)nextTimeLoginButton {
+    if (_nextTimeLoginButton == nil) {
+        UIButton *button = [UIButton new];
+        [button setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+        [button.titleLabel setFont:[UIFont systemFontOfSize:15]];
+        [button setTitle:@"下次再登入" forState:UIControlStateNormal];
+        _nextTimeLoginButton = button;
+        [button addTarget:self action:@selector(nextTimeLoginButton:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _nextTimeLoginButton;
+}
+
+- (void)nextTimeLoginButton:(id)sender {
+    self.dismissBlock();
+    [self dismissViewControllerAnimated:YES completion:^{
+    }];
 }
 
 
@@ -106,6 +141,7 @@
                 
                 if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"status"] isEqualToString:@"1"]) {
                     [KMTProgressHUD mt_showMessage:@"登入成功"  animated:YES View:self.view complete:^{
+                        self.dismissBlock();
                         [self dismissViewControllerAnimated:YES completion:^{
                         }];
                     }];

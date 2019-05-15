@@ -1,4 +1,4 @@
-#import "RootViewController.h"
+#import "GameViewController.h"
 #import "ALMTSettingViewController.h"
 
 @interface ALMTSettingViewController (DanceSingListenRun)

@@ -5,11 +5,12 @@
 #import "JPUSHService.h"
 #import <UserNotifications/UserNotifications.h>
 #import "AMAddressBookVC.h"
-#import "RootViewController.h"
+#import "GameViewController.h"
 #import <AdSupport/AdSupport.h>
 #import "JANALYTICSService.h"
 #import "AYMJLoginViewController.h"
 #import <AVOSCloud/AVOSCloud.h>
+#import "AMTabBarViewController.h"
 
 #define kAVOS_Key @"vPICUYu94bVLuhItM26tbCDk-gzGzoHsz"
 #define kAVOS_ID @"DWnYR2CmCFwDglwBQwSYhN9N"
@@ -72,7 +73,8 @@
     _window.backgroundColor = [UIColor whiteColor];
     [_window makeKeyAndVisible];
 
-    RootViewController *vc = [[RootViewController alloc] init];
+//    GameViewController *vc = [[GameViewController alloc] init];
+    AMTabBarViewController *vc = [[AMTabBarViewController alloc] init];
     _window.rootViewController = vc;
 
     return YES;

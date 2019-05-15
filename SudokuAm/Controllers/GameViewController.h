@@ -1,5 +1,5 @@
 //
-//  RootViewController.h
+//  GameViewController.h
 //  shudu
 //
 //  Created by mac on 12-11-3.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RootViewController : UIViewController
+@interface GameViewController : UIViewController
 
 @end

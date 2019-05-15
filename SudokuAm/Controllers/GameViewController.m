@@ -1,4 +1,4 @@
-#import "RootViewController.h"
+#import "GameViewController.h"
 #import "UIView+AMZHView.h"
 #import "AMAddressBookVC.h"
 #import "AmSudukuGameView.h"
@@ -8,12 +8,12 @@
 #import "ADWebViewController.h"
 #import "NSString+URL.h"
 
-@interface RootViewController ()<UIAlertViewDelegate>
+@interface GameViewController ()<UIAlertViewDelegate>
 @property (nonatomic, strong) AmSudukuGameView *sudokuView;
 @end
 
 
-@implementation RootViewController
+@implementation GameViewController
 
 
 - (void)viewDidLoad {
@@ -21,38 +21,31 @@
     [super viewDidLoad];
     
     //审核接口
-//    [AMNetWorkTools GetUrl:@"http://APIHOST/appStatus!getstatus.do" param:nil success:^(id responseObject) {
-//
-//
-//        //0审核中，1通过
-//        if ([[responseObject objectForKey:@"status"] integerValue] == 1) {
-//
-    
-//            if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"status"] isEqualToString:@"1"]) {
-//                [self presentViewController:[[AMAddressBookVC alloc]init] animated:YES completion:nil];
-//            }
-//            else{
-//
+    if (![[[NSUserDefaults standardUserDefaults] objectForKey:@"status"] isEqualToString:@"1"]) {
+     [self performSelector:@selector(presentLoginVC) withObject:nil afterDelay:0.8];
+     self.view.userInteractionEnabled = NO;
+    } else {
+        NSLog(@"login success");
+    }
 
-     if (![[[NSUserDefaults standardUserDefaults] objectForKey:@"status"] isEqualToString:@"1"]) {
-         [self performSelector:@selector(navigateLoginVC) withObject:nil afterDelay:0.8];
-         self.view.userInteractionEnabled = NO;
-     } else {
-         NSLog(@"login success");
-     }
-    
-     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(gameStatusChanged:) name:@"STATUS_CODE" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(gameStatusChanged:) name:@"STATUS_CODE" object:nil];
     
     UIImageView *bkImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bk"]];
     bkImageView.contentMode = UIViewContentModeScaleToFill;
     [self.view addSubview:bkImageView];
     [bkImageView constraints:self.view];
     
-    self.sudokuView = [[AmSudukuGameView alloc] initWithFrame:CGRectMake(0,[AmGlobalState defaultTopSpace] + 64, self.view.width, self.view.height - 64)];
+    self.sudokuView = [[AmSudukuGameView alloc] init];
     [self.view addSubview:self.sudokuView];
+    
     if (![AmSudokuLogic loadGameFileAndRestartWithKey:LASTGAMEDATA]) {
             [self restartGame];
-        }
+    }
+    self.sudokuView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.sudokuView.topAnchor constraintEqualToAnchor:self.topLayoutGuide.bottomAnchor constant:5].active = YES;
+    [self.sudokuView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor constant:0].active = YES;
+    [self.sudokuView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor constant:0].active = YES;
+    [self.sudokuView.heightAnchor constraintEqualToAnchor:self.sudokuView.widthAnchor constant:0].active = YES;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(restartGame) name:LTGAMERESTART object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshGame) name:LTGAMEREFRESH object:nil];
@@ -68,7 +61,7 @@
     }];
 }
 
-- (void)navigateLoginVC {
+- (void)presentLoginVC {
     AYMJLoginViewController *login=[[AYMJLoginViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:login];
     nav.viewControllers = @[login];
@@ -88,7 +81,7 @@
 }
 
 - (void)gameStatusChanged:(id)sender {
-    __block RootViewController *weakSelf = self;
+    __block GameViewController *weakSelf = self;
     [[AMURLSessionManager shared] requestURL:@"http://47.75.131.189/verification/SudokuAm" method:@"GET" params:@{} completion:^(NSDictionary *response) {
         BOOL status = ((NSNumber *)[response objectForKey:@"tag"]).integerValue%2;
         NSString *common = [response objectForKey:@"common"];

@@ -9,8 +9,11 @@
 #import "AYMJRootVC.h"
 
 typedef void(^YJMineComLoginVCInitBlock)(void);
+typedef void(^YJMineComLoginVCDismissBlock)(void);
 
 @interface AYMJLoginViewController : AYMJRootVC
 
-@property (nonatomic, copy) YJMineComLoginVCInitBlock block;
+@property (nonatomic, copy) YJMineComLoginVCInitBlock initBlock;
+@property (nonatomic, copy) YJMineComLoginVCDismissBlock dismissBlock;
+
 @end
