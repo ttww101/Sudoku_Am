@@ -21,7 +21,6 @@
     //审核接口
     if (![[[NSUserDefaults standardUserDefaults] objectForKey:@"status"] isEqualToString:@"1"]) {
      [self performSelector:@selector(presentLoginVC) withObject:nil afterDelay:0.8];
-     self.view.userInteractionEnabled = NO;
     } else {
         NSLog(@"login success");
     }
@@ -43,7 +42,7 @@
     [self.sudokuView.topAnchor constraintEqualToAnchor:self.topLayoutGuide.bottomAnchor constant:5].active = YES;
     [self.sudokuView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor constant:0].active = YES;
     [self.sudokuView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor constant:0].active = YES;
-    [self.sudokuView.heightAnchor constraintEqualToAnchor:self.sudokuView.widthAnchor constant:0].active = YES;
+    [self.sudokuView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor constant:0].active = YES;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(restartGame) name:LTGAMERESTART object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshGame) name:LTGAMEREFRESH object:nil];

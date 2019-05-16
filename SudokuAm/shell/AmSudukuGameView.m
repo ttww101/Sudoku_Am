@@ -58,34 +58,48 @@
         [self.sudokuView addSubview:xLineView];
         [self.sudokuView addSubview:yLineView];
     }
-
+    
+    [self.toolView constraintsTop:self.sudokuView toLayoutAttribute:NSLayoutAttributeBottom constant:5];
+    [self.toolView constraintsLeading:self toLayoutAttribute:NSLayoutAttributeLeading];
+    [self.toolView constraintsTrailing:self toLayoutAttribute:NSLayoutAttributeTrailing];
+    [self.toolView constraintSelfWidthHeightByRatio:3.5f];
+    
+    [self.saveButton constraintsTop:self.toolView toLayoutAttribute:NSLayoutAttributeBottom constant:5];
+    [self.saveButton constraintsLeading:self.toolView toLayoutAttribute:NSLayoutAttributeLeading constant:5];
+    [self.saveButton constraintsTrailing:self toLayoutAttribute:NSLayoutAttributeCenterX constant:-5];
+    [self.saveButton constraintSelfWidthHeightByRatio:4/1];
+    
+    [self.loadButton constraintsTop:self.toolView toLayoutAttribute:NSLayoutAttributeBottom constant:5];
+    [self.loadButton constraintsLeading:self toLayoutAttribute:NSLayoutAttributeCenterX constant:5];
+    [self.loadButton constraintsTrailing:self.toolView toLayoutAttribute:NSLayoutAttributeTrailing constant:-5];
+    [self.loadButton constraintSelfWidthHeightByRatio:4/1];
+    
+    self.saveButton.layer.cornerRadius = 6;
+    self.saveButton.layer.masksToBounds = YES;
+    
+    self.loadButton.layer.cornerRadius = 6;
+    self.loadButton.layer.masksToBounds = YES;
 }
+
+#pragma mark -
 
 - (void)layoutSubviews
 {
     self.sudokuView.frame = CGRectMake([AmGlobalState defaultTopSpace], 0, [AmGlobalState sudokuViewWidth], [AmGlobalState sudokuViewWidth]);
-    self.toolView.frame = CGRectMake(self.sudokuView.left, self.sudokuView.bottom + [AmGlobalState defaultTopSpace], [AmGlobalState sudokuViewWidth], (self.width - [AmGlobalState sudokuButtonSpace] * 5) / 6.5 * 2 + [AmGlobalState sudokuButtonSpace]);
-    self.saveButton.layer.cornerRadius = 6;
-    self.saveButton.layer.masksToBounds = YES;
-    [self.saveButton constraintsTop:self.toolView toLayoutAttribute:NSLayoutAttributeBottom constant:5];
-    [self.saveButton constraintsLeading:self.toolView toLayoutAttribute:NSLayoutAttributeLeading constant:0];
-    [self.saveButton constraintsTrailing:self toLayoutAttribute:NSLayoutAttributeCenterX constant:-5];
-    [self.saveButton constraintSelfWidthHeightByRatio:4/1];
-    
-    self.loadButton.layer.cornerRadius = 6;
-    self.loadButton.layer.masksToBounds = YES;
-    [self.loadButton constraintsTop:self.toolView toLayoutAttribute:NSLayoutAttributeBottom constant:5];
-    [self.loadButton constraintsLeading:self toLayoutAttribute:NSLayoutAttributeCenterX constant:5];
-    [self.loadButton constraintsTrailing:self.toolView toLayoutAttribute:NSLayoutAttributeTrailing constant:0];
-    [self.loadButton constraintSelfWidthHeightByRatio:4/1];
-    
+    [self.toolView layoutIfNeeded];
+//    self.toolView.frame = CGRectMake(self.sudokuView.left, self.sudokuView.bottom + [AmGlobalState defaultTopSpace], [AmGlobalState sudokuViewWidth], (self.width - [AmGlobalState sudokuButtonSpace] * 5) / 6.5 * 2 + [AmGlobalState sudokuButtonSpace]);
+//    [self.saveButton constraintsTop:self.toolView toLayoutAttribute:NSLayoutAttributeBottom constant:5];
+//    [self.saveButton constraintsLeading:self.toolView toLayoutAttribute:NSLayoutAttributeLeading constant:0];
+//    [self.saveButton constraintsTrailing:self toLayoutAttribute:NSLayoutAttributeCenterX constant:-5];
+//    [self.saveButton constraintSelfWidthHeightByRatio:4/1];
 }
 
 # pragma mark - public
 
-- (void)restartGame
-{
-    [self.sudokuView reloadData];
+- (void)restartGame {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.sudokuView reloadData];
+    });
 }
 
 

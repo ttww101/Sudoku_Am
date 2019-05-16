@@ -8,6 +8,7 @@
 
 #import "AmSudokuEditToolView.h"
 #import "AmSudokuToolButton.h"
+#import "UIView+Constraint.h"
 
 @interface AmSudokuEditToolView ()
 
@@ -31,53 +32,71 @@
     for (NSInteger i = 0; i < 9; i++) {
         AmSudokuToolButton *button = [self editButtonWithTitle:[NSString stringWithFormat:@"%ld",i + 1]];
         button.ltBackgroundImage = [UIImage imageNamed:[NSString stringWithFormat:@"note_%ld", (long)i + 1]];
-        [button addTarget:self action:@selector(editButtonClicked:) forControlEvents:UIControlEventTouchDown];
-        [self addSubview:button];
         [self.buttonArray addObject:button];
+        [self addSubview:button];
+        [button addTarget:self action:@selector(editButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     }
     
-    AmSudokuToolButton *button = [self editButtonWithTitle:@"X"];
-    button.noteTitle = @"X";
-    [self addSubview:button];
-    [self.buttonArray addObject:button];
-    [button addTarget:self action:@selector(clearButtonClicked) forControlEvents:UIControlEventTouchDown];
+    AmSudokuToolButton *toolbutton = [self editButtonWithTitle:@"X"];
+    toolbutton.noteTitle = @"X";
+    [self addSubview:toolbutton];
+    [self.buttonArray addObject:toolbutton];
+    [toolbutton addTarget:self action:@selector(clearButtonClicked) forControlEvents:UIControlEventTouchDown];
     
-    button = [self editButtonWithTitle:@"输入"];
-    button.noteTitle = @"标签";
-    [button setBackgroundColor:[UIColor colorWithHexString:@"#84b9cb"]];
-    [button addTarget:self action:@selector(switchButtonClicked) forControlEvents:UIControlEventTouchDown];
-    [self addSubview:button];
-    [self.buttonArray addObject:button];
-}
-
-- (void)layoutSubviews
-{
-    CGFloat buttonWidth = (self.width - [AmGlobalState sudokuButtonSpace] * 5) / 6.5;
+    AmSudokuToolButton *enterbutton = [self editButtonWithTitle:@"输入"];
+    enterbutton.noteTitle = @"标签";
+    [enterbutton setBackgroundColor:[UIColor colorWithHexString:@"#84b9cb"]];
+    [enterbutton addTarget:self action:@selector(switchButtonClicked) forControlEvents:UIControlEventTouchDown];
+    [self addSubview:enterbutton];
     
-    for (AmSudokuToolButton *button in self.buttonArray) {
-        NSInteger index = [self.buttonArray indexOfObject:button];
-        if (10 == [self.buttonArray indexOfObject:button]) {
-            button.top = 0;
-            button.right = self.width;
-            button.size = CGSizeMake(buttonWidth * 1.5, buttonWidth * 2 + [AmGlobalState sudokuButtonSpace]);
-            break;
+    [enterbutton constraintsTrailing:self toLayoutAttribute:NSLayoutAttributeTrailing constant:-5];
+    [enterbutton constraintsTop:self toLayoutAttribute:NSLayoutAttributeTop];
+    [enterbutton constraintsBottom:self toLayoutAttribute:NSLayoutAttributeBottom];
+    [enterbutton constraintWidthToView:self ByRatio:1/5.f];
+    
+    //constraint
+    UIButton *lastButton;
+    int index = 0;
+    for (UIButton *button in self.buttonArray) {
+        button.translatesAutoresizingMaskIntoConstraints = NO;
+        if (index == 0) {
+            [button constraintsTop:self toLayoutAttribute:NSLayoutAttributeTop];
+            [button constraintsLeading:self toLayoutAttribute:NSLayoutAttributeLeading constant:5];
+        } else if (index == 1 || index == 2 || index == 3 || index == 4) {
+            [button constraintsTop:lastButton toLayoutAttribute:NSLayoutAttributeTop];
+            [button constraintsLeading:lastButton toLayoutAttribute:NSLayoutAttributeTrailing constant:5];
+            [button constraintWidthToView:lastButton ByRatio:1.0];
+        } else if (index == 5) {
+            [button constraintsTop:lastButton toLayoutAttribute:NSLayoutAttributeBottom constant:5];
+            [button constraintsLeading:self toLayoutAttribute:NSLayoutAttributeLeading constant:5];
+            [button constraintWidthToView:lastButton ByRatio:1.0];
+        } else if (index == 6 || index == 7 || index == 8 || index == 9) {
+            [button constraintsTop:lastButton toLayoutAttribute:NSLayoutAttributeTop];
+            [button constraintsLeading:lastButton toLayoutAttribute:NSLayoutAttributeTrailing constant:5];
+            [button constraintWidthToView:lastButton ByRatio:1.0];
         }
-        
-        button.frame = CGRectMake(index % 5 * (buttonWidth + [AmGlobalState sudokuButtonSpace]), index / 5 * (buttonWidth + [AmGlobalState sudokuButtonSpace]), buttonWidth, buttonWidth);
+        if (index == 4) {
+            [button constraintsTrailing:enterbutton toLayoutAttribute:NSLayoutAttributeLeading constant:-5];
+        }
+        if (index == 9) {
+            [button constraintsBottom:self toLayoutAttribute:NSLayoutAttributeBottom];
+        }
+        if (index != 0) {
+            [button constraintHeightToView:lastButton ByRatio:1.0f];
+        }
+        lastButton = button;
+        index++;
     }
 }
 
-- (AmSudokuToolButton *)editButtonWithTitle:(NSString *)title
-{
-    AmSudokuToolButton *button = [AmSudokuToolButton buttonWithType:UIButtonTypeCustom];
+- (AmSudokuToolButton *)editButtonWithTitle:(NSString *)title {
+    AmSudokuToolButton *button = [AmSudokuToolButton new];
     button.title = title;
-    button.contentMode = UIViewContentModeScaleToFill;
     [button setTitle:title forState:UIControlStateNormal];
     [button.titleLabel setFont:[UIFont systemFontOfSize:25]];
     [button setBackgroundColor:[UIColor colorWithHexString:@"#A2D7DD"]];
     button.layer.borderWidth = 1.f;
     button.layer.borderColor = [UIColor flatGrayColor].CGColor;
-    
     return button;
 }
 
