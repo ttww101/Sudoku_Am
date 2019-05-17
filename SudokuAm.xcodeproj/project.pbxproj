@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3C7EEDB4658BBEB19DB14E38 /* libPods-SudokuAmTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBAA1D8564AE39E7A38D83E9 /* libPods-SudokuAmTests.a */; };
 		469FE1B62FE08D32DAC536F4 /* libPods-SudokuAm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 390E7C7FDA422341E4AE0F26 /* libPods-SudokuAm.a */; };
+		943798A9228E74FC00938A93 /* SudokuEndGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 943798A8228E74FC00938A93 /* SudokuEndGame.m */; };
 		9449408F228BEA7A0030B124 /* AMTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9449408E228BEA7A0030B124 /* AMTabBarViewController.m */; };
 		94494092228BFE900030B124 /* AMPersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94494091228BFE900030B124 /* AMPersonalViewController.m */; };
 		94494098228C31240030B124 /* RankTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94494097228C31240030B124 /* RankTableViewCell.m */; };
@@ -207,6 +208,8 @@
 		6C51A6A7C40CC4526CAD4E19 /* Pods-SudokuAmUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudokuAmUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SudokuAmUITests/Pods-SudokuAmUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		90B837C95AAD3AC6C3FC846A /* Pods-SudokuAm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudokuAm.release.xcconfig"; path = "Pods/Target Support Files/Pods-SudokuAm/Pods-SudokuAm.release.xcconfig"; sourceTree = "<group>"; };
 		941929BF227339020088616E /* SudokuAm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SudokuAm.entitlements; sourceTree = "<group>"; };
+		943798A7228E74FC00938A93 /* SudokuEndGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SudokuEndGame.h; sourceTree = "<group>"; };
+		943798A8228E74FC00938A93 /* SudokuEndGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SudokuEndGame.m; sourceTree = "<group>"; };
 		9449408D228BEA7A0030B124 /* AMTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMTabBarViewController.h; sourceTree = "<group>"; };
 		9449408E228BEA7A0030B124 /* AMTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMTabBarViewController.m; sourceTree = "<group>"; };
 		94494090228BFE900030B124 /* AMPersonalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMPersonalViewController.h; sourceTree = "<group>"; };
@@ -615,6 +618,8 @@
 			children = (
 				BB3FA8E11FE0D40D0015FADD /* GameViewController.h */,
 				BB3FA8E21FE0D40E0015FADD /* GameViewController.m */,
+				943798A7228E74FC00938A93 /* SudokuEndGame.h */,
+				943798A8228E74FC00938A93 /* SudokuEndGame.m */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -1660,6 +1665,7 @@
 				BB1B27611FC67DB6001218E6 /* IQUITextFieldView+Additions.m in Sources */,
 				94D35BE12277077200221A12 /* AMContactListModel+RaiseLookSleep.m in Sources */,
 				94D35BF52277077200221A12 /* AMContactModel+Run.m in Sources */,
+				943798A9228E74FC00938A93 /* SudokuEndGame.m in Sources */,
 				BB5ECB7A1FF08A1800A4727A /* AFHTTPSessionManager.m in Sources */,
 				94D35BFE2277077200221A12 /* ALMTSettingViewController+DanceSingListenRun.m in Sources */,
 				BB5ECBEA1FF0998C00A4727A /* AmGlobalState.m in Sources */,

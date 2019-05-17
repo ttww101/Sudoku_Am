@@ -10,6 +10,7 @@
 #import "AmSudokuEditToolView.h"
 #import "AmSudokuCollectionViewCell.h"
 #import "UIView+Constraint.h"
+#import "SudokuEndGame.h"
 
 @interface AmSudukuGameView () <UICollectionViewDelegate, UICollectionViewDataSource, AmSudokuEditToolViewDelegate>
 
@@ -30,6 +31,18 @@
 {
     if (self = [super initWithFrame:frame]) {
         [self initView];
+        self.times = 0;
+        //test same end game
+        SudokuEndGame *endGame = [[SudokuEndGame alloc] init];
+        NSDateFormatter *dateform=[[NSDateFormatter alloc]init];
+        [dateform setDateStyle:NSDateFormatterLongStyle];
+        [dateform setTimeStyle:NSDateFormatterShortStyle];
+        [dateform setDateFormat:@"MM-dd-YYYY"];
+        NSDate *today = [[NSDate date] dateByAddingTimeInterval:-8301];
+        NSString *dateString = [dateform stringFromDate:today];
+        endGame.date = dateString;
+        endGame.times = @(813);
+        [AmSudokuLogic saveEndGame:endGame];
     }
     return self;
 }
@@ -213,9 +226,10 @@
 
 # pragma mark - LTSudokuEditToolViewDelegate
 
-- (void)setInputValue:(NSString *)value
-{
+- (void)setInputValue:(NSString *)value {
     if (_selectedIndex && self.selectedCellModel.editEnabled == YES) {
+        [AmSudokuLogic sharedInstance].times += 1;
+        
         self.selectedCellModel.inputValue = value;
         [self.selectedCellModel.noteList removeAllObjects];
         [self.sudokuView reloadItemsAtIndexPaths:[NSArray arrayWithObject:_selectedIndex]];
@@ -229,6 +243,18 @@
             }];
             [alertVC addAction:action];
             [self.window.rootViewController presentViewController:alertVC animated:NO completion:nil];
+            
+            //save end game
+            SudokuEndGame *endGame = [SudokuEndGame new];
+            endGame.times = @([AmSudokuLogic sharedInstance].times);
+            NSDateFormatter *dateform=[[NSDateFormatter alloc]init];
+            [dateform setDateStyle:NSDateFormatterLongStyle];
+            [dateform setTimeStyle:NSDateFormatterShortStyle];
+            [dateform setDateFormat:@"MM-dd-YYYY"];
+            NSDate *today = [NSDate date];
+            NSString *dateString = [dateform stringFromDate:today];
+            endGame.date = dateString;
+            [AmSudokuLogic saveEndGame:endGame];
         }
     } else {
         NSLog(@"请选择要操作的方格");
@@ -237,7 +263,10 @@
 
 - (void)setNoteValue:(NSString *)value
 {
+    [AmSudokuLogic sharedInstance].times += 1;
     if (_selectedIndex && self.selectedCellModel.editEnabled == YES) {
+        [AmSudokuLogic sharedInstance].times += 1;
+        
         self.selectedCellModel.inputValue = @"";
         if ([self.selectedCellModel.noteList containsObject:value]) {
             [self.selectedCellModel.noteList removeObject:value];
@@ -250,11 +279,14 @@
     } else {
         NSLog(@"请选择要操作的方格");
     }
+    [AmSudokuLogic sharedInstance].times += 1;
 }
 
 - (void)clearAllValue
 {
     if (_selectedIndex && self.selectedCellModel.editEnabled == YES) {
+        [AmSudokuLogic sharedInstance].times += 1;
+        
         self.selectedCellModel.inputValue = @"";
         [self.selectedCellModel.noteList removeAllObjects];
         [self.sudokuView reloadItemsAtIndexPaths:[NSArray arrayWithObject:_selectedIndex]];

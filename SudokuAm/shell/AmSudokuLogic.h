@@ -9,9 +9,10 @@
 #import <Foundation/Foundation.h>
 
 #define GAMELEVEL @"gameLevel"
+#define SAVE_TIMES_KEY @"game_times_key"
+#define SAVE_ENDGAME_KEY @"game_endgame_key"
 
-
-@class AMSodukuCellModel;
+@class AMSodukuCellModel, SudokuEndGame;
 
 @interface AmSudokuLogic : NSObject
 
@@ -34,5 +35,11 @@
 + (BOOL)isGameOver;
 
 + (void)setGameLevel:(NSInteger)level;
+
++ (void)saveTimes:(NSUInteger)times;
+
+@property (nonatomic, assign) NSUInteger times;
+
++ (void)saveEndGame:(SudokuEndGame *)endGame;
 
 @end

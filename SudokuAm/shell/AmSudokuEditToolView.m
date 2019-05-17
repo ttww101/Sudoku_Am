@@ -43,8 +43,9 @@
     [self.buttonArray addObject:toolbutton];
     [toolbutton addTarget:self action:@selector(clearButtonClicked) forControlEvents:UIControlEventTouchDown];
     
-    AmSudokuToolButton *enterbutton = [self editButtonWithTitle:@"输入"];
+    AmSudokuToolButton *enterbutton = [self editButtonWithTitle:@"标签切换"];
     enterbutton.noteTitle = @"标签";
+    enterbutton.titleLabel.numberOfLines = 0;
     [enterbutton setBackgroundColor:[UIColor colorWithHexString:@"#84b9cb"]];
     [enterbutton addTarget:self action:@selector(switchButtonClicked) forControlEvents:UIControlEventTouchDown];
     [self addSubview:enterbutton];
@@ -121,7 +122,6 @@
             [self.delegate setInputValue:button.titleLabel.text];
         }
     }
-    
 }
 
 - (void)switchButtonClicked

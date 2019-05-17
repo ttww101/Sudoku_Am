@@ -25,10 +25,12 @@
     _isNoted = isNoted;
     if (isNoted) {
         [self setTitle:self.noteTitle forState:UIControlStateNormal];
+        [self setBackgroundColor:[UIColor colorWithHexString:@"#fed766"]];
         [self setBackgroundImage:self.ltBackgroundImage forState:UIControlStateNormal];
     } else {
         [self setTitle:self.title forState:UIControlStateNormal];
         [self setBackgroundImage:nil forState:UIControlStateNormal];
+        [self setBackgroundColor:[UIColor colorWithHexString:@"#84b9cb"]];
     }
 }
 

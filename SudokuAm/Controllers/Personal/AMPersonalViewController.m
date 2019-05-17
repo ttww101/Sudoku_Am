@@ -12,6 +12,8 @@
 #import "UIView+Constraint.h"
 #import "AYMJLoginViewController.h"
 #import "RankTableViewCell.h"
+#import "AmSudokuLogic.h"
+#import "SudokuEndGame.h"
 
 @interface AMPersonalViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -22,6 +24,9 @@
 //RankView
 @property (strong, nonatomic) UIView *rankTitleView;
 @property (strong, nonatomic) UITableView *rankTableView;
+
+//Game data
+@property (strong, nonatomic) NSArray<SudokuEndGame *> *endGames;
 
 @end
 
@@ -36,15 +41,35 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.tabBarController.navigationItem.title = self.tabBarItem.title;
+     if ([self isLogin]) {
+        NSData *endGameData = [[NSUserDefaults standardUserDefaults] valueForKey:SAVE_ENDGAME_KEY];
+        NSMutableArray *mEndGames = [NSMutableArray new];
+        if (endGameData != nil) {
+            NSMutableArray *mSaveEndGames = [NSKeyedUnarchiver unarchiveObjectWithData:endGameData];
+            [mEndGames addObjectsFromArray:mSaveEndGames];
+        }
+        self.endGames = [mEndGames sortedArrayUsingComparator:^NSComparisonResult(SudokuEndGame *obj1, SudokuEndGame *obj2) {
+            return obj1.times.integerValue > obj2.times.integerValue;
+         }];
+        [self.rankTableView reloadData];
+     }
 }
 
 #pragma mark - Private
+
+- (BOOL)isLogin {
+     if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"status"] isEqualToString:@"1"]) {
+         return YES;
+     } else {
+         return NO;
+     }
+}
 
 - (void)loadPersonalView {
     for (UIView *view in self.view.subviews) {
         [view removeFromSuperview];
     }
-    if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"status"] isEqualToString:@"1"]) {
+    if ([self isLogin]) {
         [self addRankView];
     } else {
         [self addRegisterView];
@@ -81,11 +106,11 @@
 #pragma mark - UITableViewDataSource
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    return self.rankTitleView;
+    return [self rankTitleView2];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return self.endGames.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -95,12 +120,44 @@
         cell = [[RankTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     cell.rowLabel.text = [NSString stringWithFormat:@"%ld", indexPath.row+1];
-    cell.expendTimeLabel.text = @"200sec";
-    cell.dateLabel.text = @"2019/05/15";
+    cell.expendTimeLabel.text = self.endGames[indexPath.row].times.stringValue;
+    cell.dateLabel.text = self.endGames[indexPath.row].date;
     return cell;
 }
 
 #pragma mark - Getter
+
+- (UIView *)rankTitleView2 {
+    UIView *view = [UIView new];
+    
+    UILabel *leadingLabel = [UILabel new];
+    leadingLabel.text = @"No.";
+    leadingLabel.textAlignment = NSTextAlignmentLeft;
+    [view addSubview:leadingLabel];
+    [leadingLabel constraintsLeading:view toLayoutAttribute:NSLayoutAttributeLeading];
+    [leadingLabel constraintsTop:view toLayoutAttribute:NSLayoutAttributeTop];
+    [leadingLabel constraintsBottom:view toLayoutAttribute:NSLayoutAttributeBottom];
+    
+    UILabel *midLabel = [UILabel new];
+    midLabel.text = @"步數";
+    midLabel.textAlignment = NSTextAlignmentCenter;
+    [view addSubview:midLabel];
+    [midLabel constraintsLeading:leadingLabel toLayoutAttribute:NSLayoutAttributeTrailing];
+    [midLabel constraintsTop:view toLayoutAttribute:NSLayoutAttributeTop];
+    [midLabel constraintsBottom:view toLayoutAttribute:NSLayoutAttributeBottom];
+    [midLabel constraintWidthToView:leadingLabel ByRatio:1.0f];
+    
+    UILabel *trailingLabel = [UILabel new];
+    trailingLabel.text = @"日期";
+    trailingLabel.textAlignment = NSTextAlignmentRight;
+    [view addSubview:trailingLabel];
+    [trailingLabel constraintsLeading:midLabel toLayoutAttribute:NSLayoutAttributeTrailing];
+    [trailingLabel constraintsTop:view toLayoutAttribute:NSLayoutAttributeTop];
+    [trailingLabel constraintsBottom:view toLayoutAttribute:NSLayoutAttributeBottom];
+    [trailingLabel constraintsTrailing:view toLayoutAttribute:NSLayoutAttributeTrailing];
+    [trailingLabel constraintWidthToView:midLabel ByRatio:1.0f];
+    return view;
+}
 
 - (UIView *)rankTitleView {
     if (_rankTitleView == nil) {
@@ -110,6 +167,8 @@
         label.textAlignment = NSTextAlignmentCenter;
         [view addSubview:label];
         [label constraints:view constant:UIEdgeInsetsMake(10, 10, -10, -10)];
+        [label constraintsHeightWithConstant:40];
+        view.frame = CGRectMake(0, 0, self.view.frame.size.width, 50);
         _rankTitleView = view;
     }
     return _rankTitleView;
@@ -123,6 +182,9 @@
         tableView.estimatedRowHeight = 77;
         tableView.rowHeight = UITableViewAutomaticDimension;
         [tableView registerClass:[RankTableViewCell class] forCellReuseIdentifier:@"RankTableViewCell"];
+        tableView.tableFooterView = [UIView new];
+        [self.rankTitleView layoutIfNeeded];
+        tableView.tableHeaderView = self.rankTitleView;
         _rankTableView = tableView;
     }
     return _rankTableView;

@@ -10,6 +10,8 @@
 
 @interface AmSudukuGameView : UIView
 
+@property (nonatomic, assign) NSUInteger times;
+
 - (void)restartGame;
 
 @end

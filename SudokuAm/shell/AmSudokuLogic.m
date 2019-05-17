@@ -9,6 +9,7 @@
 #import "AmSudokuLogic.h"
 #import "AMSodukuCellModel.h"
 #import "AmSudukuGameView.h"
+#import "SudokuEndGame.h"
 
 @interface AmSudokuLogic ()
 
@@ -25,6 +26,7 @@
     dispatch_once(&onceToken, ^{
         manager = [[AmSudokuLogic alloc] init];
         manager.gameLevel = [[[NSUserDefaults standardUserDefaults] valueForKey:GAMELEVEL] integerValue];
+        manager.times = 0;
     });
     return manager;
 }
@@ -218,11 +220,32 @@
 }
 
 # pragma mark - public
+
++ (void)saveEndGame:(SudokuEndGame *)endGame {
+    
+    NSData *endGameData = [[NSUserDefaults standardUserDefaults] valueForKey:SAVE_ENDGAME_KEY];
+    NSMutableArray *mEndGames = [NSMutableArray new];
+    if (endGameData != nil) {
+        NSMutableArray *mSaveEndGames = [NSKeyedUnarchiver unarchiveObjectWithData:endGameData];
+        [mEndGames addObjectsFromArray:mSaveEndGames];
+    }
+    
+    [mEndGames addObject:endGame];
+    //test remove end games
+//    [mEndGames removeObjectsInRange:NSMakeRange(2, 3)];
+    
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:[mEndGames copy]];
+    [[NSUserDefaults standardUserDefaults] setValue:data forKey:SAVE_ENDGAME_KEY];
+}
+
 // 存档
 + (void)saveGameFileWithKey:(NSString *)key
 {
     NSData *data = [NSKeyedArchiver archivedDataWithRootObject:[AmSudokuLogic sharedInstance].modelArray];
     [[NSUserDefaults standardUserDefaults] setValue:data forKey:key];
+    
+    NSData *timesData = [NSKeyedArchiver archivedDataWithRootObject:[NSNumber numberWithUnsignedInteger:[AmSudokuLogic sharedInstance].times]];
+    [[NSUserDefaults standardUserDefaults] setValue:timesData forKey:SAVE_TIMES_KEY];
 }
 
 // 读档
@@ -233,6 +256,10 @@
         return NO;
     }
     [AmSudokuLogic sharedInstance].modelArray = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    
+    NSData *timesData = [[NSUserDefaults standardUserDefaults] valueForKey:SAVE_TIMES_KEY];
+    [AmSudokuLogic sharedInstance].times = ((NSNumber *)[NSKeyedUnarchiver unarchiveObjectWithData:timesData]).unsignedIntegerValue;
+    
     [[NSNotificationCenter defaultCenter] postNotificationName:LTGAMEREFRESH object:nil];
     return YES;
 }
